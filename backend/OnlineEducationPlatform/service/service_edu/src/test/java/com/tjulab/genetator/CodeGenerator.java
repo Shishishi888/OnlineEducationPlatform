@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.junit.Test;
 
+
 /**
  * @author
  * @since 2018/12/13
@@ -62,7 +63,7 @@ public class CodeGenerator {
 
         // 5、策略配置：逆向工程
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("edu_teacher");
+        strategy.setInclude("edu_teacher"); // 对应表的名称
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 
