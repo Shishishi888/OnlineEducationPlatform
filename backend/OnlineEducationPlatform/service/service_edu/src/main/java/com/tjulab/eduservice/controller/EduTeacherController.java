@@ -5,10 +5,7 @@ import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,12 +24,18 @@ public class EduTeacherController {
     @Autowired
     private EduTeacherService eduTeacherService;
 
-    // 1. 查询讲师表所有的数据
     // rest风格
+    // 1. 查询讲师表所有的数据
     @GetMapping("findAll")
     public List<EduTeacher> findAllTeacher() {
         List<EduTeacher> eduTeacherList = eduTeacherService.list(null);
         return eduTeacherList;
+    }
+
+    // 2. 逻辑删除讲师
+    @DeleteMapping("{id}")
+    public boolean removeTeacher(@PathVariable String id) {
+        return eduTeacherService.removeById(id);
     }
 }
 
