@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/OnlineEducationPlatform.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/OnlineEducationPlatform.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/common/common.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/common/common_utils/common_utils.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/common/common_utils/common_utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/service/service.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/common/service_base/service_base.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/common/service_base/service_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/OnlineEducationPlatform/service/service_edu/service_edu.iml" filepath="$PROJECT_DIR$/backend/OnlineEducationPlatform/service/service_edu/service_edu.iml" />
