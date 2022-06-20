@@ -39,7 +39,7 @@ public class R {
     }
 
     // 失败静态方法
-    public static R errork() {
+    public static R error() {
         R r = new R();
         r.setSuccess(false);
         r.setCode(ResultCode.ERROR);

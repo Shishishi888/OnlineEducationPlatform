@@ -1,6 +1,7 @@
 package com.tjulab.eduservice.controller;
 
 
+import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
@@ -32,16 +33,22 @@ public class EduTeacherController {
     // 1. 查询讲师表所有的数据
     @ApiOperation(value = "查询所有讲师")
     @GetMapping("findAll")
-    public List<EduTeacher> findAllTeacher() {
+    public R findAllTeacher() {
         List<EduTeacher> eduTeacherList = eduTeacherService.list(null);
-        return eduTeacherList;
+        return R.ok().data("items", eduTeacherList);
     }
 
     // 2. 逻辑删除讲师
     @ApiOperation(value = "逻辑删除讲师")
     @DeleteMapping("{id}")
-    public boolean removeTeacher(@ApiParam(name = "id", value = "讲师ID", required = true) @PathVariable String id) {
-        return eduTeacherService.removeById(id);
+    public R removeTeacher(@ApiParam(name = "id", value = "讲师ID", required = true) @PathVariable String id) {
+        boolean flag = eduTeacherService.removeById(id);
+        if(flag){
+            return R.ok();
+        }
+        else {
+            return R.error();
+        }
     }
 }
 
