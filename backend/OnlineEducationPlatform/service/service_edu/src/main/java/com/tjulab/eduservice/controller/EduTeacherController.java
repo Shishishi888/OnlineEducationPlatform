@@ -63,6 +63,9 @@ public class EduTeacherController {
     @GetMapping("pageTeacher/{current}/{limit}")
     public R pageListTeacher(@PathVariable long current,
                              @PathVariable long limit){
+
+        Integer a = 10 / 0;  // 异常
+
         Page<EduTeacher> teacherPage = new Page<>(current, limit);
         eduTeacherService.page(teacherPage, null);
         long total = teacherPage.getTotal();  // 总记录数
@@ -125,6 +128,25 @@ public class EduTeacherController {
             return R.ok();
         else
             return R.error();
+    }
+
+    // 6. 根据id查询讲师
+    @GetMapping("getTeacher/{id}")
+    public R getTeacher(@PathVariable String id) {
+        EduTeacher eduTeacher = eduTeacherService.getById(id);
+        return R.ok().data("teacher", eduTeacher);
+    }
+
+    // 6. 修改讲师
+    @PostMapping("updateTeacher")
+    public R updateTeacher(@RequestBody EduTeacher eduTeacher) {
+        boolean flag = eduTeacherService.updateById(eduTeacher);
+        if(flag){
+            return R.ok();
+        }
+        else {
+            return R.error();
+        }
     }
 }
 
