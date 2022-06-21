@@ -1,15 +1,18 @@
 package com.tjulab.eduservice.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.entity.EduTeacher;
+import com.tjulab.eduservice.entity.vo.TeacherQuery;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -69,6 +72,49 @@ public class EduTeacherController {
         map.put("records", records);
         return R.ok().data(map);
         //return R.ok().data("total", total).data("records", records);
+    }
+
+    // 4. 条件查询讲师 + 分页
+    // @GetMapping("pageTeacherCondition/{current}/{limit}")
+    // public R pageTeacherCondition(@PathVariable long current, @PathVariable long limit, TeacherQuery teacherQuery) {
+    @PostMapping("pageTeacherCondition/{current}/{limit}")
+    public R pageTeacherCondition(@PathVariable long current,
+                                  @PathVariable long limit,
+                                  @RequestBody(required = false) TeacherQuery teacherQuery) {  // RequestBody 使用json传递数据，把json数据封装到对应的对象中；必须使用post提交方式
+                                                                                               // ResponseBody 返回数据，一般是json数据
+                                                                                               // required = false 表示该参数值可以为空
+        // 创建Page对象
+        Page<EduTeacher> teacherPage = new Page<>(current, limit);
+
+        // 构建条件：多条件组合查询
+        QueryWrapper<EduTeacher> wrapper = new QueryWrapper<>();
+        // 动态SQL
+        // 判断条件值是否为空，如果不为空拼接条件
+        String name = teacherQuery.getName();
+        Integer level = teacherQuery.getLevel();
+        String begin = teacherQuery.getBegin();
+        String end = teacherQuery.getEnd();;
+        if(!StringUtils.isEmpty(name)){
+            wrapper.like("name", name);  // name teacherQuery中的字段名称
+        }
+        if(!StringUtils.isEmpty(level)){
+            wrapper.eq("level", level);
+        }
+        if(!StringUtils.isEmpty(begin)){
+            wrapper.ge("gmt_create", begin);  // gmt_create 表中的属性名称
+        }
+        if(!StringUtils.isEmpty(end)){
+            wrapper.le("gmt_create", end);
+        }
+
+        // 分页查询
+        eduTeacherService.page(teacherPage, wrapper);
+        long total = teacherPage.getTotal();  // 总记录数
+        List<EduTeacher> records = teacherPage.getRecords();  // 数据list集合
+        Map map = new HashMap();
+        map.put("total", total);
+        map.put("records", records);
+        return R.ok().data(map);
     }
 }
 
