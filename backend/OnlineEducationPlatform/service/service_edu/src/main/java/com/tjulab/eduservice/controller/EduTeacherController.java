@@ -8,6 +8,7 @@ import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.entity.vo.TeacherQuery;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
+import com.tjulab.servicebase.exceptionhandler.MyException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -64,7 +65,14 @@ public class EduTeacherController {
     public R pageListTeacher(@PathVariable long current,
                              @PathVariable long limit){
 
-        Integer a = 10 / 0;  // 异常
+        // Integer a = 10 / 0;  // 异常
+
+        try {
+            Integer a = 10 / 0;
+        }catch (Exception e) {
+            // 执行自定义异常
+            throw new MyException(20001, "执行MyException异常处理");
+        }
 
         Page<EduTeacher> teacherPage = new Page<>(current, limit);
         eduTeacherService.page(teacherPage, null);
