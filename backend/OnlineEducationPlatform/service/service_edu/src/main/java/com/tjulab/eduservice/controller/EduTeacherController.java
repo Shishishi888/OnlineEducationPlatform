@@ -1,6 +1,7 @@
 package com.tjulab.eduservice.controller;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
@@ -11,7 +12,9 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -49,6 +52,23 @@ public class EduTeacherController {
         else {
             return R.error();
         }
+    }
+
+    // 3. 分页查询讲师
+    // current 当前页
+    // limit   每页记录数
+    @GetMapping("pageTeacher/{current}/{limit}")
+    public R pageListTeacher(@PathVariable long current,
+                             @PathVariable long limit){
+        Page<EduTeacher> teacherPage = new Page<>(current, limit);
+        eduTeacherService.page(teacherPage, null);
+        long total = teacherPage.getTotal();  // 总记录数
+        List<EduTeacher> records = teacherPage.getRecords();  // 数据list集合
+        Map map = new HashMap();
+        map.put("total", total);
+        map.put("records", records);
+        return R.ok().data(map);
+        //return R.ok().data("total", total).data("records", records);
     }
 }
 
