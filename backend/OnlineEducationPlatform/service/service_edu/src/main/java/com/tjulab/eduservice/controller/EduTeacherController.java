@@ -116,5 +116,15 @@ public class EduTeacherController {
         map.put("records", records);
         return R.ok().data(map);
     }
+
+    // 5. 添加讲师
+    @PostMapping("addTeacher")
+    public R addTeacher(@RequestBody EduTeacher eduTeacher) {
+        boolean save = eduTeacherService.save(eduTeacher);
+        if(save)
+            return R.ok();
+        else
+            return R.error();
+    }
 }
 
