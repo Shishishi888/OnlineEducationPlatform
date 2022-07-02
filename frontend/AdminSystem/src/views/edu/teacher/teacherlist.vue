@@ -54,6 +54,16 @@
         </template>
       </el-table-column>
     </el-table>
+
+    <!-- 分页 -->
+    <el-pagination
+      :current-page="page"
+      :page-size="limit"
+      :total="total"
+      style="padding: 30px 0; text-align: center;"
+      layout="total, prev, pager, next, jumper"
+      @current-change="getTeacherList"
+    />
   </div>
 </template>
 
@@ -67,10 +77,10 @@ export default {
   data() {
     // 定义变量和初始值
     return {
-      list: null, // 通过后端接口查询得到的讲师列表
-      page: 1, // 当前页
-      limit: 10, // 每页记录数
-      total: 0, // 总记录数
+      list: null,       // 通过后端接口查询得到的讲师列表
+      page: 1,          // 当前页
+      limit: 3,         // 每页记录数
+      total: 0,         // 总记录数
       teacherQuery: {}, // 条件封装对象
     };
   },
@@ -80,7 +90,8 @@ export default {
   },
   methods: {
     // 创建具体的方法，调用teahcer.js中定义的方法
-    getTeacherList() {
+    getTeacherList(page = 1) {
+       this.page = page; 
       // 查询讲师列表（条件查询+分页）
       teacher
         .getTeacherListPage(this.page, this.limit, this.teacherQuery)
