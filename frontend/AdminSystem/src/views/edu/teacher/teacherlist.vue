@@ -2,6 +2,42 @@
   <div class="app-container">
     讲师列表
 
+    <!--查询表单-->
+    <el-form :inline="true" class="demo-form-inline">
+      <el-form-item>
+        <el-input v-model="teacherQuery.name" placeholder="讲师名"/>
+      </el-form-item>
+
+      <el-form-item>
+        <el-select v-model="teacherQuery.level" clearable placeholder="讲师头衔">
+          <el-option :value="1" label="高级讲师"/>
+          <el-option :value="2" label="首席讲师"/>
+        </el-select>
+      </el-form-item>
+
+      <el-form-item label="添加时间">
+        <el-date-picker
+          v-model="teacherQuery.begin"
+          type="datetime"
+          placeholder="选择开始时间"
+          value-format="yyyy-MM-dd HH:mm:ss"
+          default-time="00:00:00"
+        />
+      </el-form-item>
+      <el-form-item>
+        <el-date-picker
+          v-model="teacherQuery.end"
+          type="datetime"
+          placeholder="选择截止时间"
+          value-format="yyyy-MM-dd HH:mm:ss"
+          default-time="00:00:00"
+        />
+      </el-form-item>
+
+      <el-button type="primary" icon="el-icon-search" @click="getTeacherList()">查询</el-button>
+      <el-button type="default" @click="resetData()">清空</el-button>
+    </el-form>
+
     <!-- 表格 -->
     <el-table
       :data="list"
@@ -40,9 +76,7 @@
       <el-table-column label="操作" width="200" align="center">
         <template slot-scope="scope">
           <router-link :to="'/teacher/edit/' + scope.row.id">
-            <el-button type="primary" size="mini" icon="el-icon-edit"
-              >修改</el-button
-            >
+            <el-button type="primary" size="mini" icon="el-icon-edit">修改</el-button>
           </router-link>
           <el-button
             type="danger"
@@ -81,7 +115,10 @@ export default {
       page: 1,          // 当前页
       limit: 3,         // 每页记录数
       total: 0,         // 总记录数
-      teacherQuery: {}, // 条件封装对象
+      teacherQuery: {   // 条件封装对象
+        // name:'',
+        // level:''
+      },
     };
   },
   created() {
@@ -108,6 +145,14 @@ export default {
           console.log(error);
         });
     },
+    resetData() {
+        // 清空表单中的数据
+        this.teacherQuery = {}
+
+        // 查询所有讲师数据
+        this.getTeacherList()
+
+    }
   },
 };
 </script>
