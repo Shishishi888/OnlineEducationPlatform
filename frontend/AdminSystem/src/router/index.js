@@ -37,6 +37,29 @@ export const constantRouterMap = [
     }]
   },
 
+
+  {
+    path: '/teacher',
+    component: Layout,
+    redirect: '/teacher/table',
+    name: '讲师管理',
+    meta: { title: '讲师管理', icon: 'example' },
+    children: [
+      {
+        path: 'teacherlist',
+        name: '讲师列表',
+        component: () => import('@/views/edu/teacher/teacherlist'),
+        meta: { title: '讲师列表', icon: 'table' }
+      },
+      {
+        path: 'teacheradd',
+        name: '添加讲师',
+        component: () => import('@/views/edu/teacher/teacheradd'),
+        meta: { title: '添加讲师', icon: 'tree' }
+      }
+    ]
+  },
+
   {
     path: '/example',
     component: Layout,

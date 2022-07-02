@@ -30,7 +30,7 @@ import java.util.Map;
  */
 @Api(description="讲师管理")
 @RestController
-@RequestMapping("/eduservice/edu-teacher")
+@RequestMapping("/eduservice/teacher")
 @CrossOrigin  // 解决跨域问题
 public class EduTeacherController {
     // 注入service
@@ -38,7 +38,7 @@ public class EduTeacherController {
     private EduTeacherService eduTeacherService;
 
     // rest风格
-    // 1. 查询讲师表所有的数据
+    // 1. 查询讲师表中所有的数据
     @ApiOperation(value = "查询所有讲师")
     @GetMapping("findAll")
     public R findAllTeacher() {
@@ -59,7 +59,7 @@ public class EduTeacherController {
         }
     }
 
-    // 3. 分页查询讲师
+    // 3. 查询讲师（分页）
     // current 当前页
     // limit   每页记录数
     @GetMapping("pageTeacher/{current}/{limit}")
@@ -86,7 +86,7 @@ public class EduTeacherController {
         //return R.ok().data("total", total).data("records", records);
     }
 
-    // 4. 条件查询讲师 + 分页
+    // 4. 查询讲师（条件查询+分页）
     // @GetMapping("pageTeacherCondition/{current}/{limit}")
     // public R pageTeacherCondition(@PathVariable long current, @PathVariable long limit, TeacherQuery teacherQuery) {
     @PostMapping("pageTeacherCondition/{current}/{limit}")
