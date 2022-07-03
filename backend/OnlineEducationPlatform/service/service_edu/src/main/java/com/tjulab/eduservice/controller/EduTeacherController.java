@@ -6,7 +6,6 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.entity.vo.TeacherQuery;
-import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import io.swagger.annotations.Api;
@@ -59,7 +58,7 @@ public class EduTeacherController {
         }
     }
 
-    // 3. 查询讲师（分页）
+    // 3. 查询讲师列表（分页）
     // current 当前页
     // limit   每页记录数
     @GetMapping("pageTeacher/{current}/{limit}")
@@ -86,7 +85,7 @@ public class EduTeacherController {
         //return R.ok().data("total", total).data("records", records);
     }
 
-    // 4. 查询讲师（条件查询+分页）
+    // 4. 查询讲师列表（条件查询+分页）
     // @GetMapping("pageTeacherCondition/{current}/{limit}")
     // public R pageTeacherCondition(@PathVariable long current, @PathVariable long limit, TeacherQuery teacherQuery) {
     @PostMapping("pageTeacherCondition/{current}/{limit}")
@@ -142,7 +141,7 @@ public class EduTeacherController {
             return R.error();
     }
 
-    // 6. 根据id查询讲师
+    // 6. 查询单个讲师（根据讲师ID查询）
     @GetMapping("getTeacher/{id}")
     public R getTeacher(@PathVariable String id) {
         EduTeacher eduTeacher = eduTeacherService.getById(id);

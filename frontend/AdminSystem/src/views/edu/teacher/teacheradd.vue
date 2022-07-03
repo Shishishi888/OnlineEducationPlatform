@@ -56,7 +56,15 @@ export default {
       addBtnDisabled: false, // 是否禁用保存按钮
     };
   },
-  created() {},
+  created() {  // 在页面渲染之前执行
+    // 判断路径中是否有讲师的ID值
+    if(this.$route.params && this.$route.params.id) {
+      // 从路径获取讲师的ID值
+      const id = this.$route.params.id;
+      // 调用根据讲师ID值查询讲师信息的方法
+      this.getTeacherInfo(id);
+    }
+  },
   methods: {
     addOrUpdate() {
       this.addTeacher();  // 添加讲师
@@ -80,6 +88,14 @@ export default {
             console.log(error);
         });
     },
+
+    // 2. 查询单个讲师（根据讲师ID查询）
+    getTeacherInfo(id) {
+      teacherApi.getTeacherInfo(id)
+                .then(response => {
+                  this.teacher = response.data.teacher;
+                })
+    }
   },
 };
 </script>

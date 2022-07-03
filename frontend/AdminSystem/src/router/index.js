@@ -37,7 +37,6 @@ export const constantRouterMap = [
     }]
   },
 
-
   {
     path: '/teacher',
     component: Layout,
@@ -56,6 +55,13 @@ export const constantRouterMap = [
         name: '添加讲师',
         component: () => import('@/views/edu/teacher/teacheradd'),
         meta: { title: '添加讲师', icon: 'tree' }
+      },
+      {
+        path: 'edit/:id',  // :id 占位符，用于传参数
+        name: 'EduTeacherEdit',
+        component: () => import('@/views/edu/teacher/teacheradd'),
+        meta: { title: '编辑讲师', noCache: true },
+        hidden: true  // 隐藏路由
       }
     ]
   },

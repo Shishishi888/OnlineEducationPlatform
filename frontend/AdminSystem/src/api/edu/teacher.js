@@ -29,5 +29,13 @@ export default {
             method: 'post',
             data: teacher
         })
-    }
+    },
+
+    // 4. 查询单个讲师（根据讲师ID查询）
+    getTeacherInfo(id) {
+        return request({
+            url: `/eduservice/teacher/getTeacher/${id}`,
+            method: 'get'
+        })
+    } 
 }
