@@ -129,10 +129,8 @@ export default {
     // 创建具体的方法，调用teahcer.js中定义的方法
     // 1. 查询讲师（条件查询+分页）
     getTeacherList(page = 1) {
-       this.page = page; 
-      // 查询讲师列表（条件查询+分页）
-      teacher
-        .getTeacherListPage(this.page, this.limit, this.teacherQuery)
+      this.page = page; 
+      teacher.getTeacherListPage(this.page, this.limit, this.teacherQuery)
         .then((response) => {
           // 请求成功执行
           // console.log(response);  // response是后端接口返回的数据
@@ -146,15 +144,15 @@ export default {
           console.log(error);
         });
     },
+
     // 2. 重置讲师列表
     resetData() {
         // 清空表单中的数据
         this.teacherQuery = {}
-
         // 查询所有讲师数据
         this.getTeacherList();
-
     },
+    
     // 3. 删除讲师
     removeTeacherById(id) {
        this.$confirm('此操作将永久删除该讲师记录, 是否继续?', '提示', {
@@ -169,14 +167,12 @@ export default {
               type: 'success',
               message: '删除成功!'
             });
-
             // 刷新列表界面
             this.getTeacherList();
           })
           .catch((error) => {
             console.log(error);
           });
-
         }).catch(() => {  // 点击“取消”执行
           this.$message({
             type: 'info',

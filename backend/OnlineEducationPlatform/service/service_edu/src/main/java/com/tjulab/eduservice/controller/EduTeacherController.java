@@ -119,6 +119,9 @@ public class EduTeacherController {
             wrapper.le("gmt_create", end);
         }
 
+        // 按照添加讲师的时间对查询讲师列表进行降序排序
+        wrapper.orderByDesc("gmt_create");
+        
         // 分页查询
         eduTeacherService.page(teacherPage, wrapper);
         long total = teacherPage.getTotal();  // 总记录数
