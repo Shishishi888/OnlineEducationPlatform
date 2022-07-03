@@ -119,7 +119,10 @@ public class EduTeacherController {
         }
 
         // 按照添加讲师的时间对查询讲师列表进行降序排序
-        wrapper.orderByDesc("gmt_create");
+        // wrapper.orderByDesc("gmt_create");
+
+        // 按照修改讲师的时间对查询讲师列表进行降序排序
+        wrapper.orderByDesc("gmt_modified");
         
         // 分页查询
         eduTeacherService.page(teacherPage, wrapper);

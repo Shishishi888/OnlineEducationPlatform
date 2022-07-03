@@ -67,7 +67,13 @@ export default {
   },
   methods: {
     addOrUpdate() {
-      this.addTeacher();  // 添加讲师
+      // 判断当前的操作是添加讲师还是修改讲师信息：根据this.teacher中是否有id值进行判断
+      if(!this.teacher.id) {
+        this.addTeacher();  // 添加讲师
+      }
+      else {
+        this.updateTeacher();  // 修改讲师信息
+      }
     },
 
     // 1. 添加讲师
@@ -95,6 +101,24 @@ export default {
                 .then(response => {
                   this.teacher = response.data.teacher;
                 })
+    },
+
+    // 3. 修改讲师
+    updateTeacher() {
+      teacherApi.updateTeacherInfo(this.teacher)
+                .then(response => {
+                  // 提示信息
+                  this.$message({
+                    type: "success",
+                    message: "修改成功!",
+                  });
+
+                  // 路由跳转（重定向）
+                  this.$router.push({path:'/teacher/teacherlist'})
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
     }
   },
 };
