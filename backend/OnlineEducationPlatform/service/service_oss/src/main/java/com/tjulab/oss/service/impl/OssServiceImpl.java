@@ -4,9 +4,11 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.tjulab.oss.service.OssService;
 import com.tjulab.oss.utils.ConstantPropertiesUtils;
+import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
+import java.util.UUID;
 
 @Service
 public class OssServiceImpl implements OssService {
@@ -27,6 +29,12 @@ public class OssServiceImpl implements OssService {
             InputStream inputStream = file.getInputStream();
             // 获取文件名称。
             String fileName = file.getOriginalFilename();
+            // 在文件名称中添加唯一的随机值。
+            String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+            fileName = uuid + fileName;
+            // 按照文件上传日期对文件进行分类。
+            String datePath = new DateTime().toString("yyyy/MM/dd");  // 获取当前日期
+            fileName = datePath + "/" + fileName;
             // 创建PutObject请求。
             ossClient.putObject(bucketName, fileName, inputStream);
             // 关闭OSSClient。
