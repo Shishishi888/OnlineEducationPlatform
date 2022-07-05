@@ -27,6 +27,33 @@
       </el-form-item>
 
       <!-- 讲师头像：TODO -->
+       <!-- 讲师头像 -->
+      <el-form-item label="讲师头像">
+
+          <!-- 头衔缩略图 -->
+          <pan-thumb :image="teacher.avatar"/>
+          <!-- 文件上传按钮 -->
+          <el-button type="primary" icon="el-icon-upload" @click="imagecropperShow=true">更换头像
+          </el-button>
+
+          <!--
+      v-show：是否显示上传组件
+      :key：类似于id，如果一个页面多个图片上传控件，可以做区分
+      :url：后台上传的url地址
+      @close：关闭上传组件
+      @crop-upload-success：上传成功后的回调 
+        <input type="file" name="file"/>
+      -->
+          <image-cropper
+                        v-show="imagecropperShow"
+                        :width="300"
+                        :height="300"
+                        :key="imagecropperKey"
+                        :url="BASE_API+'/ossservice/ossfile'"
+                        field="file"
+                        @close="close"
+                        @crop-upload-success="cropSuccess"/>
+      </el-form-item>
 
       <el-form-item>
         <el-button
@@ -42,7 +69,11 @@
 
 <script>
 import teacherApi from '@/api/edu/teacher'
+import ImageCropper from '@/components/ImageCropper'
+import PanThumb from '@/components/PanThumb'
+
 export default {
+  components: { ImageCropper, PanThumb },
   data() {
     return {
       teacher: {
@@ -53,7 +84,10 @@ export default {
         intro: '',
         avatar: '',
       },
-      addBtnDisabled: false, // 是否禁用保存按钮
+      imagecropperShow: false,  // 是否显示上传弹框组件  
+      imagecropperKey: 0,  // 上传组件的唯一标识
+      BASE_API:process.env.BASE_API,  // 获取dev.env.js文件中的后端访问地址
+      addBtnDisabled: false  // 是否禁用保存按钮
     };
   },
   created() {  // 在页面渲染之前执行；当多次路由跳转到同一个页面时，该方法只执行第一次
@@ -65,6 +99,17 @@ export default {
     }
   },
   methods: {
+    // 关闭上传头像的弹框
+    close() {
+      this.imagecropperShow = false;
+    },
+
+    // 上传头像成功
+    cropSuccess(data) {
+      this.teacher.avatar = data.url;
+      this.imagecropperShow = false;  // 关闭上传头像的弹框
+    },
+
     init() {
       // 判断路径中是否有讲师的ID值
       if(this.$route.params && this.$route.params.id) {  // 路径中有讲师的ID值，说明用户正在进行修改讲师操作
@@ -75,7 +120,8 @@ export default {
       }
       else {  // 路径中没有讲师的ID值，说明用户正在进行添加讲师操作
         // 清空表单
-        this.teacher = {}
+        this.teacher = {};
+        this.teacher.avatar = 'https://tjulab-online-education-platform.oss-cn-beijing.aliyuncs.com/2022/07/06/3755fcfb7e8c492aa0268ef9d12bbaf8file.png';  // 设置默认讲师头像
       }
     },
 
