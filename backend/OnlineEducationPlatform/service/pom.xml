@@ -14,7 +14,13 @@
     <modules>
         <module>service_edu</module>
         <module>service_vod</module>
+        <module>service_oss</module>
     </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
