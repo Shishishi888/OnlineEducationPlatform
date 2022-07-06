@@ -14,12 +14,23 @@ public class TestEasyExcel {
          */
 
         // 设置要写入的Excel文件：文件路径 + 文件名称
+//        String fileName = "D:/testEasyExcel.xlsx";
+
+        // 调用EasyEcel的write方法
+//        EasyExcel.write(fileName, DemoData.class)
+//                .sheet("学生列表")  // 设置sheet的名称
+//                .doWrite(getDemoDataList());  // 以List的形式传入要写入Excel文件的数据
+
+        /**
+         * 实现对Excel文件的读操作
+         */
+
+        // 设置要读取的Excel文件：文件路径 + 文件名称
         String fileName = "D:/testEasyExcel.xlsx";
 
-        // 调用EasyEcel的方法
-        EasyExcel.write(fileName, DemoData.class)
-                .sheet("学生列表")  // 设置sheet的名称
-                .doWrite(getDemoDataList());  // 以List的形式传入要写入Excel文件的数据
+        // 调用EasyEcel的read方法
+        EasyExcel.read(fileName, DemoData.class, new ExcelListener()).sheet().doRead();
+
     }
 
     private static List<DemoData> getDemoDataList() {
