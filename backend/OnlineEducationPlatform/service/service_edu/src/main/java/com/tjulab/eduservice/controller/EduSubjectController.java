@@ -2,14 +2,14 @@ package com.tjulab.eduservice.controller;
 
 
 import com.tjulab.commonutils.R;
+import com.tjulab.eduservice.entity.subject.FirstSubject;
 import com.tjulab.eduservice.service.EduSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
 
 /**
  * <p>
@@ -33,8 +33,18 @@ public class EduSubjectController {
      */
     @PostMapping("addSubject")
     public R addSubject(MultipartFile file) {
-        subjectService.saveSubject(file, subjectService);
+        subjectService.addSubject(file, subjectService);
         return R.ok();
+    }
+
+    /**
+     * 获取课程分类列表（按树形型结构显示）
+     * @return
+     */
+    @GetMapping("getAllSubject")
+    public R getAllSubject() {
+        List<FirstSubject> list = subjectService.getFirstAndSecondSubject();
+        return R.ok().data("list", list);
     }
 }
 
