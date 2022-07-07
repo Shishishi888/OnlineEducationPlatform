@@ -102,14 +102,14 @@ export default {
     // 关闭上传头像的弹框
     close() {
       this.imagecropperShow = false;
-      this.imagecropperKey = this.imagecropperKey + 1;  // 上传组件初始化
+      this.imagecropperKey = this.imagecropperKey + 1;  // 初始化上传组件
     },
 
     // 上传头像成功
     cropSuccess(data) {
       this.teacher.avatar = data.url;
       this.imagecropperShow = false;  // 关闭上传头像的弹框
-      this.imagecropperKey = this.imagecropperKey + 1;  // 上传组件初始化
+      this.imagecropperKey = this.imagecropperKey + 1;  // 初始化上传组件
     },
 
     init() {

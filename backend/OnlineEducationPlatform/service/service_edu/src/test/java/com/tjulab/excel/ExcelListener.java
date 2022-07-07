@@ -8,7 +8,6 @@ import com.alibaba.excel.util.ConverterUtils;
 import java.util.Map;
 
 public class ExcelListener extends AnalysisEventListener<DemoData> {
-
     @Override
     public void invoke(DemoData data, AnalysisContext context) {  // 按行读取Excel文件中的内容；跳过表头
         System.out.println("表中内容：" + data);
