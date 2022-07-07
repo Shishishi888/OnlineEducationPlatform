@@ -2,7 +2,7 @@
   <div class="app-container">
     <el-form label-width="120px">
       <el-form-item label="信息描述">
-        <el-tag type="info">excel模版说明</el-tag>
+        <el-tag type="info">Excel模版说明</el-tag>
         <el-tag>
           <i class="el-icon-download"/>
           <a :href="'/static/excel/edu_subject.xlsx'">点击下载模版</a>
