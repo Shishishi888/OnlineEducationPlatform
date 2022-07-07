@@ -29,8 +29,8 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         // String projectPath = System.getProperty("user.dir");
         // gc.setOutputDir(projectPath + "/src/main/java");
-        gc.setOutputDir("D:/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径；适用于Windows操作系统
-        // gc.setOutputDir("/Users/shiyang/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径；适用于Mac操作系统
+        gc.setOutputDir("D:/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径
+        // gc.setOutputDir("/Users/shiyang/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径
         gc.setAuthor("ShiYang");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
@@ -64,6 +64,7 @@ public class CodeGenerator {
 
         // 5、策略配置：逆向工程
         StrategyConfig strategy = new StrategyConfig();
+        // strategy.setInclude("edu_teacher"); // 对应数据库表的名称
         strategy.setInclude("edu_subject"); // 对应数据库表的名称
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀

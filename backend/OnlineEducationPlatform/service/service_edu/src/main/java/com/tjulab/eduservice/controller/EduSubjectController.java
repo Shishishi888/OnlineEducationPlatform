@@ -4,6 +4,7 @@ package com.tjulab.eduservice.controller;
 import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.service.EduSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @RestController
 @RequestMapping("/eduservice/subject")
+@CrossOrigin
 public class EduSubjectController {
     @Autowired
     private EduSubjectService subjectService;
