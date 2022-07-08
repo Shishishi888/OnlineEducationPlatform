@@ -64,6 +64,7 @@ export default {
             })
 
             // 跳转到课程分类列表页面
+            this.$router.push({path:'/subject/subjectlist'});
         },
 
         // Excel文件上传失败

@@ -24,7 +24,7 @@ public interface EduSubjectService extends IService<EduSubject> {
     void addSubject(MultipartFile file, EduSubjectService subjectService);
 
     /**
-     * 获取课程分类列表（按树形型结构显示）
+     * 查询课程分类列表（按树形型结构显示）
      * @return
      */
     List<FirstSubject> getFirstAndSecondSubject();

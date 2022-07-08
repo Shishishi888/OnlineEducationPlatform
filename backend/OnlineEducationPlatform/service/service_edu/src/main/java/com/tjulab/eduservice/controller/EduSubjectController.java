@@ -38,7 +38,7 @@ public class EduSubjectController {
     }
 
     /**
-     * 获取课程分类列表（按树形型结构显示）
+     * 查询课程分类列表（按树形型结构显示）
      * @return
      */
     @GetMapping("getAllSubject")
