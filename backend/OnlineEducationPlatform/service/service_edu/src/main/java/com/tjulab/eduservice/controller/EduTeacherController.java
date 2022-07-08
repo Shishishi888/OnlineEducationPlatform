@@ -37,12 +37,12 @@ public class EduTeacherController {
     private EduTeacherService eduTeacherService;
 
     // rest风格
-    // 1. 查询讲师表中所有的数据
+    // 1. 查询所有讲师
     @ApiOperation(value = "查询所有讲师")
-    @GetMapping("findAll")
-    public R findAllTeacher() {
+    @GetMapping("getAllTeacher")
+    public R getAllTeacher() {
         List<EduTeacher> eduTeacherList = eduTeacherService.list(null);
-        return R.ok().data("items", eduTeacherList);
+        return R.ok().data("eduTeacherList", eduTeacherList);
     }
 
     // 2. 删除讲师（逻辑删除）

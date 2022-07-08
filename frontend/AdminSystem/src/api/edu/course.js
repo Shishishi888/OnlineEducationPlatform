@@ -9,4 +9,12 @@ export default {
             data: courseInfo
         })
     },
+
+    // 2. 查询所有讲师
+    getAllTeacher() {
+        return request({
+            url: `/eduservice/teacher/getAllTeacher`,
+            method: 'get',
+        })
+    }
 }
