@@ -1,10 +1,11 @@
 package com.tjulab.eduservice.controller;
 
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import com.tjulab.commonutils.R;
+import com.tjulab.eduservice.entity.vo.CourseInfoVo;
+import com.tjulab.eduservice.service.EduCourseService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -18,6 +19,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/eduservice/course")
 @CrossOrigin
 public class EduCourseController {
+    @Autowired
+    private EduCourseService eduCourseService;
 
+    /**
+     * 添加课程的基本信息
+     * @param courseInfoVo
+     * @return
+     */
+    @PostMapping("addCourseInfo")
+    public R addCourseInfo(@RequestBody CourseInfoVo courseInfoVo) {
+        eduCourseService.addCourseInfo(courseInfoVo);
+        return R.ok();
+    }
 }
 

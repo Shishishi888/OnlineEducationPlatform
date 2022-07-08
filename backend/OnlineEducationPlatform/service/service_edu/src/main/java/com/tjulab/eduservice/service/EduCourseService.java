@@ -2,6 +2,7 @@ package com.tjulab.eduservice.service;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tjulab.eduservice.entity.vo.CourseInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface EduCourseService extends IService<EduCourse> {
 
+    /**
+     * 添加课程的基本信息
+     * @param courseInfoVo
+     */
+    void addCourseInfo(CourseInfoVo courseInfoVo);
 }
