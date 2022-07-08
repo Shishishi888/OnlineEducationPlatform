@@ -68,9 +68,9 @@
 </template>
 
 <script>
-import teacherApi from '@/api/edu/teacher'
-import ImageCropper from '@/components/ImageCropper'
-import PanThumb from '@/components/PanThumb'
+import teacherApi from '@/api/edu/teacher';
+import ImageCropper from '@/components/ImageCropper';
+import PanThumb from '@/components/PanThumb';
 
 export default {
   components: { ImageCropper, PanThumb },

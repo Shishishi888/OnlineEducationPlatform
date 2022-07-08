@@ -15,8 +15,9 @@ import com.tjulab.eduservice.entity.vo.CourseInfoVo;
 public interface EduCourseService extends IService<EduCourse> {
 
     /**
-     * 添加课程的基本信息
+     * 添加课程信息
      * @param courseInfoVo
+     * @return
      */
-    void addCourseInfo(CourseInfoVo courseInfoVo);
+    String addCourseInfo(CourseInfoVo courseInfoVo);
 }

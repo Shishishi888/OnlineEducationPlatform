@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import subject from '@/api/edu/subject'
+import subject from '@/api/edu/subject';
 
 export default {
   data() {

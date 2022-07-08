@@ -23,14 +23,14 @@ public class EduCourseController {
     private EduCourseService eduCourseService;
 
     /**
-     * 添加课程的基本信息
+     * 添加课程信息
      * @param courseInfoVo
      * @return
      */
     @PostMapping("addCourseInfo")
     public R addCourseInfo(@RequestBody CourseInfoVo courseInfoVo) {
-        eduCourseService.addCourseInfo(courseInfoVo);
-        return R.ok();
+        String courseId = eduCourseService.addCourseInfo(courseInfoVo);
+        return R.ok().data("courseId", courseId);
     }
 }
 
