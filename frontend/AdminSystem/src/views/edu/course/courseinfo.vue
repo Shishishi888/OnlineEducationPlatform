@@ -61,8 +61,6 @@
         </el-select>
         </el-form-item>
 
-        <!-- 课程讲师 -->
-
         <el-form-item label="总课时">
             <el-input-number :min="0" v-model="courseInfo.lessonNum" controls-position="right" placeholder="请填写课程的总课时数"/>
         </el-form-item>
@@ -106,7 +104,7 @@ import Tinymce from '@/components/Tinymce';  // 引入组件
 export default {
     // 声明组件
     components: { Tinymce },
-    
+
     data() {
         return {
             saveBtnDisabled: false,

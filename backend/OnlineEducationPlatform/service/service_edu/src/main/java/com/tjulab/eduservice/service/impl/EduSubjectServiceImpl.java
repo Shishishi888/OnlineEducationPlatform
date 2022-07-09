@@ -47,24 +47,24 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
     }
 
     /**
-     * 查询课程分类列表（按树形型结构显示）
+     * 查询课程分类列表（按树形结构显示）
      * @return
      */
     @Override
     public List<FirstSubject> getFirstAndSecondSubject() {
-        // 1. 查询所有的一级分类课程
+        // 1. 查询所有的一级课程分类
         QueryWrapper<EduSubject> wrapperForFirstSubject = new QueryWrapper<>();
         wrapperForFirstSubject.eq("parent_id", "0");  // parent_id == 0
         List<EduSubject> firstSubjectList = baseMapper.selectList(wrapperForFirstSubject);
         // this.list(wrapperForFirstSubject);
 
-        // 2. 查询所有的二级分类课程
+        // 2. 查询所有的二级课程分类
         QueryWrapper<EduSubject> wrapperForSecondSubject = new QueryWrapper<>();
         wrapperForSecondSubject.ne("parent_id", "0");  // parent_id != 0
         List<EduSubject> secondSubjectList = baseMapper.selectList(wrapperForSecondSubject);
 
-        // 3. 封装一级分类课程
-        List<FirstSubject> firstFinalSubjectList = new ArrayList<>();
+        // 3. 封装一级课程分类
+        List<FirstSubject> finalFirstSubjectList = new ArrayList<>();
 
         for(int i = 0; i < firstSubjectList.size(); ++i) {
             EduSubject eduSubjectFromFirstSubjectList = firstSubjectList.get(i);
@@ -74,23 +74,22 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
             // firstSubject.setTitle(eduSubject.getTitle());
             BeanUtils.copyProperties(eduSubjectFromFirstSubjectList, firstSubject);  // 将eduSubject中的属性值复制给firstSubject中对应的属性
 
-            firstFinalSubjectList.add(firstSubject);
-
-            // 4. 封装二级分类课程
-            List<SecondSubject> secondFinalSubjectList = new ArrayList<>();
+            // 4. 封装二级课程分类
+            List<SecondSubject> finalSecondSubjectList = new ArrayList<>();
 
             for(int j = 0; j < secondSubjectList.size(); ++j) {
                 EduSubject eduSubjectFromSecondSubjectList = secondSubjectList.get(j);
                 if(eduSubjectFromSecondSubjectList.getParentId().equals(eduSubjectFromFirstSubjectList.getId())) {
                     SecondSubject secondSubject = new SecondSubject();
                     BeanUtils.copyProperties(eduSubjectFromSecondSubjectList, secondSubject);
-                    secondFinalSubjectList.add(secondSubject);
+                    finalSecondSubjectList.add(secondSubject);
                 }
             }
 
-            firstSubject.setChildren(secondFinalSubjectList);
+            firstSubject.setChildren(finalSecondSubjectList);
+            finalFirstSubjectList.add(firstSubject);
         }
 
-        return firstFinalSubjectList;
+        return finalFirstSubjectList;
     }
 }
