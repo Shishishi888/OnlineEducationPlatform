@@ -125,7 +125,7 @@ export default {
         }
     },
     created() {
-        console.log('info created');
+        console.log('info created.');
         this.getAllTeacher();
         this.getFirstSubject();
     },

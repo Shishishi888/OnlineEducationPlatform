@@ -27,7 +27,7 @@ export default {
         }
     },
     created() {
-        console.log('publish created');
+        console.log('publish created.');
     },
     methods: {
         previous() {
