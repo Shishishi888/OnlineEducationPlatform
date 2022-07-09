@@ -123,7 +123,7 @@ export default {
       else {  // 路径中没有讲师的ID值，说明用户正在进行添加讲师操作
         // 清空表单
         this.teacher = {};
-        this.teacher.avatar = 'https://tjulab-online-education-platform.oss-cn-beijing.aliyuncs.com/2022/07/06/3755fcfb7e8c492aa0268ef9d12bbaf8file.png';  // 设置默认讲师头像
+        this.teacher.avatar = 'https://tjulab-online-education-platform.oss-cn-beijing.aliyuncs.com/default_teacher_avatar.png';  // 设置默认讲师头像
       }
     },
 

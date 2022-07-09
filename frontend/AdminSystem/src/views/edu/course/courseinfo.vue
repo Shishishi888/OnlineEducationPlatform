@@ -19,28 +19,30 @@
         <!-- 所属分类 TODO -->
         <!-- 一级课程分类 -->
         <el-form-item label="课程分类">
-        <el-select
-            v-model="courseInfo.subjectParentId"
-            placeholder="一级课程分类" @change="getSecondSubject">
+            <el-select
+                v-model="courseInfo.subjectParentId"
+                placeholder="一级课程分类" @change="getSecondSubject">
 
-            <el-option
-                v-for="subject in firstSubjectList"
-                :key="subject.id" 
-                :label="subject.title"
-                :value="subject.id"/>
+                <el-option
+                    v-for="subject in firstSubjectList"
+                    :key="subject.id" 
+                    :label="subject.title"
+                    :value="subject.id"/>
 
-        </el-select>
+            </el-select>
 
-        <!-- 二级课程分类 -->
-        <el-select
-            v-model="courseInfo.subjectId"
-            placeholder="二级课程分类">
-            <el-option
-                v-for="subject in secondSubjectList"
-                :key="subject.id" 
-                :label="subject.title"
-                :value="subject.id"/>
-        </el-select>
+            <!-- 二级课程分类 -->
+            <el-select
+                v-model="courseInfo.subjectId"
+                placeholder="二级课程分类">
+                
+                <el-option
+                    v-for="subject in secondSubjectList"
+                    :key="subject.id" 
+                    :label="subject.title"
+                    :value="subject.id"/>
+                    
+            </el-select>
         </el-form-item>
 
         <!-- 课程讲师 TODO -->
@@ -49,11 +51,13 @@
         <el-select
             v-model="courseInfo.teacherId"
             placeholder="请选择">
+
             <el-option
                 v-for="teacher in teacherList"
                 :key="teacher.id" 
                 :label="teacher.name"
                 :value="teacher.id"/>
+
         </el-select>
         </el-form-item>
 
@@ -69,6 +73,19 @@
         </el-form-item>
 
         <!-- 课程封面 TODO -->
+        <!-- 课程封面 -->
+        <el-form-item label="课程封面">
+
+            <el-upload
+                :show-file-list="false"
+                :on-success="handleCoverSuccess"
+                :before-upload="beforeCoverUpload"
+                :action="BASE_API+'/ossservice/ossfile'"
+                class="avatar-uploader">
+                <img :src="courseInfo.cover">
+            </el-upload>
+
+        </el-form-item>
 
         <el-form-item label="课程价格">
             <el-input-number :min="0" v-model="courseInfo.price" controls-position="right" placeholder="免费课程请设置为0元"/> 元
@@ -95,13 +112,13 @@ export default {
                 teacherId: '',
                 lessonNum: 0,
                 description: '',
-                cover: '',
+                cover: '/static/images/default_course_cover.jpg',
                 price: 0
             },
+            BASE_API: process.env.BASE_API,  // 接口API地址
             teacherList: [],
             firstSubjectList: [],  // 一级课程分类
             secondSubjectList: [],  // 二级课程分类
-            
         }
     },
     created() {
@@ -110,6 +127,24 @@ export default {
         this.getFirstSubject();
     },
     methods: {
+        // 上传课程封面之前调用
+        beforeCoverUpload(file) {
+            const isJPG = file.type === 'image/jpeg';
+            const isLt2M = file.size / 1024 / 1024 < 2;
+            if(!isJPG) {
+                this.$message.error('上传的图片只能是JPG格式！');
+            }
+            if(!isLt2M) {
+                this.$message.error('上传的图片大小不能超过2MB！');
+            }
+            return isJPG && isLt2M;
+        },
+
+        // 上传课程封面成功之后调用
+        handleCoverSuccess(res, file) {
+            this.courseInfo.cover = res.data.url;
+        },
+
         // 查询某一级课程分类对应的二级课程分类
         getSecondSubject(value) {
             console.log(value);  // value值就是点击的一级课程分类的id
@@ -117,6 +152,7 @@ export default {
                 var firstSubject = this.firstSubjectList[i];
                 if(firstSubject.id === value) {
                     this.secondSubjectList = firstSubject.children;
+                    this.courseInfo.subjectId = '';  // 清空二级课程分类的输入框 
                 }
             }
         },
@@ -126,7 +162,7 @@ export default {
             subject.getSubjectList()
                     .then(response => {
                         this.firstSubjectList = response.data.subjectList;
-                    })
+                    });
         },
 
         // 查询所有的讲师

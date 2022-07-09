@@ -59,7 +59,7 @@ CREATE TABLE `edu_course` (
   `id` char(19) NOT NULL COMMENT '课程ID',
   `teacher_id` char(19) NOT NULL COMMENT '课程讲师ID',
   `subject_id` char(19) NOT NULL COMMENT '课程专业ID',
-  `subject_parent_id` char(19) NOT NULL COMMENT '课程专业父级ID',
+  `subject_parent_id` char(19) COMMENT '课程专业父级ID',
   `title` varchar(50) NOT NULL COMMENT '课程标题',
   `price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '课程销售价格，设置为0则可免费观看',
   `lesson_num` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '总课时',

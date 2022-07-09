@@ -4,7 +4,7 @@
 
     <el-tree
       ref="tree2"
-      :data="data2"
+      :data="subjectList"
       :props="defaultProps"
       :filter-node-method="filterNode"
       class="filter-tree"
@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import subject from '@/api/edu/subject';
+import subject from '@/api/edu/subject'
 
 export default {
   data() {
     return {
       filterText: '',
-      data2: [],  // 返回的所有课程分类数据
+      subjectList: [],  // 返回的所有课程分类数据
       defaultProps: {
         children: 'children',
         label: 'title'
@@ -41,7 +41,7 @@ export default {
     getAllSubject() {
       subject.getSubjectList()
               .then(response => {
-                this.data2 = response.data.list;
+                this.subjectList = response.data.subjectList;
               })
     },
 
