@@ -4,7 +4,7 @@ export default {
     // 1. 查询课程分类列表
     getSubjectList() {
         return request({
-            url: `/eduservice/subject/getAllSubject`,
+            url: `/eduservice/subject/getSubjectList`,
             method: 'get',
         })
     },

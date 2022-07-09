@@ -17,6 +17,31 @@
         </el-form-item>
 
         <!-- 所属分类 TODO -->
+        <!-- 一级课程分类 -->
+        <el-form-item label="课程分类">
+        <el-select
+            v-model="courseInfo.subjectParentId"
+            placeholder="一级课程分类" @change="getSecondSubject">
+
+            <el-option
+                v-for="subject in firstSubjectList"
+                :key="subject.id" 
+                :label="subject.title"
+                :value="subject.id"/>
+
+        </el-select>
+
+        <!-- 二级课程分类 -->
+        <el-select
+            v-model="courseInfo.subjectId"
+            placeholder="二级课程分类">
+            <el-option
+                v-for="subject in secondSubjectList"
+                :key="subject.id" 
+                :label="subject.title"
+                :value="subject.id"/>
+        </el-select>
+        </el-form-item>
 
         <!-- 课程讲师 TODO -->
         <!-- 课程讲师 -->
@@ -24,13 +49,11 @@
         <el-select
             v-model="courseInfo.teacherId"
             placeholder="请选择">
-
             <el-option
                 v-for="teacher in teacherList"
                 :key="teacher.id" 
                 :label="teacher.name"
                 :value="teacher.id"/>
-
         </el-select>
         </el-form-item>
 
@@ -59,6 +82,7 @@
 </template>
 <script>
 import course from '@/api/edu/course';
+import subject from '@/api/edu/subject';
 
 export default {
     data() {
@@ -66,22 +90,45 @@ export default {
             saveBtnDisabled: false,
             courseInfo: {
                 title: '',
-                subjectId: '',
-                subjectParentId:'',
+                subjectParentId:'',  // 一级课程分类ID
+                subjectId: '',  // 二级课程分类ID
                 teacherId: '',
                 lessonNum: 0,
                 description: '',
                 cover: '',
                 price: 0
             },
-            teacherList: []
+            teacherList: [],
+            firstSubjectList: [],  // 一级课程分类
+            secondSubjectList: [],  // 二级课程分类
+            
         }
     },
     created() {
         console.log('info created');
         this.getAllTeacher();
+        this.getFirstSubject();
     },
     methods: {
+        // 查询某一级课程分类对应的二级课程分类
+        getSecondSubject(value) {
+            console.log(value);  // value值就是点击的一级课程分类的id
+            for(var i = 0; i < this.firstSubjectList.length; ++i) {
+                var firstSubject = this.firstSubjectList[i];
+                if(firstSubject.id === value) {
+                    this.secondSubjectList = firstSubject.children;
+                }
+            }
+        },
+        
+        // 查询所有的一级课程分类
+        getFirstSubject() {
+            subject.getSubjectList()
+                    .then(response => {
+                        this.firstSubjectList = response.data.subjectList;
+                    })
+        },
+
         // 查询所有的讲师
         getAllTeacher() {
             course.getAllTeacher()

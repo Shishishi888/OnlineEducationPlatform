@@ -41,10 +41,10 @@ public class EduSubjectController {
      * 查询课程分类列表（按树形型结构显示）
      * @return
      */
-    @GetMapping("getAllSubject")
-    public R getAllSubject() {
-        List<FirstSubject> list = subjectService.getFirstAndSecondSubject();
-        return R.ok().data("list", list);
+    @GetMapping("getSubjectList")
+    public R getSubjectList() {
+        List<FirstSubject> subjectList = subjectService.getFirstAndSecondSubject();
+        return R.ok().data("subjectList", subjectList);
     }
 }
 
