@@ -73,7 +73,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     }
 
     /**
-     * 修改讲师信息
+     * 修改课程信息
      * @param courseInfoVo
      * @return
      */

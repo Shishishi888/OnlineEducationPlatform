@@ -69,10 +69,10 @@ export default {
                   });
         },
         previous() {
-           this.$router.push({path:'/course/courseinfo/1'}); 
+           this.$router.push({path:'/course/courseinfo/'+this.courseId}); 
         },
         next() {
-            this.$router.push({path:'/course/coursepublish/1'});
+            this.$router.push({path:'/course/coursepublish/'+this.courseId});
         }
     }
 }

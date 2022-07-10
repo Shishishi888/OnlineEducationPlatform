@@ -5,7 +5,7 @@ export default {
     getSubjectList() {
         return request({
             url: `/eduservice/subject/getSubjectList`,
-            method: 'get',
+            method: 'get'
         })
     },
 }

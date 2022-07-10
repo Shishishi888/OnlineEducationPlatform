@@ -29,7 +29,7 @@ public interface EduCourseService extends IService<EduCourse> {
     CourseInfoVo getCourseInfo(String courseId);
 
     /**
-     * 修改讲师信息
+     * 修改课程信息
      * @param courseInfoVo
      * @return
      */

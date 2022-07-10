@@ -118,6 +118,7 @@ export default {
                 cover: '/static/images/default_course_cover.jpg',
                 price: 0
             },
+            courseId: '',
             BASE_API: process.env.BASE_API,  // 接口API地址
             teacherList: [],
             firstSubjectList: [],  // 一级课程分类
@@ -126,10 +127,25 @@ export default {
     },
     created() {
         console.log('info created.');
+        
+         // 从路由跳转路径中获取课程的id值
+        if(this.$route.params && this.$route.params.id) {
+            this.courseId = this.$route.params.id;
+            this.getCourseInfo();
+        }
+
         this.getAllTeacher();
         this.getFirstSubject();
     },
     methods: {
+        // 查询课程信息（根据课程id查询）
+        getCourseInfo() {
+            course.getCourseInfoById(this.courseId) 
+                    .then(response => {
+                        this.courseInfo = response.data.courseInfoVo;
+                    })
+        },
+
         // 上传课程封面之前调用
         beforeCoverUpload(file) {
             const isJPG = file.type === 'image/jpeg';

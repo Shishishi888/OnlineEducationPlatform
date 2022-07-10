@@ -45,7 +45,7 @@ public class EduCourseController {
     }
 
     /**
-     * 修改讲师信息
+     * 修改课程信息
      * @param courseInfoVo
      * @return
      */
