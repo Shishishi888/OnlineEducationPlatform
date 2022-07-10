@@ -104,7 +104,6 @@ import Tinymce from '@/components/Tinymce';  // 引入组件
 export default {
     // 声明组件
     components: { Tinymce },
-
     data() {
         return {
             saveBtnDisabled: false,
@@ -127,22 +126,59 @@ export default {
     },
     created() {
         console.log('info created.');
-        
-         // 从路由跳转路径中获取课程的id值
-        if(this.$route.params && this.$route.params.id) {
-            this.courseId = this.$route.params.id;
-            this.getCourseInfo();
-        }
+        this.init();
 
-        this.getAllTeacher();
-        this.getFirstSubject();
+    },
+    watch: {
+        $route(to, from) {
+            this.init();
+        }
     },
     methods: {
+        init() {
+            // 从路由跳转路径中获取课程的id值
+            if(this.$route.params && this.$route.params.id) {  // 修改课程信息操作
+                this.courseId = this.$route.params.id;
+                // 数据回显
+                this.getCourseInfo();
+                this.getAllTeacher();
+            }
+            else {  // 添加课程信息操作
+                // 清空表单
+                // this.courseInfo.title = '';
+                // this.courseInfo.subjectParentId = '';
+                // this.courseInfo.subjectId = '';
+                // this.courseInfo.teacherId = '';
+                // this.courseInfo.lessonNum = 0;
+                // this.courseInfo.description = '';
+                // this.courseInfo.cover = '/static/images/default_course_cover.jpg';
+                // this.courseInfo.price = 0;
+                this.courseInfo = {};
+                this.courseInfo.lessonNum = 0;
+                this.courseInfo.cover = '/static/images/default_course_cover.jpg';
+                this.courseInfo.price = 0;
+
+                this.getAllTeacher();
+                this.getFirstSubject();
+            }
+        },
+
         // 查询课程信息（根据课程id查询）
         getCourseInfo() {
             course.getCourseInfoById(this.courseId) 
                     .then(response => {
                         this.courseInfo = response.data.courseInfoVo;
+                        // 解决修改课程信息（数据回显）时，无法显示二级课程分类的问题
+                        subject.getSubjectList() 
+                                .then(response => {
+                                    this.firstSubjectList = response.data.subjectList;  // 获取所有的一级课程分类
+                                    for(var i = 0; i < this.firstSubjectList.length; ++i) {  // 遍历所有的一级课程分类
+                                        var firstSubject = this.firstSubjectList[i];
+                                        if(firstSubject.id == this.courseInfo.subjectParentId) {  // 找到当前的一级课程分类
+                                            this.secondSubjectList = firstSubject.children;  // 获取当前的一级课程分类对应的二级课程分类
+                                        }
+                                    }
+                                })
                     })
         },
 
