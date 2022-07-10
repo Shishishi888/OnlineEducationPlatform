@@ -2,7 +2,7 @@ package com.tjulab.eduservice.service.impl;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.EduCourseDescription;
-import com.tjulab.eduservice.entity.vo.CourseInfoVo;
+import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 import com.tjulab.eduservice.mapper.EduCourseMapper;
 import com.tjulab.eduservice.service.EduCourseDescriptionService;
 import com.tjulab.eduservice.service.EduCourseService;
@@ -51,5 +51,46 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         eduCourseDescriptionService.save(eduCourseDescription);
 
         return courseId;
+    }
+
+    /**
+     * 查询课程信息（根据课程id查询）
+     * @param courseId
+     * @return
+     */
+    @Override
+    public CourseInfoVo getCourseInfo(String courseId) {
+        // 1. 查询课程的基本信息
+        EduCourse eduCourse = baseMapper.selectById(courseId);
+        CourseInfoVo courseInfoVo = new CourseInfoVo();
+        BeanUtils.copyProperties(eduCourse, courseInfoVo);
+
+        // 2. 查询课程的描述信息
+        EduCourseDescription eduCourseDescription = eduCourseDescriptionService.getById(courseId);
+        courseInfoVo.setDescription(eduCourseDescription.getDescription());
+
+        return courseInfoVo;
+    }
+
+    /**
+     * 修改讲师信息
+     * @param courseInfoVo
+     * @return
+     */
+    @Override
+    public void updateCourseInfo(CourseInfoVo courseInfoVo) {
+        // 1. 修改课程的基本信息
+        EduCourse eduCourse = new EduCourse();
+        BeanUtils.copyProperties(courseInfoVo, eduCourse);
+        int result = baseMapper.updateById(eduCourse);
+        if(result == 0) {
+            throw new MyException(20001, "修改课程信息失败！");
+        }
+
+        // 2. 修改课程的描述信息
+        EduCourseDescription eduCourseDescription = new EduCourseDescription();
+        eduCourseDescription.setId(courseInfoVo.getId());
+        eduCourseDescription.setDescription(courseInfoVo.getDescription());
+        eduCourseDescriptionService.updateById(eduCourseDescription);
     }
 }

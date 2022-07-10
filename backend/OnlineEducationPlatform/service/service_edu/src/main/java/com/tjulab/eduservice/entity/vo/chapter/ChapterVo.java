@@ -1,4 +1,4 @@
-package com.tjulab.eduservice.entity.chapter;
+package com.tjulab.eduservice.entity.vo.chapter;
 
 import lombok.Data;
 

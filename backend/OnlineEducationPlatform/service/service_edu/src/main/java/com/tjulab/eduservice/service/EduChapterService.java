@@ -2,7 +2,7 @@ package com.tjulab.eduservice.service;
 
 import com.tjulab.eduservice.entity.EduChapter;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tjulab.eduservice.entity.chapter.ChapterVo;
+import com.tjulab.eduservice.entity.vo.chapter.ChapterVo;
 
 import java.util.List;
 

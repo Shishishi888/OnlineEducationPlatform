@@ -1,4 +1,4 @@
-package com.tjulab.eduservice.entity.vo;
+package com.tjulab.eduservice.entity.vo.course;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

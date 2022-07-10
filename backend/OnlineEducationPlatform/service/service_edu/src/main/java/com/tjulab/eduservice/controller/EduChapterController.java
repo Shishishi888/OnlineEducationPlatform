@@ -2,7 +2,7 @@ package com.tjulab.eduservice.controller;
 
 
 import com.tjulab.commonutils.R;
-import com.tjulab.eduservice.entity.chapter.ChapterVo;
+import com.tjulab.eduservice.entity.vo.chapter.ChapterVo;
 import com.tjulab.eduservice.service.EduChapterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
