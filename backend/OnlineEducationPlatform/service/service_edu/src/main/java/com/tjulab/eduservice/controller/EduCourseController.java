@@ -34,7 +34,7 @@ public class EduCourseController {
     }
 
     /**
-     * 查询课程信息（根据课程id查询）
+     * 查询课程信息（根据课程ID查询）
      * @param courseId
      * @return
      */

@@ -136,7 +136,7 @@ export default {
     },
     methods: {
         init() {
-            // 从路由跳转路径中获取课程的id值
+            // 判断路由跳转路径中是否有课程的id值
             if(this.$route.params && this.$route.params.id) {  // 修改课程信息操作
                 this.courseId = this.$route.params.id;
                 // 数据回显
@@ -228,8 +228,9 @@ export default {
                     });
         },
 
-        saveOrUpdate() {
-            course.addCourseInfo(this.courseInfo)
+        // 添加课程信息
+        addCourseInfo() {
+             course.addCourseInfo(this.courseInfo)
                     .then(response => {
                         this.$message({
                             type: 'success',
@@ -237,6 +238,28 @@ export default {
                         })
                         this.$router.push({path:'/course/coursechapter/' + response.data.courseId});
                     });
+        },
+
+        // 修改课程信息
+        updateCourseInfo() {
+            course.updateCourseInfo(this.courseInfo)
+                    .then(response => {
+                        this.$message({
+                            type: 'success',
+                            message: '修改课程信息成功！'
+                        })
+                        this.$router.push({path:'/course/coursechapter/' + this.courseId});
+                    })
+        },
+
+        // 添加或修改课程信息
+        saveOrUpdate() {
+           if(!this.courseInfo.id) {  // 添加课程信息操作
+                this.addCourseInfo();
+           }
+           else {  // 修改课程信息操作
+                this.updateCourseInfo();
+           }
         }
     }
 }
