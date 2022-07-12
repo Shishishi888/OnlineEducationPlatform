@@ -21,7 +21,7 @@ export default {
     // 3. 查询章节信息（根据章节ID查询）
     getChapterInfo(chapterId) {
         return request({
-            url: '/eduservice/chapter/getChapterInfo/' + courseId,
+            url: '/eduservice/chapter/getChapterInfo/' + chapterId,
             method: 'get'
         })
     },
@@ -36,7 +36,7 @@ export default {
     },
 
     // 5. 删除章节
-    updateChapterInfo(chapterId) {
+    deleteChapter(chapterId) {
         return request({
             url: '/eduservice/chapter/deleteChapter/' + chapterId,
             method: 'delete'

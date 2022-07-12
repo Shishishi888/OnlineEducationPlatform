@@ -10,7 +10,7 @@
       <el-step title="最终发布"/>
     </el-steps>
 
-    <el-button type="text" @click="dialogChapterFormVisible=true">添加章节</el-button>
+    <el-button type="text" @click="openAddChapterDialog()">添加章节</el-button>
 
      <!-- 章节 -->
     <ul class="chapterVideoList">
@@ -19,12 +19,17 @@
             :key="chapter.id">
             <p>
                 {{ chapter.title }}
+                <span class="acts">
+                  <el-button style="" type="text" @click="openEditChatperDialog(chapter.id)">编辑</el-button>
+                  <el-button type="text">删除</el-button>
+                </span>
             </p>
             <!-- 视频 -->
             <ul class="chanpterList videoList">
                 <li
                     v-for="video in chapter.children"
-                    :key="video.id">
+                    :key="video.id"
+                    >
                     <p>
                       {{ video.title }}
                     </p>
@@ -57,7 +62,7 @@
 
 </template>
 <script>
-import chapter from '@/api/edu/chapter'
+import chapter from '@/api/edu/chapter';
 
 export default {
     data() {
@@ -81,41 +86,89 @@ export default {
         }
     },
     methods: {
-        // 添加章节
-        saveOrUpdate() {
-          this.chapter.courseId = this.courseId;
-          chapter.addChapter(this.chapter)
-                  .then(response => {
-                    // 关闭弹框
-                    this.dialogChapterFormVisible = false;
+      // 打开修改章节弹框
+      openEditChatperDialog(chapterId) {
+        // 显示弹框
+        this.dialogChapterFormVisible = true;
+        // 数据回显
+        chapter.getChapterInfo(chapterId)
+                .then(response => {
+                  this.chapter = response.data.eduChapter;
+                })
+      },
 
-                    // 提示信息
-                    this.$message({
-                      type: "success",
-                      message: "添加章节成功!",
-                    });
+      // 打开添加章节弹框
+      openAddChapterDialog() {
+        // 显示弹框
+        this.dialogChapterFormVisible = true;
+        // 清空表单数据
+        this.chapter.title = '';
+        this.chapter.sort = 0;
+      },
 
-                    // 刷新页面
-                    this.getChapterVideo();
-                  })
-        },
+      // 添加章节
+      addChapter() {
+        this.chapter.courseId = this.courseId;
+        chapter.addChapter(this.chapter)
+                .then(response => {
+                  // 关闭弹框
+                  this.dialogChapterFormVisible = false;
 
-        // 查询课程大纲列表
-        getChapterVideo() {
-          chapter.getAllChapterVideo(this.courseId)
-                  .then(response => {
-                    this.chapterVideoList = response.data.chapterVideoList;
-                  })
-                  .catch((error) => {
-                    console.log(error);
+                  // 提示信息
+                  this.$message({
+                    type: "success",
+                    message: "添加章节成功!",
                   });
-        },
-        previous() {
-           this.$router.push({path:'/course/courseinfo/'+this.courseId}); 
-        },
-        next() {
-            this.$router.push({path:'/course/coursepublish/'+this.courseId});
+
+                  // 刷新页面
+                  this.getChapterVideo();
+                })
+      },
+
+      // 修改章节信息
+      updateChapterInfo() {
+        chapter.updateChapterInfo(this.chapter)
+                .then(response => {
+                  // 关闭弹框
+                  this.dialogChapterFormVisible = false;
+
+                  // 提示信息
+                  this.$message({
+                    type: "success",
+                    message: "修改章节信息成功!",
+                  });
+
+                  // 刷新页面
+                  this.getChapterVideo();
+                })
+      },
+
+      // 添加或修改章节
+      saveOrUpdate() {
+        if(this.chapter.id) {  // 修改章节信息
+          this.updateChapterInfo();
         }
+        else {
+          this.addChapter();  // 添加章节
+        }
+      },
+
+      // 查询课程大纲列表
+      getChapterVideo() {
+        chapter.getAllChapterVideo(this.courseId)
+                .then(response => {
+                  this.chapterVideoList = response.data.chapterVideoList;
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+      },
+      previous() {
+          this.$router.push({path:'/course/courseinfo/'+this.courseId}); 
+      },
+      next() {
+          this.$router.push({path:'/course/coursepublish/'+this.courseId});
+      }
     }
 }
 </script>
