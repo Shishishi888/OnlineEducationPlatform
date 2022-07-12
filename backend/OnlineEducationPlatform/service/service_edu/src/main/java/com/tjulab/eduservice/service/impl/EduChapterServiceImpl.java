@@ -9,6 +9,7 @@ import com.tjulab.eduservice.mapper.EduChapterMapper;
 import com.tjulab.eduservice.service.EduChapterService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tjulab.eduservice.service.EduVideoService;
+import com.tjulab.servicebase.exceptionhandler.MyException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -72,5 +73,24 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
         }
 
         return finalChapterList;
+    }
+
+    /**
+     * 删除章节
+     * @param chapterId
+     * @return
+     */
+    @Override
+    public boolean deleteChapter(String chapterId) {
+        QueryWrapper<EduVideo> wrapper = new QueryWrapper<>();
+        wrapper.eq("chapter_id", chapterId);
+        int count = eduVideoService.count(wrapper);  // 返回符合条件的记录数
+        if(count > 0) {  // 该章节下有小节，不允许删除
+            throw new MyException(20001, "该章节下有小节，不允许删除");
+        }
+        else {  // 该章节下没有小节，允许删除
+            int result = baseMapper.deleteById(chapterId);
+            return result > 0;
+        }
     }
 }
