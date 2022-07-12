@@ -21,7 +21,7 @@
                 {{ chapter.title }}
                 <span class="acts">
                   <el-button style="" type="text" @click="openEditChatperDialog(chapter.id)">编辑</el-button>
-                  <el-button type="text">删除</el-button>
+                  <el-button type="text" @click="removeChapter(chapter.id)">删除</el-button>
                 </span>
             </p>
             <!-- 视频 -->
@@ -86,6 +86,26 @@ export default {
         }
     },
     methods: {
+      // 删除章节
+      removeChapter(chapterId) {
+        this.$confirm('此操作将删除章节，是否继续？', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'    
+        }).then(() => {  // 点击“确认”执行
+          chapter.deleteChapterById(chapterId)
+                  .then(response => {
+                      this.$message({
+                        type: 'success',
+                        message: '删除成功！'
+                      });
+                      // 回到列表页面
+                      this.getChapterVideo();
+                    })
+        }).catch();  // 点击“取消”执行
+
+      },
+
       // 打开修改章节弹框
       openEditChatperDialog(chapterId) {
         // 显示弹框
