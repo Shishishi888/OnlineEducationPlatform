@@ -44,11 +44,12 @@ public class EduChapterController {
      */
     @PostMapping("addChapter")
     public R addChapter(@RequestBody EduChapter eduChapter) {
+        eduChapterService.save(eduChapter);
         return R.ok();
     }
 
     /**
-     * 查询章节信息（根据课程ID查询）
+     * 查询章节信息（根据章节ID查询）
      * @param chapterId
      * @return
      */

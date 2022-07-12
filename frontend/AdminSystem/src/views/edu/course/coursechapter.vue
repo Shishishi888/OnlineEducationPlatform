@@ -65,7 +65,10 @@ export default {
             saveBtnDisabled: false,
             courseId: '',
             chapterVideoList: [],
-            chapter: {},  // 封装章节数据
+            chapter: {  // 封装章节数据
+              title: '',
+              sort: 0
+            },
             dialogChapterFormVisible: false  // 是否显示章节弹框
         }
     },
@@ -78,6 +81,25 @@ export default {
         }
     },
     methods: {
+        // 添加章节
+        saveOrUpdate() {
+          this.chapter.courseId = this.courseId;
+          chapter.addChapter(this.chapter)
+                  .then(response => {
+                    // 关闭弹框
+                    this.dialogChapterFormVisible = false;
+
+                    // 提示信息
+                    this.$message({
+                      type: "success",
+                      message: "添加章节成功!",
+                    });
+
+                    // 刷新页面
+                    this.getChapterVideo();
+                  })
+        },
+
         // 查询课程大纲列表
         getChapterVideo() {
           chapter.getAllChapterVideo(this.courseId)

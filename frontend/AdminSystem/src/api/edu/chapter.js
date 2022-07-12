@@ -7,5 +7,39 @@ export default {
             url: '/eduservice/chapter/getChapterVideo/' + courseId,
             method: 'get'
         })
-    }
+    },
+
+    // 2. 添加章节
+    addChapter(chapter) {
+        return request({
+            url: '/eduservice/chapter/addChapter',
+            method: 'post',
+            data: chapter
+        })
+    },
+
+    // 3. 查询章节信息（根据章节ID查询）
+    getChapterInfo(chapterId) {
+        return request({
+            url: '/eduservice/chapter/getChapterInfo/' + courseId,
+            method: 'get'
+        })
+    },
+
+    // 4. 修改章节信息
+    updateChapterInfo(chapter) {
+        return request({
+            url: '/eduservice/chapter/updateChapter',
+            method: 'post',
+            data: chapter
+        })
+    },
+
+    // 5. 删除章节
+    updateChapterInfo(chapterId) {
+        return request({
+            url: '/eduservice/chapter/deleteChapter/' + chapterId,
+            method: 'delete'
+        })
+    },
 }
