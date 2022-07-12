@@ -6,6 +6,6 @@ export default {
         return request({
             url: `/eduservice/subject/getSubjectList`,
             method: 'get'
-        })
+        });
     },
 }

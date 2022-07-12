@@ -11,7 +11,7 @@ export default {
             // 后端使用 RequestBody 获取数据
             // data表示将对象以json的形式传递到后端接口
             data: teacherQuery
-        })
+        });
     },
 
     // 2. 删除讲师（逻辑删除）
@@ -19,7 +19,7 @@ export default {
         return request({
             url: `/eduservice/teacher/${id}`,
             method: 'delete',
-        })
+        });
     },
 
     // 3. 添加讲师
@@ -28,7 +28,7 @@ export default {
             url: `/eduservice/teacher/addTeacher`,
             method: 'post',
             data: teacher
-        })
+        });
     },
 
     // 4. 查询单个讲师（根据讲师ID查询）
@@ -36,7 +36,7 @@ export default {
         return request({
             url: `/eduservice/teacher/getTeacher/${id}`,
             method: 'get'
-        })
+        });
     },
 
     // 5. 修改讲师
@@ -45,6 +45,6 @@ export default {
             url: `/eduservice/teacher/updateTeacher`,
             method: 'post',
             data: teacher
-        })
+        });
     }
 }

@@ -7,7 +7,7 @@ export default {
             url: `/eduservice/course/addCourseInfo`,
             method: 'post',
             data: courseInfo
-        })
+        });
     },
 
     // 2. 查询所有讲师
@@ -15,7 +15,7 @@ export default {
         return request({
             url: `/eduservice/teacher/getAllTeacher`,
             method: 'get'
-        })
+        });
     },
 
     // 3. 查询课程信息（根据课程id查询）
@@ -23,7 +23,7 @@ export default {
         return request({
             url: '/eduservice/course/getCourseInfo/' + id,
             method: 'get'
-        })
+        });
     },
 
     // 4. 修改课程信息
@@ -32,6 +32,6 @@ export default {
             url: '/eduservice/course/updateCourseInfo',
             method: 'post',
             data: courseInfo
-        })
+        });
     }
 }

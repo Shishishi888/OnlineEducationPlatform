@@ -20,6 +20,7 @@
             <p>
                 {{ chapter.title }}
                 <span class="acts">
+                  <el-button style="" type="text" @click="openAddVideoDialog(chapter.id)">添加小节</el-button>
                   <el-button style="" type="text" @click="openEditChatperDialog(chapter.id)">编辑</el-button>
                   <el-button type="text" @click="removeChapter(chapter.id)">删除</el-button>
                 </span>
@@ -55,14 +56,40 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
             <el-button @click="dialogChapterFormVisible = false">取 消</el-button>
-            <el-button type="primary" @click="saveOrUpdate">确 定</el-button>
+            <el-button type="primary" @click="addOrUpdateChapter">确 定</el-button>
         </div>
+    </el-dialog>
+
+    <!-- 添加和修改课时表单 -->
+    <el-dialog :visible.sync="dialogVideoFormVisible" title="添加课时">
+      <el-form :model="video" label-width="120px">
+        <el-form-item label="课时标题">
+          <el-input v-model="video.title"/>
+        </el-form-item>
+        <el-form-item label="课时排序">
+          <el-input-number v-model="video.sort" :min="0" controls-position="right"/>
+        </el-form-item>
+        <el-form-item label="是否免费">
+          <el-radio-group v-model="video.free">
+            <el-radio :label="true">免费</el-radio>
+            <el-radio :label="false">默认</el-radio>
+          </el-radio-group>
+        </el-form-item>
+        <el-form-item label="上传视频">
+          <!-- TODO -->
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="dialogVideoFormVisible = false">取 消</el-button>
+        <el-button :disabled="saveVideoBtnDisabled" type="primary" @click="addOrUpdateVideo">确 定</el-button>
+      </div>
     </el-dialog>
   </div>
 
 </template>
 <script>
 import chapter from '@/api/edu/chapter';
+import video from '@/api/edu/video';
 
 export default {
     data() {
@@ -74,7 +101,14 @@ export default {
               title: '',
               sort: 0
             },
-            dialogChapterFormVisible: false  // 是否显示章节弹框
+            video: {  // 封装小节数据
+              title: '',
+              sort: 0,
+              free: 0,
+              videoSourceId: ''
+            },
+            dialogChapterFormVisible: false,  // 是否显示章节弹框
+            dialogVideoFormVisible: false     // 是否显示小节弹框
         }
     },
     created() {
@@ -86,6 +120,39 @@ export default {
         }
     },
     methods: {
+      // *** *** 操作小节 *** ***
+      // 打开添加小节弹框
+      openAddVideoDialog(chapterId) {
+        // 显示弹框
+        this.dialogVideoFormVisible = true;
+        // 设置课程ID
+        this.video.courseId = this.courseId;
+        // 设置章节ID
+        this.video.chapterId = chapterId;
+      },
+      
+      // 添加小节
+      addVideo() {
+        video.addVideo(this.video)
+              .then(response => {
+                // 关闭添加小节弹框
+                this.dialogVideoFormVisible = false;
+                // 提示信息
+                this.$message({
+                  type: 'success',
+                  message: '添加小节成功！'
+                });
+              });
+              // 回到章节列表页面
+              this.getChapterVideo();
+      },
+
+      // 添加或修改小节
+      addOrUpdateVideo() {
+        this.addVideo();  // 添加小节
+      },
+
+      // *** *** 操作章节 *** ***
       // 删除章节
       removeChapter(chapterId) {
         this.$confirm('此操作将删除章节，是否继续？', '提示', {
@@ -97,11 +164,11 @@ export default {
                   .then(response => {
                       this.$message({
                         type: 'success',
-                        message: '删除成功！'
+                        message: '删除章节成功！'
                       });
-                      // 回到列表页面
+                      // 回到章节列表页面
                       this.getChapterVideo();
-                    })
+                    });
         }).catch();  // 点击“取消”执行
 
       },
@@ -164,7 +231,7 @@ export default {
       },
 
       // 添加或修改章节
-      saveOrUpdate() {
+      addOrUpdateChapter() {
         if(this.chapter.id) {  // 修改章节信息
           this.updateChapterInfo();
         }
