@@ -20,7 +20,7 @@ export default {
     },
 
     // 3. 删除小节
-    deltetVideo(videoId) {
+    deleteVideo(videoId) {
         return request({
             url: '/eduservice/video/deleteVideo/' + videoId,
             method: 'delete'

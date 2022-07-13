@@ -42,7 +42,7 @@ public class EduVideoController {
      * @param videoId
      * @return
      */
-    @DeleteMapping("{videoId}")
+    @DeleteMapping("deleteVideo/{videoId}")
     public R deleteVideo(@PathVariable String videoId) {
         eduVideoService.removeById(videoId);
         return R.ok();

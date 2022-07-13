@@ -33,6 +33,10 @@
                     >
                     <p>
                       {{ video.title }}
+                      <span class="acts">
+                        <el-button style="" type="text">编辑</el-button>
+                        <el-button type="text" @click="removeVideo(video.id)">删除</el-button>
+                      </span>
                     </p>
                 </li>
             </ul>
@@ -107,6 +111,7 @@ export default {
               free: 0,
               videoSourceId: ''
             },
+            saveVideoBtnDisabled: false,
             dialogChapterFormVisible: false,  // 是否显示章节弹框
             dialogVideoFormVisible: false     // 是否显示小节弹框
         }
@@ -121,6 +126,27 @@ export default {
     },
     methods: {
       // *** *** 操作小节 *** ***
+      // 删除小节
+      removeVideo(videoId) {
+         this.$confirm('此操作将删除小节，是否继续？', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'    
+          }).then(() => {  // 点击“确认”执行
+            video.deleteVideo(videoId)
+                    .then(response => {
+                        this.$message({
+                          type: 'success',
+                          message: '删除小节成功！'
+                        });
+                        // 回到章节列表页面
+                        this.getChapterVideo();
+                      });
+          }).catch();  // 点击“取消”执行
+      },
+
+      // 修改小节 TODO
+
       // 打开添加小节弹框
       openAddVideoDialog(chapterId) {
         // 显示弹框
@@ -129,6 +155,11 @@ export default {
         this.video.courseId = this.courseId;
         // 设置章节ID
         this.video.chapterId = chapterId;
+
+        // 清空添加小节弹框
+        this.video.title = ''; 
+        this.video.sort = 0;
+        this.video.free = 0;
       },
       
       // 添加小节
@@ -149,7 +180,11 @@ export default {
 
       // 添加或修改小节
       addOrUpdateVideo() {
-        this.addVideo();  // 添加小节
+        // 添加小节
+        this.addVideo();  
+
+        // 修改小节
+        // TODO
       },
 
       // *** *** 操作章节 *** ***
@@ -170,7 +205,6 @@ export default {
                       this.getChapterVideo();
                     });
         }).catch();  // 点击“取消”执行
-
       },
 
       // 打开修改章节弹框
@@ -188,7 +222,7 @@ export default {
       openAddChapterDialog() {
         // 显示弹框
         this.dialogChapterFormVisible = true;
-        // 清空表单数据
+        // 清空添加章节弹框
         this.chapter.title = '';
         this.chapter.sort = 0;
       },
