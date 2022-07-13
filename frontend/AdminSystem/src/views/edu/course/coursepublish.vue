@@ -45,7 +45,6 @@ export default {
         if(this.$route.params && this.$route.params.id) {
           this.courseId = this.$route.params.id;
         }
-
         this.getCoursePublishInfoByCourseId();
     },
     methods: {
@@ -61,7 +60,17 @@ export default {
           this.$router.push({path:'/course/coursechapter/1'});
       },
       publish() {
-          this.$router.push({path:'/course/courselist'});
+          course.publishCourse(this.courseId)  // 发布课程
+                .then(response => {
+                  // 提示信息
+                  this.$message({
+                      type: 'success',
+                      message: '课程发布成功！'
+                  });
+
+                  // 跳转到课程列表页面
+                  this.$router.push({path:'/course/courselist'});
+                });
       }
     }
 }
