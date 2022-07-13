@@ -61,10 +61,10 @@ public class EduCourseController {
      * @param courseId
      * @return
      */
-    @GetMapping("getPublishCourseInfo/{courseId}")
-    public R getPublishCourseInfo(@PathVariable String courseId) {
-        CoursePublishInfoVo coursePublishInfoVo = eduCourseService.publishCourseInfo(courseId);
-        return R.ok().data("publishCourseInfo", coursePublishInfoVo);
+    @GetMapping("getCoursePublishInfo/{courseId}")
+    public R getCoursePublishInfo(@PathVariable String courseId) {
+        CoursePublishInfoVo coursePublishInfoVo = eduCourseService.getCoursePublishInfo(courseId);
+        return R.ok().data("coursePublishInfo", coursePublishInfoVo);
     }
 }
 

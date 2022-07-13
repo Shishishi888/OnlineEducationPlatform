@@ -19,9 +19,9 @@ export default {
     },
 
     // 3. 查询课程信息（根据课程id查询）
-    getCourseInfoById(id) {
+    getCourseInfoByCourseId(courseId) {
         return request({
-            url: '/eduservice/course/getCourseInfo/' + id,
+            url: '/eduservice/course/getCourseInfo/' + courseId,
             method: 'get'
         });
     },
@@ -32,6 +32,14 @@ export default {
             url: '/eduservice/course/updateCourseInfo',
             method: 'post',
             data: courseInfo
+        });
+    },
+
+    // 5. 查询课程发布确认信息（根据课程ID查询）
+    getCoursePublishInfoByCourseId(courseId) {
+        return request({
+            url: '/eduservice/course/getCoursePublishInfo/' + courseId,
+            method: 'get'
         });
     }
 }

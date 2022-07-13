@@ -41,5 +41,5 @@ public interface EduCourseService extends IService<EduCourse> {
      * @param courseId
      * @return
      */
-    CoursePublishInfoVo publishCourseInfo(String courseId);
+    CoursePublishInfoVo getCoursePublishInfo(String courseId);
 }

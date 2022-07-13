@@ -215,7 +215,7 @@ export default {
         chapter.getChapterInfo(chapterId)
                 .then(response => {
                   this.chapter = response.data.eduChapter;
-                })
+                });
       },
 
       // 打开添加章节弹框
@@ -243,7 +243,7 @@ export default {
 
                   // 刷新页面
                   this.getChapterVideo();
-                })
+                });
       },
 
       // 修改章节信息

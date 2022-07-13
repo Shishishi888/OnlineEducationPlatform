@@ -165,7 +165,7 @@ export default {
 
         // 查询课程信息（根据课程id查询）
         getCourseInfo() {
-            course.getCourseInfoById(this.courseId) 
+            course.getCourseInfoByCourseId(this.courseId) 
                     .then(response => {
                         this.courseInfo = response.data.courseInfoVo;
                         // 解决修改课程信息（数据回显）时，无法显示二级课程分类的问题
@@ -178,8 +178,8 @@ export default {
                                             this.secondSubjectList = firstSubject.children;  // 获取当前的一级课程分类对应的二级课程分类
                                         }
                                     }
-                                })
-                    })
+                                });
+                    });
         },
 
         // 上传课程封面之前调用
@@ -235,7 +235,7 @@ export default {
                         this.$message({
                             type: 'success',
                             message: '添加课程信息成功！'
-                        })
+                        });
                         this.$router.push({path:'/course/coursechapter/' + response.data.courseId});
                     });
         },
