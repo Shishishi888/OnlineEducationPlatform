@@ -3,7 +3,7 @@ package com.tjulab.eduservice.entity.vo;
 import lombok.Data;
 
 @Data
-public class CoursePublishVo {
+public class CoursePublishInfoVo {
     private String id;
     private String title;
     private String cover;

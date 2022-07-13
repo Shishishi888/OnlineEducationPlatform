@@ -2,7 +2,7 @@ package com.tjulab.eduservice.mapper;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tjulab.eduservice.entity.vo.CoursePublishVo;
+import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 
 /**
  * <p>
@@ -13,5 +13,10 @@ import com.tjulab.eduservice.entity.vo.CoursePublishVo;
  * @since 2022-07-08
  */
 public interface EduCourseMapper extends BaseMapper<EduCourse> {
-    public CoursePublishVo getPublishCourseInfo(String courseId);
+    /**
+     * 查询课程发布确认信息（根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    public CoursePublishInfoVo getPublishCourseInfo(String courseId);
 }

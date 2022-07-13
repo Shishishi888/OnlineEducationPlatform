@@ -2,6 +2,7 @@ package com.tjulab.eduservice.service.impl;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.EduCourseDescription;
+import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 import com.tjulab.eduservice.mapper.EduCourseMapper;
 import com.tjulab.eduservice.service.EduCourseDescriptionService;
@@ -92,5 +93,16 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         eduCourseDescription.setId(courseInfoVo.getId());
         eduCourseDescription.setDescription(courseInfoVo.getDescription());
         eduCourseDescriptionService.updateById(eduCourseDescription);
+    }
+
+    /**
+     * 查询课程发布确认信息（根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    @Override
+    public CoursePublishInfoVo publishCourseInfo(String courseId) {
+        CoursePublishInfoVo coursePublishInfoVo = baseMapper.getPublishCourseInfo(courseId);
+        return coursePublishInfoVo;
     }
 }

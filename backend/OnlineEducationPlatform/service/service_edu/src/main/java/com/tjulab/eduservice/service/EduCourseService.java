@@ -2,6 +2,7 @@ package com.tjulab.eduservice.service;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 
 /**
@@ -34,4 +35,11 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     void updateCourseInfo(CourseInfoVo courseInfoVo);
+
+    /**
+     * 查询课程发布确认信息（根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    CoursePublishInfoVo publishCourseInfo(String courseId);
 }

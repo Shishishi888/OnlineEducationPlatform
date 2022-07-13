@@ -2,6 +2,7 @@ package com.tjulab.eduservice.controller;
 
 
 import com.tjulab.commonutils.R;
+import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 import com.tjulab.eduservice.service.EduCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +54,17 @@ public class EduCourseController {
     public R updateCourseInfo(@RequestBody CourseInfoVo courseInfoVo) {
         eduCourseService.updateCourseInfo(courseInfoVo);
         return R.ok();
+    }
+
+    /**
+     * 查询课程发布确认信息（根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    @GetMapping("getPublishCourseInfo/{courseId}")
+    public R getPublishCourseInfo(@PathVariable String courseId) {
+        CoursePublishInfoVo coursePublishInfoVo = eduCourseService.publishCourseInfo(courseId);
+        return R.ok().data("publishCourseInfo", coursePublishInfoVo);
     }
 }
 
