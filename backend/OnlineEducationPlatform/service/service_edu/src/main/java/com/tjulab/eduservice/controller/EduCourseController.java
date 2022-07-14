@@ -97,5 +97,16 @@ public class EduCourseController {
         eduCourseService.updateById(eduCourse);
         return R.ok();
     }
+
+    /**
+     * 删除课程（根据课程ID删除，物理删除）
+     * @param courseId
+     * @return
+     */
+    @DeleteMapping("deleteCourse/{courseId}")
+    public R deleCourse(@PathVariable String courseId) {
+        eduCourseService.deleteCourse(courseId);
+        return R.ok();
+    }
 }
 

@@ -23,22 +23,22 @@ public class EduVideoController {
     private EduVideoService eduVideoService;
 
     /**
-     * 添加小节
+     * 添加课程小节
      * @param eduVideo
      * @return
      */
     @PostMapping("addVideo")
-    public R addVidep(@RequestBody EduVideo eduVideo) {
+    public R addVideo(@RequestBody EduVideo eduVideo) {
         eduVideoService.save(eduVideo);
         return R.ok();
     }
 
     /**
-     * 添加小节 TODO
+     * 添加课程小节 TODO
      */
 
     /**
-     * 删除小节
+     * 删除课程小节（根据小节ID删除）
      * @param videoId
      * @return
      */

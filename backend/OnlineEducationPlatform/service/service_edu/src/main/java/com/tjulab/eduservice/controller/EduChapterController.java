@@ -38,7 +38,7 @@ public class EduChapterController {
     }
 
     /**
-     * 添加章节
+     * 添加课程章节
      * @param eduChapter
      * @return
      */
@@ -49,7 +49,7 @@ public class EduChapterController {
     }
 
     /**
-     * 查询章节信息（根据章节ID查询）
+     * 查询课程章节信息（根据章节ID查询）
      * @param chapterId
      * @return
      */
@@ -60,7 +60,7 @@ public class EduChapterController {
     }
 
     /**
-     * 修改章节信息
+     * 修改课程章节信息
      * @param eduChapter
      * @return
      */
@@ -71,7 +71,7 @@ public class EduChapterController {
     }
 
     /**
-     * 删除章节
+     * 删除课程章节（根据章节ID删除）
      * @param chapterId
      * @return
      */

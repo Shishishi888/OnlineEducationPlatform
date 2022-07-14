@@ -5,9 +5,11 @@ import com.tjulab.eduservice.entity.EduCourseDescription;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 import com.tjulab.eduservice.mapper.EduCourseMapper;
+import com.tjulab.eduservice.service.EduChapterService;
 import com.tjulab.eduservice.service.EduCourseDescriptionService;
 import com.tjulab.eduservice.service.EduCourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tjulab.eduservice.service.EduVideoService;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,12 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
 
     @Autowired
     private EduCourseDescriptionService eduCourseDescriptionService;
+
+    @Autowired
+    private EduChapterService eduChapterService;
+
+    @Autowired
+    private EduVideoService eduVideoService;
 
     /**
      * 添加课程信息
@@ -76,7 +84,6 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     /**
      * 修改课程信息
      * @param courseInfoVo
-     * @return
      */
     @Override
     public void updateCourseInfo(CourseInfoVo courseInfoVo) {
@@ -104,5 +111,28 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     public CoursePublishInfoVo getCoursePublishInfo(String courseId) {
         CoursePublishInfoVo coursePublishInfoVo = baseMapper.getPublishCourseInfo(courseId);
         return coursePublishInfoVo;
+    }
+
+    /**
+     * 删除课程（根据课程ID删除）
+     * @param courseId
+     */
+    @Override
+    public void deleteCourse(String courseId) {
+        // 1. 根据课程id删除课程小节
+        eduVideoService.deleteVideoByCourseId(courseId);
+
+        // 2. 根据课程id删除课程章节
+        eduChapterService.deleteChapterByCourseId(courseId);
+
+        // 3. 根据课程id删除课程描述信息
+        eduCourseDescriptionService.removeById(courseId);
+
+        // 4. 根据课程id删除课程本身
+        int result = baseMapper.deleteById(courseId);
+
+        if(result == 0) {
+            throw new MyException(20001, "删除失败");
+        }
     }
 }

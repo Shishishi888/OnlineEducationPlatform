@@ -125,8 +125,8 @@ export default {
         }
     },
     methods: {
-      // *** *** 操作小节 *** ***
-      // 删除小节
+      // *** *** 操作课程小节 *** ***
+      // 删除课程小节
       removeVideo(videoId) {
          this.$confirm('此操作将删除小节，是否继续？', '提示', {
             confirmButtonText: '确定',
@@ -139,7 +139,7 @@ export default {
                           type: 'success',
                           message: '删除小节成功！'
                         });
-                        // 回到章节列表页面
+                        // 回到课程章节列表页面
                         this.getChapterVideo();
                       });
           }).catch();  // 点击“取消”执行
@@ -147,7 +147,7 @@ export default {
 
       // 修改小节 TODO
 
-      // 打开添加小节弹框
+      // 打开添加课程小节弹框
       openAddVideoDialog(chapterId) {
         // 显示弹框
         this.dialogVideoFormVisible = true;
@@ -162,11 +162,11 @@ export default {
         this.video.free = 0;
       },
       
-      // 添加小节
+      // 添加课程小节
       addVideo() {
         video.addVideo(this.video)
               .then(response => {
-                // 关闭添加小节弹框
+                // 关闭添加课程小节弹框
                 this.dialogVideoFormVisible = false;
                 // 提示信息
                 this.$message({
@@ -174,21 +174,21 @@ export default {
                   message: '添加小节成功！'
                 });
               });
-              // 回到章节列表页面
+              // 回到课程章节列表页面
               this.getChapterVideo();
       },
 
-      // 添加或修改小节
+      // 添加或修改课程小节
       addOrUpdateVideo() {
-        // 添加小节
+        // 添加课程小节
         this.addVideo();  
 
-        // 修改小节
+        // 修改课程小节
         // TODO
       },
 
-      // *** *** 操作章节 *** ***
-      // 删除章节
+      // *** *** 操作课程章节 *** ***
+      // 删除课程章节
       removeChapter(chapterId) {
         this.$confirm('此操作将删除章节，是否继续？', '提示', {
           confirmButtonText: '确定',
@@ -201,13 +201,13 @@ export default {
                         type: 'success',
                         message: '删除章节成功！'
                       });
-                      // 回到章节列表页面
+                      // 回到课程章节列表页面
                       this.getChapterVideo();
                     });
         }).catch();  // 点击“取消”执行
       },
 
-      // 打开修改章节弹框
+      // 打开修改课程章节弹框
       openEditChatperDialog(chapterId) {
         // 显示弹框
         this.dialogChapterFormVisible = true;
@@ -218,16 +218,16 @@ export default {
                 });
       },
 
-      // 打开添加章节弹框
+      // 打开添加课程章节弹框
       openAddChapterDialog() {
         // 显示弹框
         this.dialogChapterFormVisible = true;
-        // 清空添加章节弹框
+        // 清空添加课程章节弹框
         this.chapter.title = '';
         this.chapter.sort = 0;
       },
 
-      // 添加章节
+      // 添加课程章节
       addChapter() {
         this.chapter.courseId = this.courseId;
         chapter.addChapter(this.chapter)
@@ -246,7 +246,7 @@ export default {
                 });
       },
 
-      // 修改章节信息
+      // 修改课程章节信息
       updateChapterInfo() {
         chapter.updateChapterInfo(this.chapter)
                 .then(response => {
@@ -264,9 +264,9 @@ export default {
                 })
       },
 
-      // 添加或修改章节
+      // 添加或修改课程章节
       addOrUpdateChapter() {
-        if(this.chapter.id) {  // 修改章节信息
+        if(this.chapter.id) {  // 修改课程章节信息
           this.updateChapterInfo();
         }
         else {

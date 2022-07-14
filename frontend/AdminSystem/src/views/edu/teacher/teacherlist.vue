@@ -82,7 +82,7 @@
             type="danger"
             size="mini"
             icon="el-icon-delete"
-            @click="removeTeacherById(scope.row.id)"
+            @click="deleteTeacherById(scope.row.id)"
             >删除</el-button
           >
         </template>
@@ -154,13 +154,13 @@ export default {
     },
     
     // 3. 删除讲师
-    removeTeacherById(id) {
+    deleteTeacherById(teacherId) {
        this.$confirm('此操作将永久删除该讲师记录, 是否继续?', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {  // 点击“确定”执行
-          teacher.deleteTeacherById(id)
+          teacher.deleteTeacherById(teacherId)
           .then((response) => {
             // 提示信息
             this.$message({

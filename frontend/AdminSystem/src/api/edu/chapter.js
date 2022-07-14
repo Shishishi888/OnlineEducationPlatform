@@ -9,7 +9,7 @@ export default {
         });
     },
 
-    // 2. 添加章节
+    // 2. 添加课程章节
     addChapter(chapter) {
         return request({
             url: '/eduservice/chapter/addChapter',
@@ -26,7 +26,7 @@ export default {
         });
     },
 
-    // 4. 修改章节信息
+    // 4. 修改课程章节信息
     updateChapterInfo(chapter) {
         return request({
             url: '/eduservice/chapter/updateChapter',
@@ -35,7 +35,7 @@ export default {
         });
     },
 
-    // 5. 删除章节
+    // 5. 删除课程章节
     deleteChapterById(chapterId) {
         return request({
             url: '/eduservice/chapter/deleteChapter/' + chapterId,

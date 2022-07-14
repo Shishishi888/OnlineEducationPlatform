@@ -32,9 +32,9 @@ export default {
     },
 
     // 4. 查询单个讲师（根据讲师ID查询）
-    getTeacherInfo(id) {
+    getTeacherInfo(teacherId) {
         return request({
-            url: `/eduservice/teacher/getTeacher/${id}`,
+            url: `/eduservice/teacher/getTeacher/${teacherId}`,
             method: 'get'
         });
     },

@@ -57,7 +57,15 @@ export default {
             url: '/eduservice/course/getCourseList',
             method: 'get'
         });
-    }
+    },
 
     // 8. 查询课程列表（条件查询 + 分页）TODO
+
+    // 9. 删除课程（根据课程ID删除，物理删除）
+    deleteCourseById(courseId) {
+        return request({
+            url: '/eduservice/course/deleteCourse/' + courseId,
+            method: 'delete',
+        });
+    },
 }

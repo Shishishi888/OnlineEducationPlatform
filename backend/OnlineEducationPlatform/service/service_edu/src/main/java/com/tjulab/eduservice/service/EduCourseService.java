@@ -32,7 +32,6 @@ public interface EduCourseService extends IService<EduCourse> {
     /**
      * 修改课程信息
      * @param courseInfoVo
-     * @return
      */
     void updateCourseInfo(CourseInfoVo courseInfoVo);
 
@@ -42,4 +41,10 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     CoursePublishInfoVo getCoursePublishInfo(String courseId);
+
+    /**
+     * 删除课程（根据课程ID删除）
+     * @param courseId
+     */
+    void deleteCourse(String courseId);
 }

@@ -48,17 +48,17 @@
 
       <el-table-column label="操作" width="200" align="center">
         <template slot-scope="scope">
-          <router-link :to="'/teacher/edit/' + scope.row.id">
+          <router-link :to="'' + scope.row.id">
             <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程信息</el-button>
           </router-link>
-          <router-link :to="'/teacher/edit/' + scope.row.id">
+          <router-link :to="'' + scope.row.id">
             <el-button type="primary" size="mini" icon="el-icon-edit">编辑课程大纲</el-button>
           </router-link>
           <el-button
             type="danger"
             size="mini"
             icon="el-icon-delete"
-            @click="removeTeacherById(scope.row.id)"
+            @click="deleteCourseById(scope.row.id)"
             >删除课程信息</el-button
           >
         </template>
@@ -83,7 +83,7 @@ export default {
   data() {
     // 定义变量和初始值
     return {
-      courseList: null,       // 通过后端接口查询得到的讲师列表
+      courseList: null, // 通过后端接口查询得到的讲师列表
       page: 1,          // 当前页
       limit: 3,         // 每页记录数
       total: 0,         // 总记录数
@@ -106,13 +106,50 @@ export default {
         });
     },
 
-    // 2. 重置讲师列表
+    // 2. 查询课程列表（条件查询+分页）
+    // TODO
+
+    // 3. 重置课程列表
     resetData() {
         // 清空表单中的数据
         this.courseQuery = {}
         // 查询所有的课程数据
         this.getCourseList();
     },
+
+    // 4. 编辑课程信息
+    // TODO
+
+    // 5. 编辑课程大纲
+    // TODO
+
+    // 4. 删除课程
+    deleteCourseById(courseId) {
+        this.$confirm('此操作将永久删除该课程记录, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {  // 点击“确定”执行
+          course.deleteCourseById(courseId)
+          .then((response) => {
+            // 提示信息
+            this.$message({
+              type: 'success',
+              message: '删除成功!'
+            });
+            // 刷新列表界面
+            this.getCourseList();
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+        }).catch(() => {  // 点击“取消”执行
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+    }
   }
 };
 </script>
