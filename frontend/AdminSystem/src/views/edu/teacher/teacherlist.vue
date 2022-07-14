@@ -5,7 +5,7 @@
     <!--查询表单-->
     <el-form :inline="true" class="demo-form-inline">
       <el-form-item>
-        <el-input v-model="teacherQuery.name" placeholder="讲师名"/>
+        <el-input v-model="teacherQuery.name" placeholder="讲师名称"/>
       </el-form-item>
 
       <el-form-item>
@@ -40,7 +40,7 @@
 
     <!-- 表格 -->
     <el-table
-      :data="list"
+      :data="teacherList"
       border
       fit
       highlight-current-row
@@ -51,10 +51,10 @@
         </template>
       </el-table-column>
 
-      <el-table-column prop="name" label="名称" width="80" />
+      <el-table-column prop="name" label="讲师名称" width="80" />
 
 <!--       
-      <el-table-column label="名称" width="80">
+      <el-table-column label="讲师名称" width="80">
         <template slot-scope="scope">
           {{ scope.row.name }}
         </template>
@@ -111,14 +111,14 @@ export default {
   data() {
     // 定义变量和初始值
     return {
-      list: null,       // 通过后端接口查询得到的讲师列表
+      teacherList: null,       // 通过后端接口查询得到的讲师列表
       page: 1,          // 当前页
       limit: 3,         // 每页记录数
       total: 0,         // 总记录数
       teacherQuery: {   // 条件封装对象
         // name:'',
         // level:''
-      },
+      }
     };
   },
   created() {
@@ -127,16 +127,16 @@ export default {
   },
   methods: {
     // 创建具体的方法，调用teahcer.js中定义的方法
-    // 1. 查询讲师（条件查询+分页）
+    // 1. 查询讲师列表（条件查询+分页）
     getTeacherList(page = 1) {
       this.page = page; 
       teacher.getTeacherListPage(this.page, this.limit, this.teacherQuery)
         .then((response) => {
           // 请求成功执行
           // console.log(response);  // response是后端接口返回的数据
-          this.list = response.data.records;
+          this.teacherList = response.data.records;
           this.total = response.data.total;
-          console.log(this.list);
+          console.log(this.teacherList);
           console.log(this.total);
         })
         .catch((error) => {
@@ -147,9 +147,9 @@ export default {
 
     // 2. 重置讲师列表
     resetData() {
-        // 清空表单中的数据
+        // 清空表单数据
         this.teacherQuery = {}
-        // 查询所有讲师数据
+        // 查询所有的讲师数据
         this.getTeacherList();
     },
     
@@ -180,6 +180,6 @@ export default {
           });          
         });
     }
-  },
+  }
 };
 </script>

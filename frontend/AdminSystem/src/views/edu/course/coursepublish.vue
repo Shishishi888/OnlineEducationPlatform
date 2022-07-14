@@ -59,8 +59,9 @@ export default {
       previous() {
           this.$router.push({path:'/course/coursechapter/1'});
       },
+      // 发布课程
       publish() {
-          course.publishCourse(this.courseId)  // 发布课程
+          course.publishCourse(this.courseId)
                 .then(response => {
                   // 提示信息
                   this.$message({

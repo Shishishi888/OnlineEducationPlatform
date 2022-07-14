@@ -9,6 +9,8 @@ import com.tjulab.eduservice.service.EduCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <p>
  * 课程 前端控制器
@@ -23,6 +25,20 @@ import org.springframework.web.bind.annotation.*;
 public class EduCourseController {
     @Autowired
     private EduCourseService eduCourseService;
+
+    /**
+     * 查询课程列表
+     * @return
+     */
+    @GetMapping("getCourseList")
+    public R getCourseList() {
+        List<EduCourse> eduCourseList = eduCourseService.list(null);
+        return R.ok().data("courseList", eduCourseList);
+    }
+
+    /**
+     * 查询课程列表（条件查询 + 分页） TODO
+     */
 
     /**
      * 添加课程信息
@@ -69,7 +85,7 @@ public class EduCourseController {
     }
 
     /**
-     * 课程最终发布
+     * 课程发布
      * @param courseId
      * @return
      */
@@ -77,7 +93,7 @@ public class EduCourseController {
     public R publishCourse(@PathVariable String courseId) {
         EduCourse eduCourse = new EduCourse();
         eduCourse.setId(courseId);
-        eduCourse.setStatus("Normal");  // status 设置成 "Normal" 表示课程已经发布
+        eduCourse.setStatus("Normal");  // 将 status 设置成 "Normal" 表示该课程已经发布
         eduCourseService.updateById(eduCourse);
         return R.ok();
     }

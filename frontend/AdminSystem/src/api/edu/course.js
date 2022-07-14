@@ -43,11 +43,21 @@ export default {
         });
     },
 
-    // 6. 课程最终发布
+    // 6. 课程发布
     publishCourse(courseId) {
         return request({
             url: '/eduservice/course/publishCourse/' + courseId,
             method: 'post'
         });
+    },
+
+    // 7. 查询课程列表
+    getCourseList() {
+        return request({
+            url: '/eduservice/course/getCourseList',
+            method: 'get'
+        });
     }
+
+    // 8. 查询课程列表（条件查询 + 分页）TODO
 }
