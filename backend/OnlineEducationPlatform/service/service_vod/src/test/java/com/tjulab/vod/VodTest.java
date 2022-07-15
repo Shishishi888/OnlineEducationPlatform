@@ -51,7 +51,6 @@ public class VodTest {
         }
     }
 
-
     /**
      * 根据视频ID获取视频播放凭证
      * @throws Exception
