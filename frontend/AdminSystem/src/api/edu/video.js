@@ -25,5 +25,13 @@ export default {
             url: '/eduservice/video/deleteVideo/' + videoId,
             method: 'delete'
         });
+    },
+
+    // 4. 删除阿里云视频
+    deleteVideoFromAliyun(videoId) {
+        return request({
+            url: '/vodservice/video/deleteVideoFromAliyun/' + videoId,
+            method: 'delete'
+        });
     }
 }

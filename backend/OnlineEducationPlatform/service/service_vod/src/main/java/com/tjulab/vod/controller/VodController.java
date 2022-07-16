@@ -1,12 +1,7 @@
 package com.tjulab.vod.controller;
 
-import com.aliyuncs.DefaultAcsClient;
-import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.tjulab.commonutils.R;
-import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.vod.service.VodService;
-import com.tjulab.vod.utils.ConstantPropertiesUtils;
-import com.tjulab.vod.utils.InitVodClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -35,7 +30,7 @@ public class VodController {
      * @param videoId
      * @return
      */
-    @DeleteMapping("deleteVideoFromAliyun/{id}")
+    @DeleteMapping("deleteVideoFromAliyun/{videoId}")
     public R deleteVideoFromAliyun(@PathVariable String videoId) {
         vodService.deleteVideoFromAliyun(videoId);
         return R.ok();

@@ -147,12 +147,28 @@ export default {
         }
     },
     methods: {
-      // 上传视频点击“确定”按钮调用的方法
+      // 删除上传视频，点击“确定”按钮调用的方法
       handleVodRemove() {
+        console.log(this.video.videoSourceId);
         // 删除视频
+        video.deleteVideoFromAliyun(this.video.videoSourceId)
+              .then(response => {
+                // 提示信息
+                this.$message({
+                  type: 'success',
+                  message: '删除视频成功！'
+                });
+                // 清空文件列表
+                this.fileList = [];
+
+                // 清空视频id
+                this.video.videoSourceId = '';
+                // 清空视频名称
+                this.video.videoOriginalName = '';
+              });
       },
 
-      // 上传视频点击“x”调用的方法
+      // 删除上传视频，点击“x”调用的方法
       beforeVodRemove(file, fileList) {
         return this.$confirm(`确定移除 ${ file.name }？`);
       },
@@ -188,7 +204,7 @@ export default {
           }).catch();  // 点击“取消”执行
       },
 
-      // 修改小节 TODO
+      // 修改课程小节 TODO
 
       // 打开添加课程小节弹框
       openAddVideoDialog(chapterId) {
