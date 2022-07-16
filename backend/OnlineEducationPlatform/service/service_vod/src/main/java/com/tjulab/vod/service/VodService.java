@@ -9,4 +9,10 @@ public interface VodService {
      * @return
      */
     String uploadVideo(MultipartFile file);
+
+    /**
+     * 删除阿里云视频（根据视频ID删除）
+     * @param videoId
+     */
+    void deleteVideoFromAliyun(String videoId);
 }

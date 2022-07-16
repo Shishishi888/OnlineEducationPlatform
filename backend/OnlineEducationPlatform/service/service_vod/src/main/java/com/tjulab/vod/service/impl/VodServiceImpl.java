@@ -3,8 +3,12 @@ package com.tjulab.vod.service.impl;
 import com.aliyun.vod.upload.impl.UploadVideoImpl;
 import com.aliyun.vod.upload.req.UploadStreamRequest;
 import com.aliyun.vod.upload.resp.UploadStreamResponse;
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
+import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.vod.service.VodService;
 import com.tjulab.vod.utils.ConstantPropertiesUtils;
+import com.tjulab.vod.utils.InitVodClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -40,6 +44,33 @@ public class VodServiceImpl implements VodService {
         } catch (Exception e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    /**
+     * 删除阿里云视频（根据视频ID删除）
+     * @param videoId
+     */
+    @Override
+    public void deleteVideoFromAliyun(String videoId) {
+        try {
+            // 1. 初始化对象
+            String accessKeyId = ConstantPropertiesUtils.ACCESS_KEY_ID;
+            String accessKeySecret = ConstantPropertiesUtils.ACCESS_KEY_SECRET;
+            DefaultAcsClient client = InitVodClient.initVodClient(accessKeyId, accessKeySecret);
+
+            // 2. 创建删除视频的request对象
+            DeleteVideoRequest deleteVideoRequest = new DeleteVideoRequest();
+
+            // 3. 向request设置视频id
+            deleteVideoRequest.setVideoIds(videoId);
+
+            // 4. 调用初始化对象的方法删除视频
+            client.getAcsResponse(deleteVideoRequest);
+
+       } catch (Exception e) {
+            e.printStackTrace();
+            throw new MyException(20001, "删除视频失败");
         }
     }
 }

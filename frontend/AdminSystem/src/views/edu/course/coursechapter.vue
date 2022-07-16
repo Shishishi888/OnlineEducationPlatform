@@ -81,7 +81,7 @@
         </el-form-item>
         <el-form-item label="上传视频">
           <el-upload
-              :on-success="handleVodAfterUploadSuccess"
+              :on-success="handleVodUploadSuccess"
               :on-remove="handleVodRemove"
               :before-remove="beforeVodRemove"
               :on-exceed="handleUploadExceed"
@@ -127,7 +127,7 @@ export default {
               title: '',
               sort: 0,
               free: 0,
-              videoSourceId: '',
+              videoSourceId: '',  // 视频id
               videoOriginalName: '',  // 视频文件名称
             },
             saveVideoBtnDisabled: false,
@@ -147,8 +147,18 @@ export default {
         }
     },
     methods: {
+      // 上传视频点击“确定”按钮调用的方法
+      handleVodRemove() {
+        // 删除视频
+      },
+
+      // 上传视频点击“x”调用的方法
+      beforeVodRemove(file, fileList) {
+        return this.$confirm(`确定移除 ${ file.name }？`);
+      },
+
       // 上传视频成功之后调用的方法
-      handleVodAfterUploadSuccess(response, file, fileList) {
+      handleVodUploadSuccess(response, file, fileList) {
         this.video.videoSourceId = response.data.videoId;
         this.video.videoOriginalName = file.name;
       },
