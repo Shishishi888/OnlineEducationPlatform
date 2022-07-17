@@ -8,6 +8,10 @@ import com.tjulab.eduservice.service.EduVideoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -26,21 +30,42 @@ public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> i
     /**
      * 删除课程小节（根据课程ID删除）
      * @param courseId
-     * TODO 删除课程小节对应的课程视频
      */
     @Override
     public void deleteVideoByCourseId(String courseId) {
-        QueryWrapper<EduVideo> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("course_id", courseId);
-        baseMapper.delete(queryWrapper);
+        // 1. 删除课程视频
+        // 根据课程ID查询出所有的课程视频，并删除
+        QueryWrapper<EduVideo> queryWrapperForAliyunVideo = new QueryWrapper<>();
+        queryWrapperForAliyunVideo.eq("course_id", courseId);
+        queryWrapperForAliyunVideo.select("video_source_id");  // 指定要查询的列
+        List<EduVideo> eduVideoList = baseMapper.selectList(queryWrapperForAliyunVideo);
+
+        List<String> vidoSourceIdList = new ArrayList<>();
+        for (int i = 0; i < eduVideoList.size(); ++i) {
+            EduVideo eduVideo = eduVideoList.get(i);
+            String videoSourceId = eduVideo.getVideoSourceId();
+            if(!StringUtils.isEmpty(videoSourceId)) {
+                vidoSourceIdList.add(videoSourceId);
+            }
+        }
+
+        System.out.println(123);
+        if(vidoSourceIdList.size() > 0) {
+            vodClient.deleteAliyunVideos(vidoSourceIdList);
+        }
+
+        // 2. 删除课程小节
+        QueryWrapper<EduVideo> queryWrapperForVideo = new QueryWrapper<>();
+        queryWrapperForVideo.eq("course_id", courseId);
+        baseMapper.delete(queryWrapperForVideo);
     }
 
     /**
-     * 删除阿里云视频（根据视频ID删除）
+     * 删除单个阿里云视频（根据视频ID删除）
      * @param videoId
      */
     @Override
-    public void deleteVideoFromAliyun(String videoId) {
-        vodClient.deleteVideoFromAliyun(videoId);
+    public void deleteAliyunVideo(String videoId) {
+        vodClient.deleteAliyunVideo(videoId);
     }
 }

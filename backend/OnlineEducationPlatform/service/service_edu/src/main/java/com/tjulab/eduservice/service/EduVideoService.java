@@ -20,8 +20,8 @@ public interface EduVideoService extends IService<EduVideo> {
     void deleteVideoByCourseId(String courseId);
 
     /**
-     * 删除阿里云视频（根据视频ID删除）
+     * 删除单个阿里云视频（根据视频ID删除）
      * @param videoId
      */
-    void deleteVideoFromAliyun(String videoId);
+    void deleteAliyunVideo(String videoId);
 }

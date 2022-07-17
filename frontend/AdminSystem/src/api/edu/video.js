@@ -27,10 +27,10 @@ export default {
         });
     },
 
-    // 4. 删除阿里云视频
-    deleteVideoFromAliyun(videoId) {
+    // 4. 删除单个阿里云视频
+    deleteAliyunVideo(videoId) {
         return request({
-            url: '/vodservice/video/deleteVideoFromAliyun/' + videoId,
+            url: '/vodservice/video/deleteAliyunVideo/' + videoId,
             method: 'delete'
         });
     }

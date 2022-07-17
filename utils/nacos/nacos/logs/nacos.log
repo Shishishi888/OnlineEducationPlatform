@@ -122,3 +122,103 @@
 
 2022-07-17 11:51:28,367 WARN clearConfigHistory start
 
+2022-07-17 12:01:27,957 INFO [capacityManagement] start correct usage
+
+2022-07-17 12:01:27,991 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 12:01:28,402 WARN clearConfigHistory start
+
+2022-07-17 12:11:27,965 INFO [capacityManagement] start correct usage
+
+2022-07-17 12:11:27,995 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 12:11:28,423 WARN clearConfigHistory start
+
+2022-07-17 12:26:33,529 INFO [capacityManagement] start correct usage
+
+2022-07-17 12:26:33,565 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 12:26:34,005 WARN clearConfigHistory start
+
+2022-07-17 12:58:23,863 INFO [capacityManagement] start correct usage
+
+2022-07-17 12:58:23,924 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 12:58:24,334 WARN clearConfigHistory start
+
+2022-07-17 13:09:14,922 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:09:14,956 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:09:15,372 WARN clearConfigHistory start
+
+2022-07-17 13:19:14,966 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:19:15,002 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:19:15,418 WARN clearConfigHistory start
+
+2022-07-17 13:29:15,015 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:29:15,058 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:29:15,481 WARN clearConfigHistory start
+
+2022-07-17 13:39:15,040 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:39:15,085 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:39:15,496 WARN clearConfigHistory start
+
+2022-07-17 13:49:15,091 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:49:15,131 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:49:15,552 WARN clearConfigHistory start
+
+2022-07-17 13:59:15,137 INFO [capacityManagement] start correct usage
+
+2022-07-17 13:59:15,182 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 13:59:15,584 WARN clearConfigHistory start
+
+2022-07-17 14:09:15,184 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:09:15,228 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:09:15,619 WARN clearConfigHistory start
+
+2022-07-17 14:19:15,234 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:19:15,292 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:19:15,680 WARN clearConfigHistory start
+
+2022-07-17 14:29:15,334 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:29:15,388 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:29:15,785 WARN clearConfigHistory start
+
+2022-07-17 14:39:15,395 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:39:15,438 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:39:15,860 WARN clearConfigHistory start
+
+2022-07-17 14:45:37,413 INFO Expired JWT token.
+
+2022-07-17 14:45:37,459 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
+
+2022-07-17 14:49:15,464 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:49:15,516 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:49:15,917 WARN clearConfigHistory start
+
+2022-07-17 14:59:15,535 INFO [capacityManagement] start correct usage
+
+2022-07-17 14:59:15,589 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-17 14:59:15,964 WARN clearConfigHistory start
+

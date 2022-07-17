@@ -151,7 +151,7 @@ export default {
       handleVodRemove() {
         console.log(this.video.videoSourceId);
         // 删除视频
-        video.deleteVideoFromAliyun(this.video.videoSourceId)
+        video.deleteAliyunVideo(this.video.videoSourceId)
               .then(response => {
                 // 提示信息
                 this.$message({
@@ -219,6 +219,7 @@ export default {
         this.video.title = ''; 
         this.video.sort = 0;
         this.video.free = 0;
+        this.fileList= [];
       },
       
       // 添加课程小节

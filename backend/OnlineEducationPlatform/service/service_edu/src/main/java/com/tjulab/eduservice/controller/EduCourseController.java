@@ -104,7 +104,8 @@ public class EduCourseController {
      * @return
      */
     @DeleteMapping("deleteCourse/{courseId}")
-    public R deleCourse(@PathVariable String courseId) {
+    public R deleteCourse(@PathVariable String courseId) {
+        System.out.println(courseId);
         eduCourseService.deleteCourse(courseId);
         return R.ok();
     }

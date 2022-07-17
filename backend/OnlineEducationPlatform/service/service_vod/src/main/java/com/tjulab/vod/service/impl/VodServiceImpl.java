@@ -9,10 +9,12 @@ import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.vod.service.VodService;
 import com.tjulab.vod.utils.ConstantPropertiesUtils;
 import com.tjulab.vod.utils.InitVodClient;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
+import java.util.List;
 
 @Service
 public class VodServiceImpl implements VodService {
@@ -48,11 +50,11 @@ public class VodServiceImpl implements VodService {
     }
 
     /**
-     * 删除阿里云视频（根据视频ID删除）
+     * 删除单个阿里云视频（根据视频ID删除）
      * @param videoId
      */
     @Override
-    public void deleteVideoFromAliyun(String videoId) {
+    public void deleteAliyunVideo(String videoId) {
         try {
             // 1. 初始化对象
             String accessKeyId = ConstantPropertiesUtils.ACCESS_KEY_ID;
@@ -69,6 +71,34 @@ public class VodServiceImpl implements VodService {
             client.getAcsResponse(deleteVideoRequest);
 
        } catch (Exception e) {
+            e.printStackTrace();
+            throw new MyException(20001, "删除视频失败");
+        }
+    }
+
+    /**
+     * 删除多个阿里云视频
+     * @param videoIdList
+     */
+    @Override
+    public void deleteAliyunVideos(List<String> videoIdList) {
+        try {
+            // 1. 初始化对象
+            String accessKeyId = ConstantPropertiesUtils.ACCESS_KEY_ID;
+            String accessKeySecret = ConstantPropertiesUtils.ACCESS_KEY_SECRET;
+            DefaultAcsClient client = InitVodClient.initVodClient(accessKeyId, accessKeySecret);
+
+            // 2. 创建删除视频的request对象
+            DeleteVideoRequest deleteVideoRequest = new DeleteVideoRequest();
+
+            // 3. 向request设置视频id
+            String videoIds = StringUtils.join(videoIdList.toArray(), ",");
+            deleteVideoRequest.setVideoIds(videoIds);
+
+            // 4. 调用初始化对象的方法删除视频
+            client.getAcsResponse(deleteVideoRequest);
+
+        } catch (Exception e) {
             e.printStackTrace();
             throw new MyException(20001, "删除视频失败");
         }

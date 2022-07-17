@@ -45,11 +45,11 @@ public class EduVideoController {
      */
     @DeleteMapping("deleteVideo/{videoId}")
     public R deleteVideo(@PathVariable String videoId) {
-        // 1. 删除课程小节下的视频
+        // 1. 删除课程小节下的课程视频
         EduVideo eduVideo = eduVideoService.getById(videoId);
         String videoSourceId = eduVideo.getVideoSourceId();  // 获取阿里云视频id
         if(!StringUtils.isEmpty(videoSourceId)){
-            eduVideoService.deleteVideoFromAliyun(videoSourceId);
+            eduVideoService.deleteAliyunVideo(videoSourceId);
         }
         // 2. 删除课程小节
         eduVideoService.removeById(videoId);
