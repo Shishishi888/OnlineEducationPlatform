@@ -1,11 +1,13 @@
 package com.tjulab.eduservice.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.tjulab.commonutils.R;
 import com.tjulab.eduservice.client.VodClient;
 import com.tjulab.eduservice.entity.EduVideo;
 import com.tjulab.eduservice.mapper.EduVideoMapper;
 import com.tjulab.eduservice.service.EduVideoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tjulab.servicebase.exceptionhandler.MyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -66,6 +68,9 @@ public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> i
      */
     @Override
     public void deleteAliyunVideo(String videoId) {
-        vodClient.deleteAliyunVideo(videoId);
+        R result = vodClient.deleteAliyunVideo(videoId);
+        if(result.getCode() == 20001) {
+            throw new MyException(20001, "删除视频失败，触发熔断器");
+        }
     }
 }
