@@ -1,26 +1,6 @@
-2022-07-18 00:04:29,178 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-07-19 00:00:13,540 INFO {POS} {IP-DISABLED} valid: 172.23.203.169:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658159995391
 
-2022-07-18 00:04:29,187 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.203.169:8001_true,
+2022-07-19 00:00:28,739 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-07-18 00:09:03,100 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-07-18 00:09:03,102 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
-
-2022-07-18 00:09:13,200 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-07-18 00:09:13,202 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.203.169:8001_true,
-
-2022-07-18 00:16:22,448 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.203.169:8003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-07-18 00:16:22,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 172.23.203.169:8003_true,
-
-2022-07-18 00:19:28,920 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.203.169:8003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-07-18 00:19:28,922 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
-
-2022-07-18 00:20:04,366 INFO {POS} {IP-DISABLED} valid: 172.23.203.169:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658074784653
-
-2022-07-18 00:20:19,559 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-07-18 00:20:19,563 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+2022-07-19 00:00:28,740 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
 

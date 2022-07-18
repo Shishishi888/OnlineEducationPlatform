@@ -1,0 +1,1 @@
+127.0.0.1 - - [19/Jul/2022:00:00:28 +0800] "DELETE /nacos/v1/ns/instance?ephemeral=true&serviceName=DEFAULT_GROUP%40%40service-edu&port=8001&namespaceId=public&ip=172.23.203.169&clusterName=DEFAULT HTTP/1.1" 200 2 88 Nacos-Server:1.1.4
