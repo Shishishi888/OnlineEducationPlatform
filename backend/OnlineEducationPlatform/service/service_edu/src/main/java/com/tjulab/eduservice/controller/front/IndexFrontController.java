@@ -25,14 +25,17 @@ public class IndexFrontController {
     @Autowired
     private EduCourseService eduCourseService;
 
-
-    @GetMapping("index")
+    /**
+     * 获取热门课程和热门讲师列表
+     * @return
+     */
+    @GetMapping("getHotCourseAndTeacher")
     public R index() {
         // 1. 查询前8门热门课程
-        List<EduCourse> eduCourseList = eduCourseService.getTopEightPopularCourse();
+        List<EduCourse> hotCourseList = eduCourseService.getTopEightPopularCourse();
         // 2. 查询前4名热门讲师
-        List<EduTeacher> eduTeacherList = eduTeacherService.getTopFourPopularTeacher();
-        return R.ok().data("eduCourseList", eduCourseList).data("eduTeacherList", eduTeacherList);
+        List<EduTeacher> hotTeacherList = eduTeacherService.getTopFourPopularTeacher();
+        return R.ok().data("hotCourseList", hotCourseList).data("hotTeacherList", hotTeacherList);
     }
 
 }
