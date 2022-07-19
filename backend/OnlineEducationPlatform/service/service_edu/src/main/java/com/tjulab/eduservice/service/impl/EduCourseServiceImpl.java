@@ -1,7 +1,9 @@
 package com.tjulab.eduservice.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.EduCourseDescription;
+import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 import com.tjulab.eduservice.mapper.EduCourseMapper;
@@ -14,6 +16,8 @@ import com.tjulab.servicebase.exceptionhandler.MyException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -135,4 +139,18 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             throw new MyException(20001, "删除失败");
         }
     }
+
+    /**
+     * 查询前8门热门课程
+     * @return
+     */
+    @Override
+    public List<EduCourse> getTopEightPopularCourse() {
+        QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("id");
+        queryWrapper.last("limit 8");
+        List<EduCourse> eduCourseList = baseMapper.selectList(queryWrapper);
+        return eduCourseList;
+    }
+
 }

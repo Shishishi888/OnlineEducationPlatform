@@ -25,7 +25,7 @@ public class CmsBannerAdminController {
     private CmsBannerService cmsBannerService;
 
     /**
-     * 查询banner（根据ID查询）
+     * 查询banner（根据banner的ID查询）
      * @param id
      * @return
      */
@@ -71,7 +71,7 @@ public class CmsBannerAdminController {
     }
 
     /**
-     * 删除banner
+     * 删除banner（根据banner的ID删除）
      * @param id
      * @return
      */

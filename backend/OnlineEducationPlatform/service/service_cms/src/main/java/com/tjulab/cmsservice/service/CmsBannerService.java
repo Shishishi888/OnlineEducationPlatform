@@ -19,5 +19,5 @@ public interface CmsBannerService extends IService<CmsBanner> {
      * 查询所有的banner
      * @return
      */
-    List<CmsBanner> getAllBanner();
+    List<CmsBanner> getTopTwoBanner();
 }

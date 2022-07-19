@@ -1,10 +1,13 @@
 package com.tjulab.eduservice.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -17,4 +20,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeacher> implements EduTeacherService {
 
+    /**
+     * 查询前4名热门讲师
+     * @return
+     */
+    @Override
+    public List<EduTeacher> getTopFourPopularTeacher() {
+        QueryWrapper<EduTeacher> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("id");
+        queryWrapper.last("limit 4");
+        List<EduTeacher> eduTeacherList = baseMapper.selectList(queryWrapper);
+        return eduTeacherList;
+    }
 }

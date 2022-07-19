@@ -2,8 +2,11 @@ package com.tjulab.eduservice.service;
 
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -47,4 +50,10 @@ public interface EduCourseService extends IService<EduCourse> {
      * @param courseId
      */
     void deleteCourse(String courseId);
+
+    /**
+     * 查询前8门热门课程
+     * @return
+     */
+    List<EduCourse> getTopEightPopularCourse();
 }

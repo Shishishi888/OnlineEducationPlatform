@@ -25,12 +25,12 @@ public class CmsBannerFrontController {
     private CmsBannerService cmsBannerService;
 
     /**
-     * 查询所有的banner
+     * 查询banner的前两条记录
      * @return
      */
     @GetMapping("getAllBanner")
     public R getAllBanner() {
-        List<CmsBanner> cmsBannerList = cmsBannerService.getAllBanner();
+        List<CmsBanner> cmsBannerList = cmsBannerService.getTopTowBanner();
         return R.ok().data("cmsBannerList", cmsBannerList);
     }
 }
