@@ -28,9 +28,9 @@ public class CmsBannerFrontController {
      * 查询banner的前两条记录
      * @return
      */
-    @GetMapping("getAllBanner")
+    @GetMapping("getTopTwoBanner")
     public R getAllBanner() {
-        List<CmsBanner> cmsBannerList = cmsBannerService.getTopTowBanner();
+        List<CmsBanner> cmsBannerList = cmsBannerService.getTopTwoBanner();
         return R.ok().data("cmsBannerList", cmsBannerList);
     }
 }
