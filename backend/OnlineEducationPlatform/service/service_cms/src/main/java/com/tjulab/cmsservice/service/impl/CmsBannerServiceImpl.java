@@ -5,6 +5,7 @@ import com.tjulab.cmsservice.entity.CmsBanner;
 import com.tjulab.cmsservice.mapper.CmsBannerMapper;
 import com.tjulab.cmsservice.service.CmsBannerService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class CmsBannerServiceImpl extends ServiceImpl<CmsBannerMapper, CmsBanner
      * 查询banner的前两条记录
      * @return
      */
+    @Cacheable(key = "'topTowBanner'", value = "cmsBannerList")
     @Override
     public List<CmsBanner> getTopTwoBanner() {
         QueryWrapper<CmsBanner> queryWrapper = new QueryWrapper<>();

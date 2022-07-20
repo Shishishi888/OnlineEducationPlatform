@@ -1,6 +1,1826 @@
-2022-07-19 00:00:13,540 INFO {POS} {IP-DISABLED} valid: 172.23.203.169:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658159995391
+2022-07-20 00:41:11,994 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658247898484
 
-2022-07-19 00:00:28,739 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.203.169:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-07-20 00:41:12,166 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-07-19 00:00:28,740 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+2022-07-20 00:41:12,166 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 00:41:13,449 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 00:41:13,473 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 00:59:12,909 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658248878274
+
+2022-07-20 00:59:13,006 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 00:59:13,007 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 00:59:14,071 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 00:59:14,075 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 01:17:26,213 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658249989111
+
+2022-07-20 01:17:26,367 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 01:17:26,370 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 01:17:27,315 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 01:17:27,317 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 01:32:33,339 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658251047281
+
+2022-07-20 01:32:33,563 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 01:32:33,569 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 01:32:34,268 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 01:32:34,271 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 01:48:14,043 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658251964309
+
+2022-07-20 01:48:14,138 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 01:48:14,139 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 01:48:14,779 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 01:48:14,779 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:03:54,687 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658252894775
+
+2022-07-20 02:03:54,859 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:03:54,861 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:03:55,398 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:03:55,398 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:20:31,891 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658253845425
+
+2022-07-20 02:20:31,943 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:20:31,943 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:20:32,515 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:20:32,516 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:38:25,778 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658254832513
+
+2022-07-20 02:38:25,814 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:38:25,814 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:38:26,403 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:38:26,403 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:44:05,360 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256195594
+
+2022-07-20 02:44:05,431 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:44:05,432 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:44:06,235 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:44:06,238 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:45:32,314 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256255995
+
+2022-07-20 02:45:32,415 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:45:32,415 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:45:32,922 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:45:32,924 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:47:17,203 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256392866
+
+2022-07-20 02:47:17,241 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:47:17,241 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:47:17,928 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:47:17,935 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:48:38,407 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658256465301
+
+2022-07-20 02:48:38,537 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:48:38,537 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 02:48:40,019 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256462820
+
+2022-07-20 02:48:40,043 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:48:40,044 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:48:40,569 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:48:40,569 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:48:43,045 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:48:43,050 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 02:50:30,263 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658256599497
+
+2022-07-20 02:50:30,470 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:50:30,471 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 02:50:31,669 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256597050
+
+2022-07-20 02:50:31,698 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:50:31,698 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:50:32,248 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:50:32,249 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:50:34,712 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:50:34,713 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 02:51:01,262 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256637383
+
+2022-07-20 02:51:01,848 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 02:52:05,005 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256686906
+
+2022-07-20 02:52:05,161 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:52:05,167 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:52:05,725 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:52:05,730 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:52:36,243 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256725690
+
+2022-07-20 02:52:36,352 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:52:36,352 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:52:36,766 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:52:36,766 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:52:57,095 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256761754
+
+2022-07-20 02:52:57,524 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 02:54:00,535 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256819922
+
+2022-07-20 02:54:00,977 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 02:56:27,917 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256972341
+
+2022-07-20 02:56:28,369 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 02:57:27,942 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658256993362
+
+2022-07-20 02:57:28,014 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:57:28,014 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:57:28,374 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:57:28,375 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:58:31,437 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257073422
+
+2022-07-20 02:58:31,489 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:58:31,489 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:58:31,835 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:58:31,835 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 02:59:22,244 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257116842
+
+2022-07-20 02:59:22,291 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 02:59:22,291 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 02:59:22,774 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 02:59:22,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 03:00:56,328 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257187675
+
+2022-07-20 03:00:56,451 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:00:56,451 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 03:00:56,695 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:00:56,695 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 03:01:52,430 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257286758
+
+2022-07-20 03:01:52,739 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:04:34,124 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658257373436
+
+2022-07-20 03:04:34,254 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:04:34,254 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 03:04:35,633 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257370985
+
+2022-07-20 03:04:35,849 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:04:35,851 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 03:04:35,938 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:04:35,939 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 03:04:38,399 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:04:38,400 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 03:05:33,939 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257504648
+
+2022-07-20 03:05:34,187 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:06:21,745 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257558979
+
+2022-07-20 03:06:21,784 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:06:48,267 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257586803
+
+2022-07-20 03:06:48,313 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:07:33,959 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658257635912
+
+2022-07-20 03:07:35,690 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257633353
+
+2022-07-20 03:07:35,736 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:07:38,284 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 172.23.124.97:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:08:15,350 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257678678
+
+2022-07-20 03:08:15,374 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:08:39,827 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257700374
+
+2022-07-20 03:08:39,827 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:10:12,460 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257790659
+
+2022-07-20 03:10:12,485 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:10:39,293 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257839293
+
+2022-07-20 03:10:39,293 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:11:28,458 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257869333
+
+2022-07-20 03:11:28,480 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:13:25,624 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658257989908
+
+2022-07-20 03:13:25,645 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:19:26,268 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658258323621
+
+2022-07-20 03:19:26,285 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:21:14,388 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658258378782
+
+2022-07-20 03:21:14,544 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:21:14,545 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 03:21:18,911 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:21:18,913 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 03:22:14,195 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658258481264
+
+2022-07-20 03:22:14,415 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:22:14,415 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 03:22:19,035 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:22:19,046 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 03:38:17,657 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658259444499
+
+2022-07-20 03:38:17,816 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:38:17,816 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 03:38:22,214 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:38:22,220 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 03:39:22,149 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658259504343
+
+2022-07-20 03:39:22,158 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:39:22,255 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:39:22,255 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 03:39:26,995 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:39:26,999 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 03:48:45,788 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658260030106
+
+2022-07-20 03:48:46,227 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:48:46,230 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 03:48:50,218 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:48:50,226 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 03:51:27,485 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658260188098
+
+2022-07-20 03:51:27,493 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 03:59:12,984 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658260670815
+
+2022-07-20 03:59:13,240 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 03:59:13,242 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 03:59:17,121 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 03:59:17,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:01:01,343 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658260759374
+
+2022-07-20 04:01:01,597 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:01:01,598 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:01:06,056 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:01:06,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:07:50,385 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658261205131
+
+2022-07-20 04:07:50,655 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:07:50,657 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 04:07:54,403 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:07:54,410 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:13:23,962 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658261486398
+
+2022-07-20 04:13:24,283 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:13:24,286 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:13:28,345 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:13:28,367 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:16:50,226 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658261684731
+
+2022-07-20 04:16:50,416 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:16:50,417 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:16:54,412 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:16:54,428 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:24:42,559 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658262232864
+
+2022-07-20 04:24:42,705 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:24:42,707 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:24:46,614 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:24:46,616 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:27:03,869 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658262294598
+
+2022-07-20 04:27:03,900 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:27:03,900 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 04:27:07,886 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:27:07,887 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:28:03,672 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658262429906
+
+2022-07-20 04:28:03,688 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:28:03,688 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:28:07,639 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:28:07,640 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:41:39,424 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658263245600
+
+2022-07-20 04:41:39,477 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:41:39,478 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 04:41:43,281 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:41:43,281 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:44:59,056 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658263445229
+
+2022-07-20 04:44:59,211 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:44:59,217 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 04:45:02,887 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:45:02,890 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:48:17,346 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658263643372
+
+2022-07-20 04:48:17,491 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:48:17,494 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 04:48:21,075 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:48:21,077 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 04:50:35,408 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658263703264
+
+2022-07-20 04:50:35,560 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 04:50:35,561 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 04:50:39,555 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 04:50:39,558 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 04:58:09,088 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658264259567
+
+2022-07-20 04:58:12,767 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 172.23.124.97:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 05:00:24,004 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658264294924
+
+2022-07-20 05:00:24,256 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:00:24,256 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:00:27,925 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:00:27,929 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:01:24,010 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658264430730
+
+2022-07-20 05:01:24,329 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:01:24,331 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:01:27,574 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:01:27,576 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:03:39,341 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658264514791
+
+2022-07-20 05:03:39,365 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:03:39,365 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:03:43,029 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:03:43,031 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:04:40,326 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658264625885
+
+2022-07-20 05:04:40,413 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:04:40,413 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:04:43,630 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:04:43,636 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:06:52,634 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658264685775
+
+2022-07-20 05:06:56,334 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 05:11:03,713 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658265017341
+
+2022-07-20 05:11:03,951 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:11:03,954 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:11:07,261 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:11:07,276 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:14:01,514 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658265192891
+
+2022-07-20 05:14:01,694 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:14:01,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:14:04,968 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:14:04,977 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:15:51,458 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658265247819
+
+2022-07-20 05:15:51,519 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:15:51,521 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:15:54,748 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:15:54,752 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:16:51,454 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658265366874
+
+2022-07-20 05:16:51,590 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:16:51,592 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:16:54,825 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:16:54,829 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:18:42,875 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658265417680
+
+2022-07-20 05:18:42,954 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:18:42,954 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:18:46,133 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:18:46,135 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:19:44,458 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658265528273
+
+2022-07-20 05:19:44,507 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:19:44,507 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:19:47,732 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:19:47,749 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:22:53,325 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658265714232
+
+2022-07-20 05:22:53,659 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:22:53,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:22:56,421 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:22:56,423 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:26:04,106 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658265892322
+
+2022-07-20 05:26:04,161 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:26:04,161 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:26:07,021 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:26:07,025 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:27:26,024 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658265969137
+
+2022-07-20 05:27:26,124 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:27:26,125 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:27:29,269 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:27:29,270 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:30:13,442 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658266159137
+
+2022-07-20 05:30:13,542 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:30:13,542 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:30:16,651 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:30:16,651 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:35:28,146 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658266406994
+
+2022-07-20 05:35:28,182 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:35:28,182 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:35:31,345 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:35:31,352 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:38:13,110 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658266592105
+
+2022-07-20 05:38:13,136 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:38:13,136 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:38:16,052 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:38:16,054 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:39:13,366 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658266723156
+
+2022-07-20 05:39:13,398 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:39:13,399 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:39:16,548 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:39:16,549 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:40:55,815 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658266759461
+
+2022-07-20 05:40:55,856 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:40:55,856 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:40:58,745 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:40:58,750 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:41:55,368 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658266860826
+
+2022-07-20 05:41:55,404 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:41:55,404 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:41:58,539 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:41:58,540 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:44:42,928 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267022329
+
+2022-07-20 05:44:43,167 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:44:43,167 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:44:45,734 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:44:45,734 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:46:30,162 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267110774
+
+2022-07-20 05:46:30,493 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:46:30,493 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:46:31,641 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658267112899
+
+2022-07-20 05:46:31,691 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:46:31,691 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:46:32,745 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:46:32,747 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:46:34,842 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:46:34,848 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:49:11,475 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267296795
+
+2022-07-20 05:49:11,520 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:49:11,520 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:49:13,780 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:49:13,787 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:51:50,218 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267454879
+
+2022-07-20 05:51:50,287 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:51:50,290 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:51:52,554 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:51:52,555 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:53:52,614 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267527547
+
+2022-07-20 05:53:52,692 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:53:52,693 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:53:54,906 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:53:54,906 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:54:51,564 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658267636971
+
+2022-07-20 05:54:51,598 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:54:51,598 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:54:54,725 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:54:54,726 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 05:56:54,406 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267697676
+
+2022-07-20 05:56:54,517 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:56:54,519 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:56:56,650 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:56:56,652 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:57:54,303 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658267821646
+
+2022-07-20 05:57:54,343 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:57:54,343 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 05:57:56,499 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:57:56,499 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 05:59:53,478 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658267878576
+
+2022-07-20 05:59:53,500 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 05:59:53,500 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 05:59:56,620 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 05:59:56,624 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:00:54,521 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268004554
+
+2022-07-20 06:00:54,558 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:00:54,558 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:00:56,725 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:00:56,731 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:02:36,024 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658268058775
+
+2022-07-20 06:02:36,071 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:02:36,074 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:02:39,174 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:02:39,179 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:03:38,192 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268187132
+
+2022-07-20 06:03:38,248 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:03:38,248 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:03:40,360 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:03:40,361 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:05:07,837 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268220355
+
+2022-07-20 06:05:08,959 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658268222518
+
+2022-07-20 06:05:09,018 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:05:09,019 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:05:09,996 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 172.23.124.97:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 06:05:12,059 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:05:12,082 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:06:10,752 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268320009
+
+2022-07-20 06:06:10,805 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:06:10,805 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:06:12,735 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:06:12,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:07:44,217 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268372715
+
+2022-07-20 06:07:44,354 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:07:44,357 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:07:45,110 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658268374773
+
+2022-07-20 06:07:45,145 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:07:45,145 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:07:46,126 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:07:46,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:07:48,200 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:07:48,201 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:10:20,742 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268533945
+
+2022-07-20 06:10:20,791 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:10:20,791 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:10:22,562 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:10:22,563 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:11:45,860 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658268624624
+
+2022-07-20 06:11:46,116 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:11:46,116 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:11:48,873 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:11:48,873 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:14:43,562 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268774651
+
+2022-07-20 06:14:43,604 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:14:43,604 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:14:45,426 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:14:45,428 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:15:42,556 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658268887450
+
+2022-07-20 06:15:42,635 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:15:42,635 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:15:45,142 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:15:45,142 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:17:39,147 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658268948063
+
+2022-07-20 06:17:39,206 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:17:39,206 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:17:40,945 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:17:40,946 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:18:37,921 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269088057
+
+2022-07-20 06:18:40,442 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 172.23.124.97:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 06:20:23,062 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269123382
+
+2022-07-20 06:20:23,103 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:20:23,103 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:20:24,819 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:20:24,821 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:21:22,043 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269226901
+
+2022-07-20 06:21:22,078 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:21:22,078 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:21:24,573 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:21:24,573 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:22:50,779 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269287506
+
+2022-07-20 06:22:50,807 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:22:50,807 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:22:52,520 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:22:52,539 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:23:49,502 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269379600
+
+2022-07-20 06:23:49,606 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:23:49,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:23:52,036 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:23:52,041 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:25:16,966 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269434963
+
+2022-07-20 06:25:17,013 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:25:17,013 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:25:18,698 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:25:18,698 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:26:18,193 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269520761
+
+2022-07-20 06:26:18,220 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:26:18,220 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:26:20,690 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:26:20,691 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:27:42,709 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269585673
+
+2022-07-20 06:27:42,733 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:27:42,733 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:27:45,200 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:27:45,203 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:29:10,529 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269673110
+
+2022-07-20 06:29:10,637 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:29:10,637 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:29:12,399 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:29:12,405 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:30:14,729 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269759453
+
+2022-07-20 06:30:15,017 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:30:15,017 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:30:17,228 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:30:17,229 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:32:01,953 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269819998
+
+2022-07-20 06:32:02,021 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:32:02,023 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:32:03,607 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:32:03,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:33:01,331 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658269925878
+
+2022-07-20 06:33:01,380 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:33:01,380 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:33:03,624 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:33:03,624 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:34:52,763 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658269991376
+
+2022-07-20 06:34:52,905 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:34:52,907 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:34:54,379 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:34:54,381 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:35:52,097 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270096648
+
+2022-07-20 06:35:52,119 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:35:52,120 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:35:54,379 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:35:54,379 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:37:28,323 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270182146
+
+2022-07-20 06:37:28,376 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:37:28,376 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:37:29,994 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:37:30,001 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:38:27,566 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270252123
+
+2022-07-20 06:38:27,694 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:38:27,695 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:38:29,857 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:38:29,862 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:39:50,261 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270317597
+
+2022-07-20 06:39:50,333 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:39:50,333 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:39:51,794 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:39:51,794 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:40:49,511 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270394078
+
+2022-07-20 06:40:49,540 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:40:49,540 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:40:51,693 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:40:51,693 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:42:10,828 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270461716
+
+2022-07-20 06:42:10,857 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:42:10,857 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:42:13,149 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:42:13,155 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:43:16,835 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270535739
+
+2022-07-20 06:43:16,968 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:43:16,969 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:43:18,313 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:43:18,313 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:44:31,095 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270600586
+
+2022-07-20 06:44:31,152 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:44:31,152 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:44:33,325 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:44:33,329 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:46:03,005 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270676005
+
+2022-07-20 06:46:03,106 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:46:03,106 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:46:04,398 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:46:04,399 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:47:00,973 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270764395
+
+2022-07-20 06:47:00,986 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:47:00,987 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:47:02,144 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:47:02,144 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:47:02,251 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270766669
+
+2022-07-20 06:47:02,271 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:47:02,271 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:47:04,433 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:47:04,434 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:48:50,628 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270837161
+
+2022-07-20 06:48:50,671 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:48:50,671 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:48:51,787 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:48:51,787 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:49:48,401 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658270931787
+
+2022-07-20 06:49:48,433 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:49:48,433 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:49:49,561 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:49:49,561 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:49:49,667 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270934081
+
+2022-07-20 06:49:49,732 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:49:49,733 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:49:51,865 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:49:51,870 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:51:31,815 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658270991842
+
+2022-07-20 06:51:32,117 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:51:32,118 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:51:33,979 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:51:33,981 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:52:34,503 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271111777
+
+2022-07-20 06:52:34,547 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:52:34,547 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:52:35,694 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:52:35,695 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:54:16,055 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271167942
+
+2022-07-20 06:54:16,158 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:54:16,159 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:54:18,118 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:54:18,155 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:54:19,556 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271170720
+
+2022-07-20 06:54:19,671 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:54:19,674 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:54:20,756 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:54:20,758 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:55:30,548 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271265753
+
+2022-07-20 06:55:30,611 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:55:30,611 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:55:31,647 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:55:31,648 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:55:32,026 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271267986
+
+2022-07-20 06:55:32,054 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:55:32,054 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:55:33,890 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:55:33,891 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:56:58,917 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271333886
+
+2022-07-20 06:56:58,945 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:56:58,945 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:57:00,782 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:57:00,783 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:57:02,480 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271336656
+
+2022-07-20 06:57:02,519 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:57:02,519 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:57:03,651 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:57:03,678 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 06:59:33,142 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271450844
+
+2022-07-20 06:59:33,657 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:59:33,661 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 06:59:35,075 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:59:35,083 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 06:59:36,608 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271453599
+
+2022-07-20 06:59:36,693 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 06:59:36,696 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 06:59:37,646 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 06:59:37,647 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:00:34,381 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271577647
+
+2022-07-20 07:00:34,401 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:00:34,401 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:00:35,349 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:00:35,349 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:00:36,327 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271579920
+
+2022-07-20 07:00:36,361 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:00:36,362 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:00:37,620 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:00:37,621 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:02:21,023 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271637615
+
+2022-07-20 07:02:21,068 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:02:21,068 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:02:22,334 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:02:22,336 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:02:24,096 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271640357
+
+2022-07-20 07:02:24,119 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:02:24,119 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:02:25,058 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:02:25,058 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:04:34,354 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271750058
+
+2022-07-20 07:04:34,392 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:04:34,392 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:04:35,309 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:04:35,309 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:05:33,719 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658271885309
+
+2022-07-20 07:05:33,749 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:05:33,749 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:05:34,880 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:05:34,905 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:07:40,822 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658271936952
+
+2022-07-20 07:07:40,926 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:07:40,927 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:07:42,117 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:07:42,120 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:10:14,739 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272072120
+
+2022-07-20 07:10:14,759 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:10:14,760 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:10:16,941 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:10:16,945 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:10:17,783 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272074844
+
+2022-07-20 07:10:17,884 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:10:17,885 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:10:18,708 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:10:18,708 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:11:15,580 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272218708
+
+2022-07-20 07:11:15,608 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:11:15,609 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:11:16,417 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:11:16,417 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:11:17,456 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272221043
+
+2022-07-20 07:11:17,483 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:11:17,483 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:11:18,727 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:11:18,728 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:12:56,703 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272278727
+
+2022-07-20 07:12:56,766 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:12:56,766 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:12:58,041 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:12:58,044 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:13:56,893 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272405824
+
+2022-07-20 07:13:57,028 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:13:57,028 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:13:57,991 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:13:57,998 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:13:58,797 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272408025
+
+2022-07-20 07:13:58,918 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:13:58,919 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:14:00,060 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:14:00,060 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:16:28,337 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272440027
+
+2022-07-20 07:16:28,405 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:16:28,405 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:16:29,534 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:16:29,535 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:16:31,495 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272442844
+
+2022-07-20 07:16:31,528 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:16:31,528 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:16:32,332 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:16:32,332 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:18:13,235 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272617369
+
+2022-07-20 07:18:13,281 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:18:13,281 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:18:14,054 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:18:14,055 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:18:15,098 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272619583
+
+2022-07-20 07:18:15,124 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:18:15,124 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:18:16,253 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:18:16,254 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:21:08,845 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658272696242
+
+2022-07-20 07:21:08,883 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:21:08,883 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:21:09,987 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:21:09,988 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:24:17,445 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658272882828
+
+2022-07-20 07:24:17,620 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:24:17,623 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:24:18,262 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:24:18,263 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:25:15,309 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273058254
+
+2022-07-20 07:25:15,332 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:25:15,332 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:25:16,029 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:25:16,029 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:25:17,086 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273060437
+
+2022-07-20 07:25:17,111 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:25:17,111 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:25:18,216 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:25:18,217 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:26:49,176 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273126036
+
+2022-07-20 07:26:49,249 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:26:49,250 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:26:50,046 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:26:50,050 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:26:50,956 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273128233
+
+2022-07-20 07:26:51,058 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:26:51,058 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:26:52,085 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:26:52,097 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:28:58,067 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273212082
+
+2022-07-20 07:28:58,118 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:28:58,119 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:28:59,119 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:28:59,119 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:29:01,243 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273214892
+
+2022-07-20 07:29:01,288 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:29:01,288 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:29:02,089 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:29:02,095 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:30:54,990 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273342035
+
+2022-07-20 07:30:55,127 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:30:55,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:30:55,671 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:30:55,671 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:30:56,843 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273344131
+
+2022-07-20 07:30:56,871 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:30:56,872 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:30:57,890 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:30:57,891 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:31:44,654 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273457908
+
+2022-07-20 07:31:44,679 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:31:44,679 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:31:45,672 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:31:45,673 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 07:31:47,883 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273460679
+
+2022-07-20 07:31:47,907 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:31:47,907 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:31:48,477 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:31:48,477 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:48:19,295 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658273533529
+
+2022-07-20 07:48:19,405 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:48:19,405 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 07:48:20,121 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:48:20,127 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 07:48:21,052 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658273535727
+
+2022-07-20 07:48:21,185 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 07:48:21,185 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 07:48:22,061 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 07:48:22,061 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 08:05:16,648 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658274502066
+
+2022-07-20 08:05:16,700 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:05:16,700 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 08:05:17,565 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:05:17,565 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 08:05:19,837 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658274504894
+
+2022-07-20 08:05:19,846 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:05:19,846 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 08:05:20,370 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:05:20,370 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 08:21:33,038 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658275532598
+
+2022-07-20 08:21:33,130 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:21:33,130 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 08:21:34,124 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:21:34,133 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 08:37:33,815 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658276496737
+
+2022-07-20 08:37:33,941 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:37:33,941 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 08:37:34,374 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:37:34,374 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 08:54:41,166 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658277476617
+
+2022-07-20 08:54:41,246 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:54:41,246 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 08:54:42,269 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:54:42,279 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 08:54:44,356 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658277479434
+
+2022-07-20 08:54:44,458 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 08:54:44,459 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 08:54:44,880 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 08:54:44,880 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 09:12:37,487 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658278484881
+
+2022-07-20 09:12:37,543 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:12:37,543 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 09:12:37,926 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:12:37,926 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 09:12:39,242 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658278487083
+
+2022-07-20 09:12:39,268 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:12:39,268 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 09:12:40,335 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:12:40,351 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 09:28:45,611 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658279557927
+
+2022-07-20 09:28:45,735 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:28:45,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 09:28:45,900 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:28:45,900 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 09:28:47,228 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658279560290
+
+2022-07-20 09:28:47,289 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:28:47,289 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 09:28:48,106 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:28:48,106 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 09:45:06,393 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658280540929
+
+2022-07-20 09:45:06,499 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:45:06,499 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 09:45:06,701 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:45:06,704 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 09:45:07,965 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658280543135
+
+2022-07-20 09:45:08,061 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 09:45:08,061 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 09:45:08,825 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 09:45:08,825 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 10:02:38,341 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658281508821
+
+2022-07-20 10:02:38,406 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:02:38,406 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 10:02:39,083 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:02:39,084 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 10:02:41,732 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658281511592
+
+2022-07-20 10:02:41,760 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:02:41,760 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 10:02:41,896 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:02:41,896 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 10:19:14,737 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658282561895
+
+2022-07-20 10:19:14,776 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:19:14,776 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 10:19:14,898 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:19:14,899 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 10:19:16,394 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658282564098
+
+2022-07-20 10:19:16,442 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:19:16,442 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 10:19:17,113 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:19:17,113 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 10:35:46,608 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8002@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1658283554897
+
+2022-07-20 10:35:46,908 INFO service: DEFAULT_GROUP@@service-oss {POS} {IP-ENABLED} valid: 172.23.124.97:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-07-20 10:35:46,994 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:35:46,999 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 10:35:48,149 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658283557113
+
+2022-07-20 10:35:48,174 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:35:48,174 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 10:35:48,853 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:35:48,854 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 10:35:51,653 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:35:51,654 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 172.23.124.97:8002_true,
+
+2022-07-20 10:51:07,809 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658284553853
+
+2022-07-20 10:51:07,911 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 10:51:07,911 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 10:51:08,512 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 10:51:08,513 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 11:17:14,570 INFO {POS} {IP-DISABLED} valid: 172.23.124.97:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1658286486553
+
+2022-07-20 11:17:14,628 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-07-20 11:17:14,628 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 11:17:15,238 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 11:17:15,243 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 11:22:54,222 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 11:22:54,228 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 11:22:54,228 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 11:22:54,229 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2022-07-20 11:28:13,427 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 11:28:13,436 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 11:58:37,838 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 11:58:37,841 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 12:43:21,117 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:43:21,126 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 12:44:51,750 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:44:51,753 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 12:45:06,437 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:45:06,438 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 12:45:54,348 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:45:54,351 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 12:47:45,402 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:47:45,407 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
+
+2022-07-20 12:59:17,233 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:59:17,237 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-20 12:59:31,242 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.124.97:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-20 12:59:31,243 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.124.97:8001_true,
 

@@ -1,4 +1,4 @@
-package com.tjulab.servicebase;
+package com.tjulab.servicebase.config;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

@@ -1,0 +1,12 @@
+2022-07-19 00:00:06,511 INFO retry to push data, key: 127.0.0.1,54070,103999835648875
+
+2022-07-19 00:00:06,535 INFO send udp packet: 127.0.0.1,54070,103999835648875
+
+2022-07-19 00:00:14,558 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-07-19 00:00:16,547 INFO retry to push data, key: 127.0.0.1,54070,103999835648875
+
+2022-07-19 00:00:16,548 WARN max re-push times reached, retry times 2, key: 127.0.0.1,54070,103999835648875
+
+2022-07-19 00:00:29,744 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+

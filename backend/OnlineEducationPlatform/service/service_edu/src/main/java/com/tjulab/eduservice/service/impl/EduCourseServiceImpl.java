@@ -15,6 +15,7 @@ import com.tjulab.eduservice.service.EduVideoService;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -144,6 +145,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
      * 查询前8门热门课程
      * @return
      */
+    @Cacheable(key = "'topEightPopularCourse'", value = "eduCourseList")
     @Override
     public List<EduCourse> getTopEightPopularCourse() {
         QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();

@@ -32,8 +32,8 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-sdk-vod-upload</artifactId>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/aliyun-java-vod-upload-1.4.11.jar</systemPath>
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/src/main/resources/lib/aliyun-java-vod-upload-1.4.11.jar</systemPath>-->
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>

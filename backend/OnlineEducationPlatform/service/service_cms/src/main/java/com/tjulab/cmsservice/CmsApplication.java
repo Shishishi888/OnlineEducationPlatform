@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan({"com.tjulab"})
 @MapperScan("com.tjulab.cmsservice.mapper")
-public class CmsBannerApplication {
+public class CmsApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CmsBannerApplication.class, args);
+        SpringApplication.run(CmsApplication.class, args);
     }
 }

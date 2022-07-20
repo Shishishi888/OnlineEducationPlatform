@@ -5,6 +5,7 @@ import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.mapper.EduTeacherMapper;
 import com.tjulab.eduservice.service.EduTeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
      * 查询前4名热门讲师
      * @return
      */
+    @Cacheable(key = "'topFourPopularTeacher'", value = "eduTeacherList")
     @Override
     public List<EduTeacher> getTopFourPopularTeacher() {
         QueryWrapper<EduTeacher> queryWrapper = new QueryWrapper<>();
