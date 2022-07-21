@@ -1,4 +1,4 @@
-package com.tjulab.commonutils;
+package com.tjulab.commonutils.R;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.tjulab.eduservice.client;
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.client.impl.VodFileDegradeFeignClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;

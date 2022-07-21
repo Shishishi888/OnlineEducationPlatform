@@ -145,9 +145,9 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
      * 查询前8门热门课程
      * @return
      */
-    @Cacheable(key = "'topEightPopularCourse'", value = "eduCourseList")
+    @Cacheable(key = "'hotCourseList'", value = "eduCourseList")
     @Override
-    public List<EduCourse> getTopEightPopularCourse() {
+    public List<EduCourse> getHotCourseList() {
         QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByDesc("id");
         queryWrapper.last("limit 8");

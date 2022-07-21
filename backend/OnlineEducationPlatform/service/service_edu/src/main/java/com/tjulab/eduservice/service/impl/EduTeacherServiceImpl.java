@@ -25,9 +25,9 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
      * 查询前4名热门讲师
      * @return
      */
-    @Cacheable(key = "'topFourPopularTeacher'", value = "eduTeacherList")
+    @Cacheable(key = "'hotTeacherList'", value = "eduTeacherList")
     @Override
-    public List<EduTeacher> getTopFourPopularTeacher() {
+    public List<EduTeacher> getHotTeacherList() {
         QueryWrapper<EduTeacher> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByDesc("id");
         queryWrapper.last("limit 4");

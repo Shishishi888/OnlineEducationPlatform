@@ -1,6 +1,6 @@
 package com.tjulab.oss.controller;
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.oss.service.OssService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

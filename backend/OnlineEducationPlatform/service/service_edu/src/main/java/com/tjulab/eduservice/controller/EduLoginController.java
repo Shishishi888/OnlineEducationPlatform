@@ -1,6 +1,6 @@
 package com.tjulab.eduservice.controller;
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,6 +1,6 @@
 package com.tjulab.eduservice.client.impl;
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.client.VodClient;
 import org.springframework.stereotype.Component;
 

@@ -134,24 +134,24 @@ import index from '@/api/index';
       }
     },
     created() {
-      // 获取两页幻灯片
-      this.getTopTwoBanner();
+      // 获取幻灯片
+      this.getBannerList();
 
       // 获取热门课程和热门名师
-      this.getHotCourseAndTeacher();
+      this.getHotCourseAndTeacherList();
     },
     methods: {
-      // 1. 查询banner的前两条记录
-      getTopTwoBanner() {
-        banner.getTopTwoBanner()
+      // 1. 查询banner
+      getBannerList() {
+        banner.getBannerList()
               .then(response => {
                 this.bannerList = response.data.data.cmsBannerList;
               });
       },
 
       // 2. 查询热门课程和热门名师
-      getHotCourseAndTeacher() {
-        index.getHotCourseAndTeacher()
+      getHotCourseAndTeacherList() {
+        index.getHotCourseAndTeacherList()
               .then(response => {
                 this.hotCourseList = response.data.data.hotCourseList;
                 this.hotTeacherList = response.data.data.hotTeacherList;

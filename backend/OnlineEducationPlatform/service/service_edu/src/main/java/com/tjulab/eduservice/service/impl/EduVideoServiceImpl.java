@@ -1,7 +1,7 @@
 package com.tjulab.eduservice.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.client.VodClient;
 import com.tjulab.eduservice.entity.EduVideo;
 import com.tjulab.eduservice.mapper.EduVideoMapper;

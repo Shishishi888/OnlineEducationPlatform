@@ -2,7 +2,7 @@ package com.tjulab.cmsservice.controller;
 
 import com.tjulab.cmsservice.entity.CmsBanner;
 import com.tjulab.cmsservice.service.CmsBannerService;
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,12 +25,12 @@ public class CmsBannerFrontController {
     private CmsBannerService cmsBannerService;
 
     /**
-     * 查询banner的前两条记录
+     * 查询banner
      * @return
      */
-    @GetMapping("getTopTwoBanner")
-    public R getAllBanner() {
-        List<CmsBanner> cmsBannerList = cmsBannerService.getTopTwoBanner();
+    @GetMapping("getBannerList")
+    public R getBannerList() {
+        List<CmsBanner> cmsBannerList = cmsBannerService.getBannerList();
         return R.ok().data("cmsBannerList", cmsBannerList);
     }
 }

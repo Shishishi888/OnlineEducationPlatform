@@ -55,5 +55,5 @@ public interface EduCourseService extends IService<EduCourse> {
      * 查询前8门热门课程
      * @return
      */
-    List<EduCourse> getTopEightPopularCourse();
+    List<EduCourse> getHotCourseList();
 }

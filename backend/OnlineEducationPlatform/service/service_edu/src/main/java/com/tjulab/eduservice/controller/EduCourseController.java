@@ -1,7 +1,7 @@
 package com.tjulab.eduservice.controller;
 
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;

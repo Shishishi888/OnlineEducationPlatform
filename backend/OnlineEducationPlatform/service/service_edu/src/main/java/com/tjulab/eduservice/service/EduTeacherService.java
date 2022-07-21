@@ -19,5 +19,5 @@ public interface EduTeacherService extends IService<EduTeacher> {
      * 查询前4名热门讲师
      * @return
      */
-    List<EduTeacher> getTopFourPopularTeacher();
+    List<EduTeacher> getHotTeacherList();
 }

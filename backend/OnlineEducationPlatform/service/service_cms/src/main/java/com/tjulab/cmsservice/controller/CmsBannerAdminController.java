@@ -4,7 +4,7 @@ package com.tjulab.cmsservice.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.cmsservice.entity.CmsBanner;
 import com.tjulab.cmsservice.service.CmsBannerService;
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

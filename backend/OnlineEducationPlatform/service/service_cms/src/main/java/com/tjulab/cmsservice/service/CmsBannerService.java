@@ -16,8 +16,8 @@ import java.util.List;
 public interface CmsBannerService extends IService<CmsBanner> {
 
     /**
-     * 查询所有的banner
+     * 查询banner的前两条记录
      * @return
      */
-    List<CmsBanner> getTopTwoBanner();
+    List<CmsBanner> getBannerList();
 }

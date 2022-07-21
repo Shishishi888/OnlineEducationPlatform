@@ -1,4 +1,4 @@
-package com.tjulab.commonutils;
+package com.tjulab.commonutils.R;
 
 public interface ResultCode {
     public static Integer SUCCESS = 20000;

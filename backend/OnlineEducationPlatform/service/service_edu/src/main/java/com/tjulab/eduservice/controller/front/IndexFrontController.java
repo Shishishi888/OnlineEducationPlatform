@@ -1,7 +1,6 @@
 package com.tjulab.eduservice.controller.front;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.service.EduCourseService;
@@ -29,12 +28,12 @@ public class IndexFrontController {
      * 获取热门课程和热门讲师列表
      * @return
      */
-    @GetMapping("getHotCourseAndTeacher")
-    public R index() {
+    @GetMapping("getHotCourseAndTeacherList")
+    public R getHotCourseAndTeacherList() {
         // 1. 查询前8门热门课程
-        List<EduCourse> hotCourseList = eduCourseService.getTopEightPopularCourse();
+        List<EduCourse> hotCourseList = eduCourseService.getHotCourseList();
         // 2. 查询前4名热门讲师
-        List<EduTeacher> hotTeacherList = eduTeacherService.getTopFourPopularTeacher();
+        List<EduTeacher> hotTeacherList = eduTeacherService.getHotTeacherList();
         return R.ok().data("hotCourseList", hotCourseList).data("hotTeacherList", hotTeacherList);
     }
 

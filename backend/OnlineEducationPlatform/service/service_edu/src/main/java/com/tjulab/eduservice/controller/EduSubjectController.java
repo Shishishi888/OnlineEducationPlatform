@@ -1,7 +1,7 @@
 package com.tjulab.eduservice.controller;
 
 
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.entity.subject.FirstSubject;
 import com.tjulab.eduservice.service.EduSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;

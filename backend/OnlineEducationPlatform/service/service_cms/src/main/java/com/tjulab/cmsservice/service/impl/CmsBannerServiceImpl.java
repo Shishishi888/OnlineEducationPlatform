@@ -25,9 +25,9 @@ public class CmsBannerServiceImpl extends ServiceImpl<CmsBannerMapper, CmsBanner
      * 查询banner的前两条记录
      * @return
      */
-    @Cacheable(key = "'topTowBanner'", value = "cmsBannerList")
+    @Cacheable(key = "'bannerList'", value = "cmsBannerList")
     @Override
-    public List<CmsBanner> getTopTwoBanner() {
+    public List<CmsBanner> getBannerList() {
         QueryWrapper<CmsBanner> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByDesc("id");  // 按照banner的id进行降序排序
         queryWrapper.last("limit 2");  // 拼接sql语句，只查询banner的前两条记录

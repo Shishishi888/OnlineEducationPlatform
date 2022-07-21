@@ -3,7 +3,7 @@ package com.tjulab.eduservice.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.tjulab.commonutils.R;
+import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.tjulab.eduservice.entity.vo.TeacherQuery;
 import com.tjulab.eduservice.service.EduTeacherService;
