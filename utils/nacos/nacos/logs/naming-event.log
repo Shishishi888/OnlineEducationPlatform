@@ -668,3 +668,11 @@
 
 2022-07-21 18:23:03,985 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.179.138:8001_true,
 
+2022-07-21 19:24:11,655 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.179.138:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-21 19:24:11,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-07-21 19:24:25,510 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.7:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-07-21 19:24:25,517 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.1.7:8001_true,
+

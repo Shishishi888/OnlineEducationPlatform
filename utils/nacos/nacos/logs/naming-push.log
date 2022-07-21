@@ -1014,3 +1014,25 @@ java.io.IOException: Network is unreachable
 
 2022-07-21 18:23:25,027 WARN max re-push times reached, retry times 2, key: 172.23.179.138,64427,15016809436917
 
+2022-07-21 19:24:12,665 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-07-21 19:24:12,671 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.179.138:64427, agent: Nacos-Java-Client:v1.0.0, key: 172.23.179.138,64427,18684514608542
+
+2022-07-21 19:24:12,671 INFO send udp packet: 172.23.179.138,64427,18684514608542
+
+2022-07-21 19:24:22,680 INFO retry to push data, key: 172.23.179.138,64427,18684514608542
+
+2022-07-21 19:24:22,681 INFO send udp packet: 172.23.179.138,64427,18684514608542
+
+2022-07-21 19:24:26,520 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-07-21 19:24:26,527 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 127.0.0.1:62181, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,62181,18698370589083
+
+2022-07-21 19:24:26,527 INFO send udp packet: 127.0.0.1,62181,18698370589083
+
+2022-07-21 19:24:26,560 INFO received ack: {"type": "push-ack", "lastRefTime":"18698370589083", "data":""} from: 127.0.0.1:, cost: 62181 ms, unacked: 33, total push: 1
+
+2022-07-21 19:24:32,684 INFO retry to push data, key: 172.23.179.138,64427,18684514608542
+
+2022-07-21 19:24:32,685 WARN max re-push times reached, retry times 2, key: 172.23.179.138,64427,18684514608542
+
