@@ -18,7 +18,7 @@ import java.util.Map;
 @Service
 public class MsmServiceImpl implements MsmService {
     /**
-     * 将4位随机验证码和目标手机号发送给阿里云
+     * 将4位随机验证码和目标手机号发送给阿里云作后续验证码短信发送
      * @param codeMap
      * @param phoneNumber
      * @return
@@ -44,7 +44,7 @@ public class MsmServiceImpl implements MsmService {
         // 设置与发送短信相关的参数
         request.putQueryParameter("PhoneNumbers", phoneNumber);                        // 设置目标手机号
         request.putQueryParameter("SignName", "阿里云短信测试");                   // 设置申请的阿里云短信业务的签名名称
-        request.putQueryParameter("TemplateCode", "SMS_246735051");              // 设置申请的阿里云短信业务的模版code
+        request.putQueryParameter("TemplateCode", "SMS_154950909");              // 设置申请的阿里云短信业务的模版code
         request.putQueryParameter("TemplateParam", JSONObject.toJSONString(codeMap));  // 设置验证码，要求以json的格式进行传递
 
         // 将相关信息发送给阿里云
