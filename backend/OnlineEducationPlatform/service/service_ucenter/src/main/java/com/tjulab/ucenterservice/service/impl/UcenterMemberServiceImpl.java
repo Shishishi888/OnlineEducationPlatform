@@ -5,9 +5,12 @@ import com.tjulab.commonutils.jwt.JwtUtils;
 import com.tjulab.commonutils.md5.MD5;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.ucenterservice.entity.UcenterMember;
+import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 import com.tjulab.ucenterservice.mapper.UcenterMemberMapper;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -22,6 +25,8 @@ import org.springframework.util.StringUtils;
 @Service
 public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, UcenterMember> implements UcenterMemberService {
 
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
     /**
      * 用户登录
      * @param ucenterMember
@@ -46,8 +51,8 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         }
 
         // 3. 判断密码是否正确
-        String passwordByMD5 = MD5.encrypt(password);
-        if(!passwordByMD5.equals(member.getPassword())) {
+        String passwordEncryptedByMD5 = MD5.encrypt(password);
+        if(!passwordEncryptedByMD5.equals(member.getPassword())) {
             throw new MyException(20001, "密码错误，登录失败");
         }
 
@@ -59,6 +64,45 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         // 5. 登录成功，生成token字符串并返回
         String jwtToken = JwtUtils.getJwtToken(member.getId(), member.getNickname());
         return jwtToken;
+    }
+
+    /**
+     * 用户注册
+     * @param registerVo
+     */
+    @Override
+    public void register(RegisterVo registerVo) {
+        String nickName = registerVo.getNickName();    // 用户昵称
+        String phoneNumber = registerVo.getMobile();   // 手机号
+        String passsword = registerVo.getPassword();;  // 用户密码
+        String code = registerVo.getCode();            // 手机验证码
+
+        // 1. 注册信息非空判断
+        if(StringUtils.isEmpty(nickName) || StringUtils.isEmpty(phoneNumber) || StringUtils.isEmpty(passsword) || StringUtils.isEmpty(code)) {
+            throw new MyException(20001, "缺少关键的注册信息，注册失败");
+        }
+
+        // 2. 手机验证码判断
+        String codeFromRedis = redisTemplate.opsForValue().get(phoneNumber);
+        if(!code.equals(codeFromRedis)) {
+            throw new MyException(20001, "验证码错误或者失效，注册失败");
+        }
+
+        // 3. 手机号重复判断
+        QueryWrapper<UcenterMember> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("mobile", phoneNumber);
+        Integer count = baseMapper.selectCount(queryWrapper);
+        if(count > 0) {
+            throw new MyException(20001, "该手机号已被注册，注册失败");
+        }
+
+        UcenterMember member = new UcenterMember();
+        member.setMobile(phoneNumber);
+        member.setNickname(nickName);
+        member.setPassword(MD5.encrypt(passsword));
+        member.setIsDisabled(false);
+        member.setAvatar("https://tjulab-online-education-platform.oss-cn-beijing.aliyuncs.com/default_teacher_avatar.png");
+        baseMapper.insert(member);
     }
 
 }

@@ -2,6 +2,7 @@ package com.tjulab.ucenterservice.service;
 
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 
 /**
  * <p>
@@ -19,4 +20,10 @@ public interface UcenterMemberService extends IService<UcenterMember> {
      * @return
      */
     String login(UcenterMember ucenterMember);
+
+    /**
+     * 用户注册
+     * @param registerVo
+     */
+    void register(RegisterVo registerVo);
 }

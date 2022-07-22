@@ -3,6 +3,7 @@ package com.tjulab.ucenterservice.controller;
 
 import com.tjulab.commonutils.R.R;
 import com.tjulab.ucenterservice.entity.UcenterMember;
+import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,17 @@ public class UcenterMemberController {
     public R loginUser(@RequestBody UcenterMember ucenterMember) {
         String token = ucenterMemberService.login(ucenterMember);
         return R.ok().data("token", token);
+    }
+
+    /**
+     * 用户注册
+     * @param registerVo
+     * @return
+     */
+    @PostMapping("register")
+    public R registerUser(@RequestBody RegisterVo registerVo) {
+        ucenterMemberService.register(registerVo);
+        return R.ok();
     }
 
 }
