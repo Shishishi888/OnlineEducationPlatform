@@ -9,5 +9,5 @@ public interface MsmService {
      * @param phoneNumber
      * @return
      */
-    boolean sendCodeToAliyun(Map<String, Object> codeMap, String phoneNumber);
+    boolean sendSms(Map<String, Object> codeMap, String phoneNumber);
 }

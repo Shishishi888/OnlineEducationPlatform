@@ -85,3 +85,12 @@
 
 2022-07-21 10:41:32,433 INFO Completed initialization in 44 ms
 
+2022-07-22 12:52:17,691 INFO Shutting down ExecutorService 'taskScheduler'
+
+2022-07-22 12:52:17,772 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoaderBase (jar:file:/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/target/nacos-server.jar!/BOOT-INF/lib/tomcat-embed-core-9.0.13.jar!/) to field java.io.ObjectStreamClass$Caches.localDescs
+WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoaderBase
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release

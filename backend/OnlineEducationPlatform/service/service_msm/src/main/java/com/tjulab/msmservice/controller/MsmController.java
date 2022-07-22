@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/msmservice/msm")
 @CrossOrigin
-public class MemController {
+public class MsmController {
 
     @Autowired
     private MsmService msmService;
@@ -30,7 +30,7 @@ public class MemController {
      * @param phoneNumber
      * @return
      */
-    @GetMapping("sendCodeToAliyun/{phoneNumber}")
+    @GetMapping("sendCms/{phoneNumber}")
     public R sendSms(@PathVariable String phoneNumber) {
         // 1. 从redis中获取验证码：获取成功
         String code = redisTemplate.opsForValue().get(phoneNumber);
@@ -42,9 +42,9 @@ public class MemController {
         code = RandomUtil.getFourBitRandom();  // 生成4位随机验证码
         Map<String, Object> codeMap = new HashMap<>();
         codeMap.put("code", code);
-        boolean isSend = msmService.sendCodeToAliyun(codeMap, phoneNumber);  // 将验证码和目标手机号发送给阿里云作后续短信发送
+        boolean isSend = msmService.sendSms(codeMap, phoneNumber);  // 将验证码和目标手机号发送给阿里云作后续短信发送
         if(isSend) {
-            redisTemplate.opsForValue().set(phoneNumber, code, 5, TimeUnit.MINUTES);  // 将验证码存入redis中，并将数据过期时间设置为5分钟
+            redisTemplate.opsForValue().set(phoneNumber, code, 5, TimeUnit.MINUTES);  // 将验证码存入本地的redis中，并将数据过期时间设置为5分钟
             return R.ok();
         } else {
             return R.error().message("短信发送失败");

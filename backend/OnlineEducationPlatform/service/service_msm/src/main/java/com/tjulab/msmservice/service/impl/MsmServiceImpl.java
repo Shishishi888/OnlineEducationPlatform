@@ -24,7 +24,7 @@ public class MsmServiceImpl implements MsmService {
      * @return
      */
     @Override
-    public boolean sendCodeToAliyun(Map<String, Object> codeMap, String phoneNumber) {
+    public boolean sendSms(Map<String, Object> codeMap, String phoneNumber) {
         if(StringUtils.isEmpty(phoneNumber))
             return false;
 
