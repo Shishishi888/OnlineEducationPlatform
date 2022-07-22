@@ -2,11 +2,14 @@ package com.tjulab.ucenterservice.controller;
 
 
 import com.tjulab.commonutils.R.R;
+import com.tjulab.commonutils.jwt.JwtUtils;
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
@@ -44,6 +47,18 @@ public class UcenterMemberController {
     public R registerUser(@RequestBody RegisterVo registerVo) {
         ucenterMemberService.register(registerVo);
         return R.ok();
+    }
+
+    /**
+     * 获取用户信息（根据token获取）
+     * @param request
+     * @return
+     */
+    @GetMapping("getUserInfo")
+    public R getUserInfo(HttpServletRequest request) {
+        String memberId = JwtUtils.getMemberIdByJwtToken(request);
+        UcenterMember ucenterMember = ucenterMemberService.getById(memberId);
+        return R.ok().data("userInfo", ucenterMember);
     }
 
 }

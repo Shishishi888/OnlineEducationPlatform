@@ -1,4 +1,4 @@
-package com.tjulab.commonutils.md5;
+package com.tjulab.commonutils.MD5;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -2,7 +2,7 @@ package com.tjulab.ucenterservice.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tjulab.commonutils.jwt.JwtUtils;
-import com.tjulab.commonutils.md5.MD5;
+import com.tjulab.commonutils.MD5.MD5;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.tjulab.ucenterservice.entity.vo.RegisterVo;
@@ -27,6 +27,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
+
     /**
      * 用户登录
      * @param ucenterMember
