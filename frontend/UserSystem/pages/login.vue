@@ -7,18 +7,18 @@
     </div>
 
     <div class="sign-up-container">
-      <el-form ref="userForm" :model="user">
+      <el-form ref="userForm" :model="loginInfo">
 
         <el-form-item class="input-prepend restyle" prop="mobile" :rules="[{ required: true, message: '请输入手机号码', trigger: 'blur' },{validator: checkPhone, trigger: 'blur'}]">
           <div >
-            <el-input type="text" placeholder="手机号" v-model="user.mobile"/>
+            <el-input type="text" placeholder="手机号" v-model="loginInfo.mobile"/>
             <i class="iconfont icon-phone" />
           </div>
         </el-form-item>
 
         <el-form-item class="input-prepend" prop="password" :rules="[{ required: true, message: '请输入密码', trigger: 'blur' }]">
           <div>
-            <el-input type="password" placeholder="密码" v-model="user.password"/>
+            <el-input type="password" placeholder="密码" v-model="loginInfo.password"/>
             <i class="iconfont icon-password"/>
           </div>
         </el-form-item>
@@ -41,23 +41,48 @@
 </template>
 
 <script>
-  import '~/assets/css/sign.css'
-  import '~/assets/css/iconfont.css'
-  import cookie from 'js-cookie'
+  import '~/assets/css/sign.css';
+  import '~/assets/css/iconfont.css';
+
+  import cookie from 'js-cookie';
+  import loginApi from '@/api/login';
+
   export default {
     layout: 'sign',
 
     data () {
       return {
-        user:{
+        loginInfo:{  // 封装用户登录信息
           mobile:'',
           password:''
         },
-        loginInfo:{}
+        token: '',
+        userInfo: {}
       }
     },
 
     methods: {
+      // 提交用户登录信息
+      submitLogin() {
+        loginApi.submitLogin(this.loginInfo)
+                .then(response => {
+                  // 获取token字符串，并将token字符串放入cookie中
+                  this.token = response.data.data.token;
+                  cookie.set("user_token", this.token, {domain: "localhost"});
+
+                  // 经过拦截器处理后调用后端接口，根据token字符串获取用户信息，并将获取的用户信息放入cookie中
+                  loginApi.getUserInfo()
+                          .then(response => {
+                            this.userInfo = response.data.data.userInfo;
+                            var userInfoStr = JSON.stringify(this.userInfo);
+                            cookie.set("user_info", userInfoStr, {domain: "localhost"});
+                          });
+                  
+                  // 跳转到首页面
+                  window.location.href = "/";
+                });
+      },
+
       checkPhone (rule, value, callback) {
         // debugger
         if (!(/^1[34578]\d{9}$/.test(value))) {

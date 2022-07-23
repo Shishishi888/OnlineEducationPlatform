@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
  * @since 2022-07-22
  */
 @RestController
-@RequestMapping("/ucenterservice/member")
+@RequestMapping("/ucenterservice/user")
 @CrossOrigin
 public class UcenterMemberController {
 
@@ -54,10 +54,11 @@ public class UcenterMemberController {
      * @param request
      * @return
      */
-    @GetMapping("getMemberInfo")
-    public R getMemberInfo(HttpServletRequest request) {
+    @GetMapping("getUserInfo")
+    public R getUserInfo(HttpServletRequest request) {
         String memberId = JwtUtils.getMemberIdByJwtToken(request);
         UcenterMember ucenterMember = ucenterMemberService.getById(memberId);
+        System.out.println(ucenterMember);
         return R.ok().data("userInfo", ucenterMember);
     }
 

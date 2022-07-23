@@ -10,7 +10,7 @@ export default {
   },
 
   // 2. 用户注册
-  registerMember(registerInfo) {
+  submitRegister(registerInfo) {
     return request({
         url: `/ucenterservice/member/register`,
         method: 'post',

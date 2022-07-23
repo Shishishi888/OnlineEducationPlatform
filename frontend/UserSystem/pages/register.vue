@@ -90,7 +90,7 @@
     methods: {
        // 提交用户注册信息
        submitRegister() {
-         registerApi.registerMember(this.registerInfo)
+         registerApi.submitRegister(this.registerInfo)
           .then(response => {
             // 注册成功
               this.$message({
