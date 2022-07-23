@@ -76,6 +76,7 @@
                             this.userInfo = response.data.data.userInfo;
                             var userInfoStr = JSON.stringify(this.userInfo);
                             cookie.set("user_info", userInfoStr, {domain: "localhost"});
+                            // cookie.set("user_info", JSON.stringify(this.userInfo), {domain: "localhost"});
                           });
                   
                   // 跳转到首页面

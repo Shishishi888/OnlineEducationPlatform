@@ -158,8 +158,17 @@ export default {
       var userInfoStr = cookie.get("user_info");  // userInfoStr为Json格式的字符串
       if(userInfoStr) {
         this.loginInfo = JSON.parse(userInfoStr);  // 将userInfoStr转换为JavaScript对象
-        // this.loginInfo = JSON.stringify(userInfoStr);  // 将userInfoStr转换为JavaScript对象
       }
+    },
+
+    // 用户退出
+    logout() {
+      // 清空cookie中的用户信息
+      cookie.set("user_token", '', {domain: "localhost"});
+      cookie.set("user_info", '', {domain: "localhost"});
+
+      // 跳转到首页面
+      window.location.href = "/";
     }
   }
 };

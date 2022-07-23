@@ -58,7 +58,6 @@ public class UcenterMemberController {
     public R getUserInfo(HttpServletRequest request) {
         String memberId = JwtUtils.getMemberIdByJwtToken(request);
         UcenterMember ucenterMember = ucenterMemberService.getById(memberId);
-        System.out.println(ucenterMember);
         return R.ok().data("userInfo", ucenterMember);
     }
 

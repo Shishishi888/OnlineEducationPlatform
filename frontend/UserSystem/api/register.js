@@ -12,7 +12,7 @@ export default {
   // 2. 用户注册
   submitRegister(registerInfo) {
     return request({
-        url: `/ucenterservice/member/register`,
+        url: `/ucenterservice/user/register`,
         method: 'post',
         data: registerInfo
       })
