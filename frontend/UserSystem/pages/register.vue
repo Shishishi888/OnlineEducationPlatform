@@ -7,35 +7,35 @@
     </div>
 
     <div class="sign-up-container">
-      <el-form ref="userForm" :model="params">
+      <el-form ref="userForm" :model="registerInfo">
 
         <el-form-item class="input-prepend restyle" prop="nickname" :rules="[{ required: true, message: '请输入你的昵称', trigger: 'blur' }]">
           <div>
-            <el-input type="text" placeholder="你的昵称" v-model="params.nickname"/>
+            <el-input type="text" placeholder="你的昵称" v-model="registerInfo.nickname"/>
             <i class="iconfont icon-user"/>
           </div>
         </el-form-item>
 
         <el-form-item class="input-prepend restyle no-radius" prop="mobile" :rules="[{ required: true, message: '请输入手机号码', trigger: 'blur' },{validator: checkPhone, trigger: 'blur'}]">
           <div>
-            <el-input type="text" placeholder="手机号" v-model="params.mobile"/>
+            <el-input type="text" placeholder="手机号" v-model="registerInfo.mobile"/>
             <i class="iconfont icon-phone"/>
           </div>
         </el-form-item>
 
         <el-form-item class="input-prepend restyle no-radius" prop="code" :rules="[{ required: true, message: '请输入验证码', trigger: 'blur' }]">
           <div style="width: 100%;display: block;float: left;position: relative">
-            <el-input type="text" placeholder="验证码" v-model="params.code"/>
+            <el-input type="text" placeholder="验证码" v-model="registerInfo.code"/>
             <i class="iconfont icon-phone"/>
           </div>
           <div class="btn" style="position:absolute;right: 0;top: 6px;width: 40%;">
-            <a href="javascript:" type="button" @click="getCodeFun()" :value="codeTest" style="border: none;background-color: none">{{codeTest}}</a>
+            <a href="javascript:" type="button" @click="getCode()" :value="codeText" style="border: none;background-color: none">{{codeText}}</a>
           </div>
         </el-form-item>
 
         <el-form-item class="input-prepend" prop="password" :rules="[{ required: true, message: '请输入密码', trigger: 'blur' }]">
           <div>
-            <el-input type="password" placeholder="设置密码" v-model="params.password"/>
+            <el-input type="password" placeholder="设置密码" v-model="registerInfo.password"/>
             <i class="iconfont icon-password"/>
           </div>
         </el-form-item>
@@ -65,70 +65,76 @@
 </template>
 
 <script>
-  import '~/assets/css/sign.css'
-  import '~/assets/css/iconfont.css'
+  import '~/assets/css/sign.css';
+  import '~/assets/css/iconfont.css';
+
+  import registerApi from '@/api/register';
+
 
 
   export default {
     layout: 'sign',
     data() {
       return {
-        params: {  // 封装注册数据
+        registerInfo: {  // 封装注册数据
           mobile: '',
           code: '',  // 手机验证码
           nickname: '',
           password: ''
         },
         sending: true,      // 是否发送验证码
-        second: 60,         // 倒计时
-        codeTest: '获取验证码'
+        second: 60,         // 倒计时间
+        codeText: '获取手机验证码'
       }
     },
     methods: {
        // 提交用户注册信息
        submitRegister() {
-         registerApi.registerMember(this.params)
+         registerApi.registerMember(this.registerInfo)
           .then(response => {
             // 注册成功
               this.$message({
                 type: 'success',
                 message: "注册成功"
-              })
+              });
             // 跳转到登录页面
             this.$router.push({path:'/login'})
-              
-          })
+          });
        },
+       // 倒计时
        timeDown() {
         let result = setInterval(() => {
           --this.second;
-          this.codeTest = this.second
+          this.codeText = this.second;
           if (this.second < 1) {
             clearInterval(result);
             this.sending = true;
             // this.disabled = false;
             this.second = 60;
-            this.codeTest = "获取验证码"
+            this.codeText = "获取手机验证码";
           }
         }, 1000);
 
       },
        // 向输入手机号发送手机验证码
-       getCodeFun() {
-         registerApi.sendCode(this.params.mobile)
+       getCode() {
+         registerApi.sendCode(this.registerInfo.mobile)
           .then(response => {
-              this.sending = false
+              this.sending = false;
               // 调用倒计时的方法
-              this.timeDown()
+              this.timeDown();
           })
+          .catch(error => {
+            console.log(error);
+          });
        },
 
       checkPhone (rule, value, callback) {
         // debugger
         if (!(/^1[34578]\d{9}$/.test(value))) {
-          return callback(new Error('手机号码格式不正确'))
+          return callback(new Error('手机号码格式不正确'));
         }
-        return callback()
+        return callback();
       }
     }
   }

@@ -54,8 +54,8 @@ public class UcenterMemberController {
      * @param request
      * @return
      */
-    @GetMapping("getUserInfo")
-    public R getUserInfo(HttpServletRequest request) {
+    @GetMapping("getMemberInfo")
+    public R getMemberInfo(HttpServletRequest request) {
         String memberId = JwtUtils.getMemberIdByJwtToken(request);
         UcenterMember ucenterMember = ucenterMemberService.getById(memberId);
         return R.ok().data("userInfo", ucenterMember);

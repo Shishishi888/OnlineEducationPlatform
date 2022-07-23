@@ -73,7 +73,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
      */
     @Override
     public void register(RegisterVo registerVo) {
-        String nickName = registerVo.getNickName();    // 用户昵称
+        String nickName = registerVo.getNickname();    // 用户昵称
         String phoneNumber = registerVo.getMobile();   // 手机号
         String passsword = registerVo.getPassword();;  // 用户密码
         String code = registerVo.getCode();            // 手机验证码
