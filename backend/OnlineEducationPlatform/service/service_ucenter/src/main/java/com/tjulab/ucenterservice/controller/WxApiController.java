@@ -1,6 +1,7 @@
 package com.tjulab.ucenterservice.controller;
 
 import com.google.gson.Gson;
+import com.tjulab.commonutils.jwt.JwtUtils;
 import com.tjulab.servicebase.exceptionhandler.MyException;
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
@@ -70,13 +71,14 @@ public class WxApiController {
      */
     @GetMapping("callback")
     public String callback(String code, String state) {
+
         // System.out.println("code: " +  code);
         // System.out.println("state: " + state);
 
         try {
             // 1. 获取code（临时票据，类似于手机验证码）
 
-            // 2. 请求微信开放平台提供的固定地址，获取access_token和openid
+            // 2. 请求微信开放平台提供的固定地址，获取扫码用户的access_token和openid
             String baseAccessTokenURL = "https://api.weixin.qq.com/sns/oauth2/access_token" +
                     "?appid=%s" +
                     "&secret=%s" +
@@ -96,34 +98,35 @@ public class WxApiController {
             Gson gson = new Gson();
             HashMap accessTokenInfoMap = gson.fromJson(accessTokenInfo, HashMap.class);
 
-            // 获取access_token和openid
+            // 获取扫码用户的access_token和openid
             String accessToken = (String) accessTokenInfoMap.get("access_token");
             String openId = (String) accessTokenInfoMap.get("openid");
 
-            // 3. 请求微信开放平台提供的固定地址，获取扫码人的个人信息
-            String baseUserInfoURL = "https://api.weixin.qq.com/sns/userinfo" +
-                    "?access_token=%s" +
-                    "&openid=%s";
-
-            String userInfoURL = String.format(
-                    baseUserInfoURL,
-                    accessToken,
-                    openId
-            );
-
-            // 通过httpclient发送http请求
-            String userInfo = HttpClientUtils.get(userInfoURL);
-
-            // 将json字符串格式的accessTokenInfo转换成map集合
-            HashMap userInfoMap = gson.fromJson(userInfo, HashMap.class);
-
-            // 获取扫码用户的个人信息
-            String nickName = (String) userInfoMap.get("nickname");      // 微信昵称
-            String headImgURL = (String) userInfoMap.get("headimgurl");  // 微信头像
-
-            // 4. 将扫码用户的个人信息添加到数据库中
+            // 3. 检查数据库中是否已有该扫码用户的个人信息
             UcenterMember member = ucenterMemberService.getMemBerByOpenId(openId);
             if(member == null) {
+                // 4. 请求微信开放平台提供的固定地址，获取扫码用户的个人信息
+                String baseUserInfoURL = "https://api.weixin.qq.com/sns/userinfo" +
+                        "?access_token=%s" +
+                        "&openid=%s";
+
+                String userInfoURL = String.format(
+                        baseUserInfoURL,
+                        accessToken,
+                        openId
+                );
+
+                // 通过httpclient发送http请求
+                String userInfo = HttpClientUtils.get(userInfoURL);
+
+                // 将json字符串格式的accessTokenInfo转换成map集合
+                HashMap userInfoMap = gson.fromJson(userInfo, HashMap.class);
+
+                // 获取扫码用户的个人信息
+                String nickName = (String) userInfoMap.get("nickname");      // 微信昵称
+                String headImgURL = (String) userInfoMap.get("headimgurl");  // 微信头像
+
+                // 5. 将扫码用户的个人信息添加到数据库中
                 member = new UcenterMember();
                 member.setOpenid(openId);
                 member.setNickname(nickName);
@@ -131,12 +134,16 @@ public class WxApiController {
                 ucenterMemberService.save(member);
             }
 
-            // 5. 跳转到首页面
-            return "redirect:http://localhost:3000";
+            // 6. 使用jwt生成token字符串
+            String jwtToken = JwtUtils.getJwtToken(member.getId(), member.getNickname());
+
+            // 7. 跳转到首页面
+            return "redirect:http://localhost:3000?token=" + jwtToken;
 
         } catch (Exception e) {
             throw new MyException(20001, "用户登录失败");
         }
 
     }
+
 }
