@@ -135,6 +135,7 @@ import "~/assets/css/theme.css";
 import "~/assets/css/global.css";
 import "~/assets/css/web.css";
 import cookie from 'js-cookie';
+import loginApi from "@/api/login"
 export default {
   data() {
     return {
@@ -150,9 +151,30 @@ export default {
     }
   },
   created() {
+    // 获取访问路径中的token值
+    this.token = this.$route.query.token;
+    if(this.token) {
+      this.loginByWxQRCode();
+    }
+
     this.showUserInfo();
   },
   methods: {
+    // 微信扫码登录
+    loginByWxQRCode() {
+      // 把token放到cookie中
+      cookie.set("user_token", this.token, {domain: "localhost"});
+      cookie.set("user_info", "", {domain: "localhost"});
+
+      // 根据token获取用户信息
+      loginApi.getUserInfo()
+              .then(response => {
+                this.loginInfo = response.data.data.userInfo;
+                cookie.set("user_info", this.loginInfo, {domain: "localhost"});
+              });
+
+    },
+
     // 从cookie中获取用户信息
     showUserInfo() {
       var userInfoStr = cookie.get("user_info");  // userInfoStr为Json格式的字符串
