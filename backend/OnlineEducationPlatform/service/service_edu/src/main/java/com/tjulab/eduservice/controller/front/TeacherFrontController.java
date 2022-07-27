@@ -22,10 +22,10 @@ public class TeacherFrontController {
      * @param limit
      * @return
      */
-    @PostMapping("getFrontTeacherList/{page}/{limit}")
-    public R getFrontTeacherList(@PathVariable long page, @PathVariable long limit) {
+    @PostMapping("getFrontTeacherPageList/{page}/{limit}")
+    public R getFrontTeacherPageList(@PathVariable long page, @PathVariable long limit) {
         Page<EduTeacher> teacherPage = new Page<>(page, limit);
-        Map<String, Object> teacherPageMap = eduTeacherService.getFrontTeacherList(teacherPage);
+        Map<String, Object> teacherPageMap = eduTeacherService.getFrontTeacherPageList(teacherPage);
         return R.ok().data(teacherPageMap);
     }
 

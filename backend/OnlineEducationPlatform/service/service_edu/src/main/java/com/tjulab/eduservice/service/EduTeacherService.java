@@ -28,5 +28,5 @@ public interface EduTeacherService extends IService<EduTeacher> {
      * @param teacherPage
      * @return
      */
-    Map<String, Object> getFrontTeacherList(Page<EduTeacher> teacherPage);
+    Map<String, Object> getFrontTeacherPageList(Page<EduTeacher> teacherPage);
 }
