@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/eduservice/teacherfront")
 @CrossOrigin
 public class TeacherFrontController {
-    
+
     @Autowired
     private EduTeacherService eduTeacherService;
 
@@ -37,6 +37,11 @@ public class TeacherFrontController {
         return R.ok().data(teacherPageMap);
     }
 
+    /**
+     * 查询讲师详情（根据讲师ID查询）
+     * @param teacherId
+     * @return
+     */
     @GetMapping("getFrontTeacherInfo/{teacherId}")
     private R getFrontTeacherInfo(@PathVariable String teacherId) {
         // 1. 根据讲师id查询讲师的基本信息
