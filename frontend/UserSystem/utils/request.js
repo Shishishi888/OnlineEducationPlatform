@@ -11,7 +11,6 @@ const service = axios.create({
 // 设置request拦截器
 service.interceptors.request.use(
   config => {
-    // debugger
     if(cookie.get("user_token")) {
       // 将获取的token值放入request的header中
       config.headers["token"] = cookie.get("user_token");

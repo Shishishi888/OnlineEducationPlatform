@@ -28,7 +28,7 @@
           </ul>
           <!-- / nav -->
           <ul class="h-r-login">
-            <li v-if="!loginInfo.id" id="no-login">
+            <li v-if="!userInfo.id" id="no-login">
                 <a href="/login" title="登录">
                     <em class="icon18 login-icon">&nbsp;</em>
                     <span class="vam ml5">登录</span>
@@ -38,22 +38,22 @@
                     <span class="vam ml5">注册</span>
                 </a>
             </li>
-            <li v-if="loginInfo.id" id="is-login-one" class="mr10">
+            <li v-if="userInfo.id" id="is-login-one" class="mr10">
                 <a id="headerMsgCountId" href="#" title="消息">
                     <em class="icon18 news-icon">&nbsp;</em>
                 </a>
                 <q class="red-point" style="display: none">&nbsp;</q>
             </li>
-            <li v-if="loginInfo.id" id="is-login-two" class="h-r-user">
+            <li v-if="userInfo.id" id="is-login-two" class="h-r-user">
                 <a href="/ucenter" title>
                     <img
-                        :src="loginInfo.avatar"
+                        :src="userInfo.avatar"
                         width="30"
                         height="30"
                         class="vam picImg"
                         alt
                         >
-                    <span id="userName" class="vam disIb">{{ loginInfo.nickname }}</span>
+                    <span id="userName" class="vam disIb">{{ userInfo.nickname }}</span>
                 </a>
                 <a href="javascript:void(0);" title="退出" @click="logout()" class="ml5">退出</a>
             </li>
@@ -140,7 +140,7 @@ export default {
   data() {
     return {
       token: '',
-      loginInfo: {
+      userInfo: {
         id: '',
         age: '',
         avatar: '',
@@ -162,15 +162,16 @@ export default {
   methods: {
     // 微信扫码登录
     loginByWxQRCode() {
-      // 把token放到cookie中
+      //将token放到cookie中
       cookie.set("user_token", this.token, {domain: "localhost"});
       cookie.set("user_info", "", {domain: "localhost"});
 
       // 根据token获取用户信息
       loginApi.getUserInfo()
               .then(response => {
-                this.loginInfo = response.data.data.userInfo;
-                cookie.set("user_info", this.loginInfo, {domain: "localhost"});
+                this.userInfo = response.data.data.userInfo;
+                var userInfoStr = JSON.stringify(this.userInfo);
+                cookie.set("user_info", userInfoStr, {domain: "localhost"});
               });
 
     },
@@ -179,7 +180,7 @@ export default {
     showUserInfo() {
       var userInfoStr = cookie.get("user_info");  // userInfoStr为Json格式的字符串
       if(userInfoStr) {
-        this.loginInfo = JSON.parse(userInfoStr);  // 将userInfoStr转换为JavaScript对象
+        this.userInfo = JSON.parse(userInfoStr);  // 将userInfoStr转换为JavaScript对象
       }
     },
 

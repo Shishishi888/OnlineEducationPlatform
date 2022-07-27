@@ -25,8 +25,8 @@ public class TeacherFrontController {
     @PostMapping("getFrontTeacherList/{page}/{limit}")
     public R getFrontTeacherList(@PathVariable long page, @PathVariable long limit) {
         Page<EduTeacher> teacherPage = new Page<>(page, limit);
-        Map<String, Object> map = eduTeacherService.getFrontTeacherList(teacherPage);
-        return R.ok().data(map);
+        Map<String, Object> teacherPageMap = eduTeacherService.getFrontTeacherList(teacherPage);
+        return R.ok().data(teacherPageMap);
     }
 
 }
