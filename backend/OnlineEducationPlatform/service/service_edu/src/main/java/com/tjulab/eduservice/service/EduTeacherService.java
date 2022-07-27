@@ -1,9 +1,11 @@
 package com.tjulab.eduservice.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.eduservice.entity.EduTeacher;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -20,4 +22,11 @@ public interface EduTeacherService extends IService<EduTeacher> {
      * @return
      */
     List<EduTeacher> getHotTeacherList();
+
+    /**
+     * 查询讲师（分页查询）
+     * @param teacherPage
+     * @return
+     */
+    Map<String, Object> getFrontTeacherList(Page<EduTeacher> teacherPage);
 }
