@@ -30,8 +30,8 @@ public class TeacherFrontController {
      * @param limit
      * @return
      */
-    @PostMapping("getFrontTeacherPageList/{page}/{limit}")
-    public R getFrontTeacherPageList(@PathVariable long page, @PathVariable long limit) {
+    @PostMapping("getTeacherFrontPageList/{page}/{limit}")
+    public R getTeacherFrontPageList(@PathVariable long page, @PathVariable long limit) {
         Page<EduTeacher> teacherPage = new Page<>(page, limit);
         Map<String, Object> teacherPageMap = eduTeacherService.getFrontTeacherPageList(teacherPage);
         return R.ok().data(teacherPageMap);
@@ -42,8 +42,8 @@ public class TeacherFrontController {
      * @param teacherId
      * @return
      */
-    @GetMapping("getFrontTeacherInfo/{teacherId}")
-    private R getFrontTeacherInfo(@PathVariable String teacherId) {
+    @GetMapping("getTeacherFrontInfo/{teacherId}")
+    private R getTeacherFrontInfo(@PathVariable String teacherId) {
         // 1. 根据讲师id查询讲师的基本信息
         EduTeacher eduTeacher = eduTeacherService.getById(teacherId);
 

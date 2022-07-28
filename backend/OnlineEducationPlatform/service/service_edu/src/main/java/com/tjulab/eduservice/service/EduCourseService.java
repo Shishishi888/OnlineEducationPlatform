@@ -1,12 +1,15 @@
 package com.tjulab.eduservice.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.tjulab.eduservice.entity.EduTeacher;
+import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -56,4 +59,12 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     List<EduCourse> getHotCourseList();
+
+    /**
+     * 查询课程（条件查询+分页查询）
+     * @param coursePage
+     * @param courseFrontVo
+     * @return
+     */
+    Map<String, Object> getCourseFrontList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo);
 }

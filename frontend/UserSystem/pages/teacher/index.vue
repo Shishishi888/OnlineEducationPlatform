@@ -16,14 +16,14 @@
       <section class="c-sort-box unBr">
         <div>
           <!-- /无数据提示 开始-->
-          <section class="no-data-wrap" v-if="frontTeacherPageListData.total==0">
+          <section class="no-data-wrap" v-if="teacherFrontPageListData.total==0">
             <em class="icon30 no-data-ico">&nbsp;</em>
             <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在努力整理中...</span>
           </section>
           <!-- /无数据提示 结束-->
-          <article v-if="frontTeacherPageListData.total>0" class="i-teacher-list">
+          <article v-if="teacherFrontPageListData.total>0" class="i-teacher-list">
             <ul class="of">
-              <li v-for="teacher in frontTeacherPageListData.items" :key="teacher.id">
+              <li v-for="teacher in teacherFrontPageListData.items" :key="teacher.id">
                 <section class="i-teach-wrap">
                   <div class="i-teach-pic">
                     <a :href="'/teacher/'+teacher.id" :title="teacher.name" target="_blank">
@@ -50,36 +50,36 @@
           <div class="paging">
             <!-- undisable这个class是否存在，取决于数据属性hasPrevious -->
             <a
-              :class="{undisable: !frontTeacherPageListData.hasPrevious}"
+              :class="{undisable: !teacherFrontPageListData.hasPrevious}"
               href="#"
               title="首页"
               @click.prevent="gotoPage(1)">首页</a>
 
             <a
-              :class="{undisable: !frontTeacherPageListData.hasPrevious}"
+              :class="{undisable: !teacherFrontPageListData.hasPrevious}"
               href="#"
               title="前一页"
-              @click.prevent="gotoPage(frontTeacherPageListData.current-1)">&lt;</a>
+              @click.prevent="gotoPage(teacherFrontPageListData.current-1)">&lt;</a>
 
             <a
-              v-for="page in frontTeacherPageListData.pages"
+              v-for="page in teacherFrontPageListData.pages"
               :key="page"
-              :class="{current: frontTeacherPageListData.current == page, undisable: frontTeacherPageListData.current == page}"
+              :class="{current: teacherFrontPageListData.current == page, undisable: teacherFrontPageListData.current == page}"
               :title="'第'+page+'页'"
               href="#"
               @click.prevent="gotoPage(page)">{{ page }}</a>
 
             <a
-              :class="{undisable: !frontTeacherPageListData.hasNext}"
+              :class="{undisable: !teacherFrontPageListData.hasNext}"
               href="#"
               title="后一页"
-              @click.prevent="gotoPage(frontTeacherPageListData.current+1)">&gt;</a>
+              @click.prevent="gotoPage(teacherFrontPageListData.current+1)">&gt;</a>
 
             <a
-              :class="{undisable: !frontTeacherPageListData.hasNext}"
+              :class="{undisable: !teacherFrontPageListData.hasNext}"
               href="#"
               title="尾页"
-              @click.prevent="gotoPage(frontTeacherPageListData.pages)">尾页</a>
+              @click.prevent="gotoPage(teacherFrontPageListData.pages)">尾页</a>
 
             <div class="clear"/>
           </div>
@@ -95,23 +95,23 @@ import teacherApi from '@/api/teacher';
 export default {
   // data() {
   //   return {
-  //     frontTeacherPageListData: []
+  //     teacherFrontPageListData: []
   //   }
   // },
   asyncData({ params, error }) {  // 异步调用
                                   // params.id 相当于 this.$route.params.id
-    return teacherApi.getFrontTeacherPageList(1, 8)  // 该方法在加载页面之后执行，而且只执行一次
+    return teacherApi.getTeacherFrontPageList(1, 8)  // 该方法在加载页面之后执行，而且只执行一次
                       .then(response => {
-                        // this.frontTeacherPageListData = response.data.data;
-                        return { frontTeacherPageListData: response.data.data };
+                        // this.teacherFrontPageListData = response.data.data;
+                        return { teacherFrontPageListData: response.data.data };
                       });
   },
   methods: {
     // 切换分页
     gotoPage(page) {
-      teacherApi.getFrontTeacherPageList(page, 8)
+      teacherApi.getTeacherFrontPageList(page, 8)
                 .then(response => {
-                  this.frontTeacherPageListData = response.data.data;
+                  this.teacherFrontPageListData = response.data.data;
                 });
     }
   }

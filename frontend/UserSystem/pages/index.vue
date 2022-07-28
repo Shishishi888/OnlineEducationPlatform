@@ -138,7 +138,7 @@ import index from '@/api/index';
       this.getBannerList();
 
       // 获取热门课程和热门名师
-      this.getHotCourseAndTeacherList();
+      this.getHotCourseTeacherList();
     },
     methods: {
       // 1. 查询banner
@@ -150,8 +150,8 @@ import index from '@/api/index';
       },
 
       // 2. 查询热门课程和热门名师
-      getHotCourseAndTeacherList() {
-        index.getHotCourseAndTeacherList()
+      getHotCourseTeacherList() {
+        index.getHotCourseTeacherList()
               .then(response => {
                 this.hotCourseList = response.data.data.hotCourseList;
                 this.hotTeacherList = response.data.data.hotTeacherList;

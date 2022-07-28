@@ -28,7 +28,7 @@ public class IndexFrontController {
      * 获取热门课程和热门讲师列表
      * @return
      */
-    @GetMapping("getHotCourseAndTeacherList")
+    @GetMapping("getHotCourseTeacherList")
     public R getHotCourseAndTeacherList() {
         // 1. 查询前8门热门课程
         List<EduCourse> hotCourseList = eduCourseService.getHotCourseList();
