@@ -66,5 +66,5 @@ public interface EduCourseService extends IService<EduCourse> {
      * @param courseFrontVo
      * @return
      */
-    Map<String, Object> getCourseFrontList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo);
+    Map<String, Object> getCourseFrontPageList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo);
 }

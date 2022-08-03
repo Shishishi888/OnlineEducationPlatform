@@ -167,7 +167,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
      * @return
      */
     @Override
-    public Map<String, Object> getCourseFrontList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo) {
+    public Map<String, Object> getCourseFrontPageList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo) {
         QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
         // 拼接查询条件
         if(!StringUtils.isEmpty(courseFrontVo.getSubjectParentId())) {  // 一级课程分类

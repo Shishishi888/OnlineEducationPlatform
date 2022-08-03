@@ -25,12 +25,12 @@ public class CourseFrontController {
      * @param courseFrontVo
      * @return
      */
-    @PostMapping("getCourseFrontList/{page}/{limit}")
-    public R getCourseFrontList(@PathVariable long page,
+    @PostMapping("getCourseFrontPageList/{page}/{limit}")
+    public R getCourseFrontPageList(@PathVariable long page,
                                 @PathVariable long limit,
                                 @RequestBody(required = false) CourseFrontVo courseFrontVo) {
         Page<EduCourse> coursePage = new Page<>(page, limit);
-        Map<String, Object> coursePageMap = eduCourseService.getCourseFrontList(coursePage, courseFrontVo);
+        Map<String, Object> coursePageMap = eduCourseService.getCourseFrontPageList(coursePage, courseFrontVo);
         return R.ok().data(coursePageMap);
     }
 
