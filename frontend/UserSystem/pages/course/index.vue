@@ -82,7 +82,7 @@
                     <a href="/course/1" :title="course.title" class="course-title fsize18 c-333">{{course.title}}</a>
                   </h3>
                   <section class="mt10 hLh20 of">
-                    <span class="fr jgTag bg-green">
+                    <span class="fr jgTag bg-green" v-if="Number(course.price)===0">
                       <i class="c-fff fsize12 f-fA">免费</i>
                     </span>
                     <span class="fl jgAttr c-ccc f-fA">
@@ -100,13 +100,40 @@
         <!-- 公共分页 开始 -->
         <div>
           <div class="paging">
-            <a class="undisable" title>首</a>
-            <a id="backpage" class="undisable" href="#" title>&lt;</a>
-            <a href="#" title class="current undisable">1</a>
-            <a href="#" title>2</a>
-            <a id="nextpage" href="#" title>&gt;</a>
-            <a href="#" title>末</a>
-            <div class="clear"></div>
+            <!-- undisable这个class是否存在，取决于数据属性hasPrevious -->
+            <a
+              :class="{undisable: !courseFrontPageListData.hasPrevious}"
+              href="#"
+              title="首页"
+              @click.prevent="gotoPage(1)">首页</a>
+
+            <a
+              :class="{undisable: !courseFrontPageListData.hasPrevious}"
+              href="#"
+              title="前一页"
+              @click.prevent="gotoPage(courseFrontPageListData.current-1)">&lt;</a>
+
+            <a
+              v-for="page in courseFrontPageListData.pages"
+              :key="page"
+              :class="{current: courseFrontPageListData.current == page, undisable: courseFrontPageListData.current == page}"
+              :title="'第'+page+'页'"
+              href="#"
+              @click.prevent="gotoPage(page)">{{ page }}</a>
+
+            <a
+              :class="{undisable: !courseFrontPageListData.hasNext}"
+              href="#"
+              title="后一页"
+              @click.prevent="gotoPage(courseFrontPageListData.current+1)">&gt;</a>
+
+            <a
+              :class="{undisable: !courseFrontPageListData.hasNext}"
+              href="#"
+              title="尾页"
+              @click.prevent="gotoPage(teacherFrontPageListData.pages)">尾页</a>
+
+            <div class="clear"/>
           </div>
         </div>
         <!-- 公共分页 结束 -->
