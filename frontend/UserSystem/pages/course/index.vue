@@ -19,7 +19,7 @@
                   <a title="全部" href="#" @click="searchAllCource()" :class="{active:firstIndex==-1}">全部</a>
                 </li>
                 <li v-for="(firstSubject, index) in firstSubjectList" :key="index" :class="{active:firstIndex==index}">
-                  <a :title="firstSubject.title" href="#" @click="searchSecondSubject(firstSubject.id, index)">{{firstSubject.title}}</a>
+                  <a :title="firstSubject.title" href="#" @click="searchFirstSubject(firstSubject.id, index)">{{firstSubject.title}}</a>
                 </li>
               </ul>
             </dd>
@@ -30,8 +30,8 @@
             </dt>
             <dd class="c-s-dl-li">
               <ul class="clearfix">
-                <li v-for="(secondSubject, index) in secondSubjectList" :key="index">
-                  <a :title="secondSubject.title" href="#">{{secondSubject.title}}</a>
+                <li v-for="(secondSubject, index) in secondSubjectList" :key="index" :class="{active:secondIndex==index}">
+                  <a :title="secondSubject.title" href="#" @click="searchSecondSubject(secondSubject.id, index)">{{secondSubject.title}}</a>
                 </li>
               </ul>
             </dd>
@@ -47,15 +47,19 @@
           </section>
           <section class="fl">
             <ol class="js-tap clearfix">
-              <li>
-                <a title="关注度" href="#">关注度</a>
+               <li :class="{'current bg-orange':salesVolumeSort!=''}">
+                <a title="销量" href="javascript:void(0);" @click="searchCourceBySalesVolumeSort()">销量
+                <span :class="{hide:salesVolumeSort==''}">↓</span>
+                </a>
               </li>
-              <li>
-                <a title="最新" href="#">最新</a>
+              <li :class="{'current bg-orange':gmtCreatSort!=''}">
+                <a title="最新" href="javascript:void(0);" @click="searchCourceByGmtCreatSort()">最新
+                <span :class="{hide:gmtCreatSort==''}">↓</span>
+                </a>
               </li>
-              <li class="current bg-orange">
-                <a title="价格" href="#">价格&nbsp;
-                  <span>↓</span>
+              <li :class="{'current bg-orange':priceSort!=''}">
+                <a title="价格" href="javascript:void(0);" @click="searchCourceByPriceSort()">价格&nbsp;
+                  <span :class="{hide:priceSort==''}">↓</span>
                 </a>
               </li>
             </ol>
@@ -185,8 +189,8 @@ export default {
                   this.courseFrontPageListData = response.data.data;
                 });
     },
-    // 查询某一级课程分类对应的二级课程分类
-    searchSecondSubject(subjectParentId, index) {
+    // 查询一级课程分类对应的课程
+    searchFirstSubject(subjectParentId, index) {
       // 实现一级课程分类选中效果
       this.firstIndex = index;
 
@@ -201,7 +205,8 @@ export default {
           this.secondSubjectList = firstSubject.children;
         }
       }
-      // 显示二级课程分类对应的课程列表
+
+      // 显示一级课程分类对应的课程列表
       this.courseSearchLimit.subjectParentId = subjectParentId;
       this.gotoPage(1);
     },
@@ -214,6 +219,50 @@ export default {
       this.secondSubjectList = [];
 
       this.initCourseFrontPageList();
+    },
+    // 查询二级课程分类对应的课程
+    searchSecondSubject(subjectId, index) {
+      // 实现二级课程分类选中效果
+      this.secondIndex = index;
+      // 显示二级课程分类对应的课程列表
+      this.courseSearchLimit.subjectId = subjectId;
+      this.gotoPage(1);
+    },
+    // 根据课程销量排序查询课程
+    searchCourceBySalesVolumeSort() {
+      this.salesVolumeSort = "1";
+      this.gmtCreatSort = "";
+      this.priceSort = "";
+
+      this.courseSearchLimit.salesVolumeSort = this.salesVolumeSort;
+      this.courseSearchLimit.gmtCreatSort = this.gmtCreatSort;
+      this.courseSearchLimit.priceSort = this.priceSort;
+
+      this.gotoPage(1);
+    },
+    // 根据课程上架时间排序查询课程
+    searchCourceByGmtCreatSort() {
+      this.salesVolumeSort = "";
+      this.gmtCreatSort = "1";
+      this.priceSort = "";
+
+      this.courseSearchLimit.salesVolumeSort = this.salesVolumeSort;
+      this.courseSearchLimit.gmtCreatSort = this.gmtCreatSort;
+      this.courseSearchLimit.priceSort = this.priceSort;
+
+      this.gotoPage(1);
+    },
+    // 根据课程价格排序查询课程
+    searchCourceByPriceSort() {
+      this.salesVolumeSort = "";
+      this.gmtCreatSort = "";
+      this.priceSort = "1";
+
+      this.courseSearchLimit.salesVolumeSort = this.salesVolumeSort;
+      this.courseSearchLimit.gmtCreatSort = this.gmtCreatSort;
+      this.courseSearchLimit.priceSort = this.priceSort;
+
+      this.gotoPage(1);
     }
   }
 };
