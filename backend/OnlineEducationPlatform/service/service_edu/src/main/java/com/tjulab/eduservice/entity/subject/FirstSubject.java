@@ -13,6 +13,6 @@ public class FirstSubject {
     private String id;
     private String title;
 
-    // 一个一级分类可以包含多个二级分类
+    // 一个一级课程分类可以包含多个二级课程分类
     private List<SecondSubject> children = new ArrayList<>();
 }

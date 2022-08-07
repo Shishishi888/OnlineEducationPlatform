@@ -16,10 +16,10 @@
             <dd class="c-s-dl-li">
               <ul class="clearfix">
                 <li>
-                  <a title="全部" href="#">全部</a>
+                  <a title="全部" href="#" @click="searchAllCource()" :class="{active:firstIndex==-1}">全部</a>
                 </li>
-                <li v-for="(firstSubject, index) in subjectNestedList" :key="index">
-                  <a title="数据库" href="#">{{firstSubject.title}}</a>
+                <li v-for="(firstSubject, index) in firstSubjectList" :key="index" :class="{active:firstIndex==index}">
+                  <a :title="firstSubject.title" href="#" @click="searchSecondSubject(firstSubject.id, index)">{{firstSubject.title}}</a>
                 </li>
               </ul>
             </dd>
@@ -30,8 +30,8 @@
             </dt>
             <dd class="c-s-dl-li">
               <ul class="clearfix">
-                <li v-for="(secondSubject, index) in subSubjectList" :key="index">
-                  <a title="职称英语" href="#">{{secondSubject.title}}</a>
+                <li v-for="(secondSubject, index) in secondSubjectList" :key="index">
+                  <a :title="secondSubject.title" href="#">{{secondSubject.title}}</a>
                 </li>
               </ul>
             </dd>
@@ -149,9 +149,9 @@ export default {
     return {
       page: 1,                      // 当前页
       courseFrontPageListData: {},  // 课程列表数据
-      subjectNestedList: [],        // 一级课程分类列表
-      subSubjectList: [],           // 二级课程分类列表
-      courseFrontVo: {},            // 查询表单对象
+      firstSubjectList: [],         // 一级课程分类列表
+      secondSubjectList: [],        // 二级课程分类列表
+      courseSearchLimit: {},        // 课程查询条件
       firstIndex: -1,               // 一级课程分类选中效果
       secondIndex: -1,              // 二级课程分类选中效果
       salesVolumeSort: "",
@@ -164,27 +164,69 @@ export default {
     this.initSubject();
   },
   methods: {
-    // 查询第一页课程列表
+    // 初始化课程列表
     initCourseFrontPageList() {
-      courseApi.getCourseFrontPageList(1, 8, this.courseFrontVo)
+      courseApi.getCourseFrontPageList(1, 8, this.courseSearchLimit)
                 .then(response => {
                   this.courseFrontPageListData = response.data.data;
                 });
     },
-    // 查询所有的课程分类
+    // 初始化课程分类
     initSubject() {
       courseApi.getSubjectList()
                 .then(response => {
-                  this.subjectNestedList = response.data.data.subjectList;
+                  this.firstSubjectList = response.data.data.subjectList;
                 });
     },
     // 切换分页
     gotoPage(page) {
-      teacherApi.getCourseFrontPageList(page, 8)
+      courseApi.getCourseFrontPageList(page, 8, this.courseSearchLimit)
                 .then(response => {
                   this.courseFrontPageListData = response.data.data;
                 });
+    },
+    // 查询某一级课程分类对应的二级课程分类
+    searchSecondSubject(subjectParentId, index) {
+      // 实现一级课程分类选中效果
+      this.firstIndex = index;
+
+      this.secondIndex = -1;
+      this.courseSearchLimit.subjectId = "";
+      this.secondSubjectList = [];
+
+      // 实现一级课程分类与二级课程分类联动效果
+      for(let i = 0; i < this.firstSubjectList.length; ++i) {
+        var firstSubject = this.firstSubjectList[i];
+        if(subjectParentId == firstSubject.id) {
+          this.secondSubjectList = firstSubject.children;
+        }
+      }
+      // 显示二级课程分类对应的课程列表
+      this.courseSearchLimit.subjectParentId = subjectParentId;
+      this.gotoPage(1);
+    },
+    // 查询所有的课程
+    searchAllCource() {
+      this.firstIndex = -1;
+
+      this.secondIndex = -1;
+      this.courseSearchLimit = {};
+      this.secondSubjectList = [];
+
+      this.initCourseFrontPageList();
     }
   }
 };
 </script>
+
+<style scoped>
+  .active {
+    background: #bdbdbd;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+</style>

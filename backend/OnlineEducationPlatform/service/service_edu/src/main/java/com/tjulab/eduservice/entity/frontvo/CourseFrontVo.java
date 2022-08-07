@@ -8,13 +8,13 @@ public class CourseFrontVo {
     @ApiModelProperty(value="课程名称")
     private String title;
 
-    @ApiModelProperty(value="讲师id")
+    @ApiModelProperty(value="讲师ID")
     private String teacherId;
 
-    @ApiModelProperty(value="一级课程分类id")
+    @ApiModelProperty(value="一级课程分类ID")
     private String subjectParentId;
 
-    @ApiModelProperty(value="二级课程分类id")
+    @ApiModelProperty(value="二级课程分类ID")
     private String subjectId;
 
     @ApiModelProperty(value="课程销量排序")

@@ -2,11 +2,11 @@ import request from '@/utils/request'
 
 export default {
   // 1. 查询课程（条件查询+分页查询）
-  getCourseFrontPageList(page, limit, courseFrontVo) {
+  getCourseFrontPageList(page, limit, courseSearchLimit) {
     return request({
       url: `/eduservice/coursefront/getCourseFrontPageList/${page}/${limit}`,
       method: 'post',
-      data: courseFrontVo
+      data: courseSearchLimit
     });
   },
 
