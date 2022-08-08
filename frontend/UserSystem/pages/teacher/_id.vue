@@ -72,7 +72,7 @@
 import teacherApi from '@/api/teacher';
 export default {
   asyncData({ params, error }) {  
-    return teacherApi.getTeacherFrontInfo(params.teacherid)
+    return teacherApi.getTeacherFrontInfo(params.id)
                     .then(response => {
                       return {
                         teacher: response.data.data.teacherInfo,

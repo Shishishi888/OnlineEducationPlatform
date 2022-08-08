@@ -16,5 +16,13 @@ export default {
       url: '/eduservice/subject/getSubjectList',
       method: 'get',
     });
+  },
+
+  // 3. 查询课程详情页信息
+  getCourseFrontInfo(courseId) {
+    return request({
+      url: '/eduservice/coursefront/getCourseFrontInfo/' + courseId,
+      method: 'get',
+    });
   }
 }
