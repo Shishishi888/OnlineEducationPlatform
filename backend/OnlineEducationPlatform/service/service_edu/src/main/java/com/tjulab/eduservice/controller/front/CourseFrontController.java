@@ -3,11 +3,15 @@ package com.tjulab.eduservice.controller.front;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R.R;
 import com.tjulab.eduservice.entity.EduCourse;
+import com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
+import com.tjulab.eduservice.entity.vo.chapter.ChapterVo;
+import com.tjulab.eduservice.service.EduChapterService;
 import com.tjulab.eduservice.service.EduCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -17,6 +21,9 @@ public class CourseFrontController {
 
     @Autowired
     private EduCourseService eduCourseService;
+
+    @Autowired
+    private EduChapterService eduChapterService;
 
     /**
      * 查询课程（条件查询+分页查询）
@@ -34,4 +41,18 @@ public class CourseFrontController {
         return R.ok().data(coursePageMap);
     }
 
+    /**
+     * 查询课程详情页信息
+     * @param courseId
+     * @return
+     */
+    @GetMapping("getCourseFrontInfo/{courseId}")
+    public R getCourseFrontInfo(@PathVariable String courseId) {
+        // 根据课程id查询课程的基本信息
+        CourseFrontIntroVo courseFrontIntroVo = eduCourseService.getCourseBaseInfo(courseId);
+        // 根据课程id查询课程的章节和小节
+        List<ChapterVo> chapterVideoList = eduChapterService.getChapterVideoListByCourseId(courseId);
+
+        return R.ok().data("courseFrontIntroVo", courseFrontIntroVo).data("chapterVideoList", chapterVideoList);
+    }
 }

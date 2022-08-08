@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.tjulab.eduservice.entity.EduTeacher;
+import com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
@@ -29,7 +30,7 @@ public interface EduCourseService extends IService<EduCourse> {
     String addCourseInfo(CourseInfoVo courseInfoVo);
 
     /**
-     * 查询课程信息（根据课程id查询）
+     * 查询课程信息（根据课程ID查询）
      * @param courseId
      * @return
      */
@@ -67,4 +68,11 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     Map<String, Object> getCourseFrontPageList(Page<EduCourse> coursePage, CourseFrontVo courseFrontVo);
+
+    /**
+     * 查询课程基本信息（用于课程详情页展示，根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    CourseFrontIntroVo getCourseBaseInfo(String courseId);
 }

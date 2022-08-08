@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.EduCourseDescription;
 import com.tjulab.eduservice.entity.EduTeacher;
+import com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
 import com.tjulab.eduservice.entity.vo.CoursePublishInfoVo;
 import com.tjulab.eduservice.entity.vo.course.CourseInfoVo;
@@ -205,6 +206,16 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         coursePageMap.put("hasPrevious", hasPrevious);
 
         return coursePageMap;
+    }
+
+    /**
+     * 查询课程基本信息（用于课程详情页展示，根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    @Override
+    public CourseFrontIntroVo getCourseBaseInfo(String courseId) {
+        return baseMapper.getCourseBaseInfo(courseId);
     }
 
 }

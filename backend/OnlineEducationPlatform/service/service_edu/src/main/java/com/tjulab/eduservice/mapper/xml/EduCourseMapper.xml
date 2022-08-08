@@ -14,4 +14,25 @@
                            LEFT OUTER JOIN edu_subject es2 ON ec.subject_id = es2.id
         WHERE ec.id = #{courseId}
     </select>
+
+    <!-- 根据课程ID查询课程基本信息（用于课程详情页展示） -->
+    <select id="getCourseBaseInfo" resultType="com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo">
+        SELECT ec.id, ec.title, ec.cover, ec.price, ec.lesson_num AS lessonHours,
+               ec.buy_count as salesCount,
+               ec.view_count as viewCount,
+               ecd.description,
+               et.id As teacherId,
+               et.name as teacherName,
+               et.intro,
+               et.avatar,
+               es1.id As firstSubjectId,
+               es1.title AS firstSubject,
+               es2.id As secondSubjectId,
+               es2.title AS secondSubject
+        From edu_course ec LEFT OUTER JOIN edu_course_description ecd ON ec.id = ecd.id
+                           LEFT OUTER JOIN edu_teacher et ON ec.teacher_id = et.id
+                           LEFT OUTER JOIN edu_subject es1 ON ec.subject_parent_id = es1.id
+                           LEFT OUTER JOIN edu_subject es2 ON ec.subject_id = es2.id
+        WHERE ec.id = #{courseId}
+    </select>
 </mapper>
