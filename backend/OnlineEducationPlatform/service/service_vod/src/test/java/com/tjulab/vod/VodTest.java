@@ -70,7 +70,7 @@ public class VodTest {
         String videoId = "af1b53e67a45491cb8cb1bc0c63ee2c8";
         request.setVideoId(videoId);
 
-        // 4. 调用初始化对象的方法传递request，获取数据
+        // 4. 调用初始化对象的方法，获取视频播放凭证
         response = client.getAcsResponse(request);
 
         System.out.println("playAuth: " + response.getPlayAuth());

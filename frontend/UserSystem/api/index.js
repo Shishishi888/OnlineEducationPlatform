@@ -6,6 +6,6 @@ export default {
     return request({
       url: '/eduservice/indexfront/getHotCourseTeacherList',
       method: 'get'
-    })
+    });
   }
 }
