@@ -1,4 +1,4 @@
-package genetator;
+package com.tjulab.generator;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -29,7 +29,8 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         // String projectPath = System.getProperty("user.dir");
         // gc.setOutputDir(projectPath + "/src/main/java");
-        gc.setOutputDir("/Users/shiyang/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_cms" + "/src/main/java"); // 建议使用绝对路径
+        // gc.setOutputDir("D:/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径
+        gc.setOutputDir("/Users/shiyang/Projects/learn/OnlineEducationPlatform/backend/OnlineEducationPlatform/service/service_edu" + "/src/main/java"); // 建议使用绝对路径
         gc.setAuthor("ShiYang");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
@@ -53,7 +54,7 @@ public class CodeGenerator {
         PackageConfig pc = new PackageConfig();
         // 包 com.tjulab.eduservice
         pc.setParent("com.tjulab");
-        pc.setModuleName("cmsservice"); //模块名
+        pc.setModuleName("eduservice"); //模块名
         // 包 com.tjulab.controller
         pc.setController("controller");
         pc.setEntity("entity");
@@ -63,7 +64,9 @@ public class CodeGenerator {
 
         // 5、策略配置：逆向工程
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("cms_banner"); // 对应数据库表的名称
+        // strategy.setInclude("edu_teacher"); // 对应数据库表的名称
+        // strategy.setInclude("edu_subject"); // 对应数据库表的名称
+        strategy.setInclude("edu_course", "edu_course_description", "edu_chapter", "edu_video"); // 对应数据库表的名称
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 
