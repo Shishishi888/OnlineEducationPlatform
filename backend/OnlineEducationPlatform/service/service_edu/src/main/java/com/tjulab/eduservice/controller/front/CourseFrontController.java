@@ -2,12 +2,14 @@ package com.tjulab.eduservice.controller.front;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R.R;
+import com.tjulab.commonvo.ordervo.CourseFrontIntroVoForOrder;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
 import com.tjulab.eduservice.entity.vo.chapter.ChapterVo;
 import com.tjulab.eduservice.service.EduChapterService;
 import com.tjulab.eduservice.service.EduCourseService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,4 +57,18 @@ public class CourseFrontController {
 
         return R.ok().data("courseFrontIntroVo", courseFrontIntroVo).data("chapterVideoList", chapterVideoList);
     }
+
+    /**
+     * 查询课程信息（根据课程ID查询）
+     * @param courseId
+     * @return
+     */
+    @PostMapping("getCourseInfoForOrder/{courseId}")
+    public CourseFrontIntroVoForOrder getCourseInfoForOrder(@PathVariable String courseId) {
+        CourseFrontIntroVoForOrder courseFrontIntroVoForOrder = new CourseFrontIntroVoForOrder();
+        CourseFrontIntroVo courseFrontIntroVo = eduCourseService.getCourseBaseInfo(courseId);
+        BeanUtils.copyProperties(courseFrontIntroVo, courseFrontIntroVoForOrder);
+        return courseFrontIntroVoForOrder;
+    }
+
 }

@@ -3,9 +3,11 @@ package com.tjulab.ucenterservice.controller;
 
 import com.tjulab.commonutils.R.R;
 import com.tjulab.commonutils.jwt.JwtUtils;
+import com.tjulab.commonvo.ordervo.UcenterMemberForOrder;
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -59,6 +61,19 @@ public class UcenterMemberController {
         String memberId = JwtUtils.getMemberIdByJwtToken(request);
         UcenterMember ucenterMember = ucenterMemberService.getById(memberId);
         return R.ok().data("userInfo", ucenterMember);
+    }
+
+    /**
+     * 查询用户信息（根据用户ID查询）
+     * @param userId
+     * @return
+     */
+    @PostMapping("getUserInfoForOrder/{userId}")
+    public UcenterMemberForOrder getUserInfoForOrder(@PathVariable String userId) {
+        UcenterMemberForOrder ucenterMemberForOrder = new UcenterMemberForOrder();
+        UcenterMember ucenterMember = ucenterMemberService.getById(userId);
+        BeanUtils.copyProperties(ucenterMember, ucenterMemberForOrder);
+        return ucenterMemberForOrder;
     }
 
 }

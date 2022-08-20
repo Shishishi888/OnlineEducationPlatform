@@ -13,4 +13,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderService extends IService<Order> {
 
+    /**
+     * 生成课程订单
+     * @param courseId
+     * @param userId
+     * @return
+     */
+    String createCourseOrder(String courseId, String userId);
 }
