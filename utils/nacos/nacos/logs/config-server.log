@@ -1,310 +1,68 @@
-2022-07-22 00:00:00,821 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2831
+2022-08-21 19:30:59,376 INFO notifyConnectTimeout:200
 
-2022-07-22 00:00:05,846 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2832
+2022-08-21 19:30:59,379 INFO notifySocketTimeout:8000
 
-2022-07-22 00:00:10,838 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2833
+2022-08-21 19:30:59,379 INFO isHealthCheck:true
 
-2022-07-22 00:00:15,841 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2834
+2022-08-21 19:30:59,379 INFO maxHealthCheckFailCount:12
 
-2022-07-22 00:00:20,848 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2835
+2022-08-21 19:30:59,379 INFO maxContent:10485760
 
-2022-07-22 00:00:25,852 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2836
+2022-08-21 19:31:00,635 INFO Schema 'NACOS' already exists.
 
-2022-07-22 00:00:30,858 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2837
+2022-08-21 19:31:00,749 INFO Table/View 'CONFIG_INFO' already exists in Schema 'NACOS'.
 
-2022-07-22 00:00:35,864 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2838
+2022-08-21 19:31:00,902 INFO Table/View 'HIS_CONFIG_INFO' already exists in Schema 'NACOS'.
 
-2022-07-22 00:00:40,873 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2839
+2022-08-21 19:31:00,937 INFO Table/View 'CONFIG_INFO_BETA' already exists in Schema 'NACOS'.
 
-2022-07-22 00:00:45,883 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2840
+2022-08-21 19:31:00,953 INFO Table/View 'CONFIG_INFO_TAG' already exists in Schema 'NACOS'.
 
-2022-07-22 00:04:53,425 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2841
+2022-08-21 19:31:00,965 INFO Table/View 'CONFIG_INFO_AGGR' already exists in Schema 'NACOS'.
 
-2022-07-22 00:04:58,438 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2842
+2022-08-21 19:31:00,981 INFO Table/View 'APP_LIST' already exists in Schema 'NACOS'.
 
-2022-07-22 00:22:04,975 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2843
+2022-08-21 19:31:00,992 INFO Table/View 'APP_CONFIGDATA_RELATION_SUBS' already exists in Schema 'NACOS'.
 
-2022-07-22 00:22:09,988 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2844
+2022-08-21 19:31:00,999 INFO Table/View 'APP_CONFIGDATA_RELATION_PUBS' already exists in Schema 'NACOS'.
 
-2022-07-22 00:22:16,006 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2845
+2022-08-21 19:31:01,004 INFO Table/View 'CONFIG_TAGS_RELATION' already exists in Schema 'NACOS'.
 
-2022-07-22 00:22:21,028 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2846
+2022-08-21 19:31:01,029 INFO Table/View 'GROUP_CAPACITY' already exists in Schema 'NACOS'.
 
-2022-07-22 00:38:57,570 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2847
+2022-08-21 19:31:01,039 INFO Table/View 'TENANT_CAPACITY' already exists in Schema 'NACOS'.
 
-2022-07-22 00:54:22,230 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2848
+2022-08-21 19:31:01,049 INFO Table/View 'TENANT_INFO' already exists in Schema 'NACOS'.
 
-2022-07-22 00:54:28,255 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2849
+2022-08-21 19:31:01,067 INFO Table/View 'USERS' already exists in Schema 'NACOS'.
 
-2022-07-22 00:54:33,264 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2850
+2022-08-21 19:31:01,074 INFO Table/View 'ROLES' already exists in Schema 'NACOS'.
 
-2022-07-22 01:11:51,719 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2851
+2022-08-21 19:31:01,278 INFO The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL220716231736410' defined on 'USERS'.
 
-2022-07-22 01:28:04,966 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2852
+2022-08-21 19:31:02,475 INFO ServerListService address-server port:8848
 
-2022-07-22 01:28:09,009 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2853
+2022-08-21 19:31:02,479 INFO ADDRESS_SERVER_URL:http://jmenv.tbsite.net:8080/nacos/serverlist
 
-2022-07-22 01:28:14,019 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2854
+2022-08-21 19:31:02,488 WARN [serverlist] updated to [172.23.46.1]
 
-2022-07-22 01:45:51,363 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2855
+2022-08-21 19:31:02,806 WARN DumpService start
 
-2022-07-22 01:45:56,377 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2856
+2022-08-21 19:31:02,809 INFO start clear all config-info.
 
-2022-07-22 02:03:37,767 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2857
+2022-08-21 19:31:02,817 WARN clear all config-info failed.
 
-2022-07-22 02:03:43,773 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2858
+2022-08-21 19:31:02,818 WARN clear all config-info-tenant failed.
 
-2022-07-22 02:03:48,782 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2859
+2022-08-21 19:31:02,986 INFO start clear all config-info-beta.
 
-2022-07-22 02:20:03,816 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2860
+2022-08-21 19:31:02,987 WARN clear all config-info-beta failed.
 
-2022-07-22 02:35:31,020 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2861
+2022-08-21 19:31:02,987 WARN clear all config-info-beta-tenant failed.
 
-2022-07-22 02:35:35,052 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2862
+2022-08-21 19:31:03,022 INFO start clear all config-info-tag.
 
-2022-07-22 02:35:41,063 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2863
+2022-08-21 19:31:03,023 WARN clear all config-info-tag failed.
 
-2022-07-22 02:35:46,078 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2864
-
-2022-07-22 02:53:01,107 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2865
-
-2022-07-22 03:10:06,690 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2866
-
-2022-07-22 03:10:11,695 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2867
-
-2022-07-22 03:10:16,698 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2868
-
-2022-07-22 03:10:22,712 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2869
-
-2022-07-22 03:27:33,045 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2870
-
-2022-07-22 03:27:37,070 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2871
-
-2022-07-22 03:44:26,173 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2872
-
-2022-07-22 04:01:18,893 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2873
-
-2022-07-22 04:01:23,901 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2874
-
-2022-07-22 04:01:28,910 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2875
-
-2022-07-22 04:18:05,998 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2876
-
-2022-07-22 04:34:08,257 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2877
-
-2022-07-22 04:34:12,263 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2878
-
-2022-07-22 04:34:18,268 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2879
-
-2022-07-22 04:51:37,056 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2880
-
-2022-07-22 04:51:41,005 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2881
-
-2022-07-22 05:08:55,441 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2882
-
-2022-07-22 05:25:43,187 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2883
-
-2022-07-22 05:25:47,164 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2884
-
-2022-07-22 05:25:53,178 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2885
-
-2022-07-22 05:25:58,189 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2886
-
-2022-07-22 05:42:55,654 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2887
-
-2022-07-22 05:58:13,387 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2888
-
-2022-07-22 05:58:19,398 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2889
-
-2022-07-22 05:58:24,408 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2890
-
-2022-07-22 06:16:06,417 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2891
-
-2022-07-22 06:33:49,461 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2892
-
-2022-07-22 06:33:54,478 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2893
-
-2022-07-22 06:51:33,953 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2894
-
-2022-07-22 06:51:39,776 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2895
-
-2022-07-22 06:51:44,794 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2896
-
-2022-07-22 07:06:59,408 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2897
-
-2022-07-22 07:23:54,554 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2898
-
-2022-07-22 07:23:59,567 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2899
-
-2022-07-22 07:40:29,420 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2900
-
-2022-07-22 07:40:34,407 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2901
-
-2022-07-22 07:40:40,440 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2902
-
-2022-07-22 07:58:28,135 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2903
-
-2022-07-22 07:58:32,145 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2904
-
-2022-07-22 08:13:51,534 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2905
-
-2022-07-22 08:13:57,545 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2906
-
-2022-07-22 08:14:02,556 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2907
-
-2022-07-22 08:31:46,549 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2908
-
-2022-07-22 08:47:31,226 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2909
-
-2022-07-22 08:47:36,220 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2910
-
-2022-07-22 09:05:32,964 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2911
-
-2022-07-22 09:05:39,092 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2912
-
-2022-07-22 09:05:44,103 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2913
-
-2022-07-22 09:21:37,924 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2914
-
-2022-07-22 09:38:10,120 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2915
-
-2022-07-22 09:38:15,130 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2916
-
-2022-07-22 09:56:05,214 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2917
-
-2022-07-22 09:56:11,222 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2918
-
-2022-07-22 09:56:16,233 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2919
-
-2022-07-22 10:13:13,571 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2920
-
-2022-07-22 10:30:13,974 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2921
-
-2022-07-22 10:30:17,984 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2922
-
-2022-07-22 10:48:00,722 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2923
-
-2022-07-22 10:48:04,742 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2924
-
-2022-07-22 10:48:09,745 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2925
-
-2022-07-22 10:48:15,767 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2926
-
-2022-07-22 10:48:20,773 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2927
-
-2022-07-22 11:06:09,218 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2928
-
-2022-07-22 11:21:46,449 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2929
-
-2022-07-22 11:21:50,448 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2930
-
-2022-07-22 11:21:56,458 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2931
-
-2022-07-22 11:22:01,467 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2932
-
-2022-07-22 11:39:09,363 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2933
-
-2022-07-22 11:57:05,462 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2934
-
-2022-07-22 11:57:10,470 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2935
-
-2022-07-22 11:57:16,481 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2936
-
-2022-07-22 12:14:15,566 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2937
-
-2022-07-22 12:14:19,576 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2938
-
-2022-07-22 12:29:21,563 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2939
-
-2022-07-22 12:29:27,574 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2940
-
-2022-07-22 12:29:32,585 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2941
-
-2022-07-22 12:29:37,596 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2942
-
-2022-07-22 12:36:43,790 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2943
-
-2022-07-22 12:36:47,814 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2944
-
-2022-07-22 12:36:52,820 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2945
-
-2022-07-22 12:48:59,457 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2946
-
-2022-07-22 12:49:04,465 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2947
-
-2022-07-22 12:49:09,470 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2948
-
-2022-07-22 12:49:14,475 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2949
-
-2022-07-22 12:49:19,482 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2950
-
-2022-07-22 12:49:24,489 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2951
-
-2022-07-22 12:49:29,512 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2952
-
-2022-07-22 12:49:34,499 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2953
-
-2022-07-22 12:49:39,505 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2954
-
-2022-07-22 12:49:44,511 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2955
-
-2022-07-22 12:49:49,517 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2956
-
-2022-07-22 12:49:54,520 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2957
-
-2022-07-22 12:49:59,579 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2958
-
-2022-07-22 12:50:04,579 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2959
-
-2022-07-22 12:50:09,581 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2960
-
-2022-07-22 12:50:14,587 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2961
-
-2022-07-22 12:50:19,590 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2962
-
-2022-07-22 12:50:24,605 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2963
-
-2022-07-22 12:50:29,601 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2964
-
-2022-07-22 12:50:34,660 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2965
-
-2022-07-22 12:50:39,661 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2966
-
-2022-07-22 12:50:44,665 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2967
-
-2022-07-22 12:50:49,679 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2968
-
-2022-07-22 12:50:54,698 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2969
-
-2022-07-22 12:50:59,695 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2970
-
-2022-07-22 12:51:04,699 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2971
-
-2022-07-22 12:51:09,701 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2972
-
-2022-07-22 12:51:14,704 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2973
-
-2022-07-22 12:51:19,724 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2974
-
-2022-07-22 12:51:24,718 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2975
-
-2022-07-22 12:51:29,723 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2976
-
-2022-07-22 12:51:34,728 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2977
-
-2022-07-22 12:51:39,733 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2978
-
-2022-07-22 12:51:44,740 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2979
-
-2022-07-22 12:51:49,742 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2980
-
-2022-07-22 12:51:54,747 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2981
-
-2022-07-22 12:51:59,752 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2982
-
-2022-07-22 12:52:04,755 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2983
-
-2022-07-22 12:52:09,763 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2984
-
-2022-07-22 12:52:17,464 ERROR unhealthIp:172.23.179.138:8848, unhealthCount:2985
+2022-08-21 19:31:03,023 WARN clear all config-info-tag-tenant failed.
 

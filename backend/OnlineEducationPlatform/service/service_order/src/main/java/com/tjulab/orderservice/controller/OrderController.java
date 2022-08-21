@@ -47,8 +47,8 @@ public class OrderController {
      * @param orderId
      * @return
      */
-    @GetMapping("getOrderInfo/{orderId}")
-    public R getOrderInfo(@PathVariable String orderId) {
+    @GetMapping("getCourseOrderInfo/{orderId}")
+    public R getCourseOrderInfo(@PathVariable String orderId) {
         QueryWrapper<Order> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("order_no", orderId);
         Order order = orderService.getOne(queryWrapper);

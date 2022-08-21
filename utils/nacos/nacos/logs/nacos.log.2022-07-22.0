@@ -1,0 +1,10 @@
+2022-07-22 11:21:46,250 INFO [capacityManagement] start correct usage
+
+2022-07-22 11:21:46,329 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-07-22 11:21:46,562 WARN clearConfigHistory start
+
+2022-07-22 12:52:17,691 INFO Shutting down ExecutorService 'taskScheduler'
+
+2022-07-22 12:52:17,772 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+

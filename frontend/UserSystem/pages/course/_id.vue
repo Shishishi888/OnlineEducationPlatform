@@ -34,7 +34,7 @@
               </span>
             </section>
             <section class="c-attr-mt">
-              <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
+              <a @click="createCourseOrder()" href="#" title="立即购买" class="comm-btn c-btn-3">立即购买</a>
             </section>
           </section>
         </aside>
@@ -161,15 +161,30 @@
 
 <script>
 import courseApi from '@/api/course';
+import orderApi from '@/api/order';
+
 export default {
   asyncData({ params, error }) {  
     return courseApi.getCourseFrontInfo(params.id)
                     .then(response => {
                       return {
                         courseFrontIntroVo: response.data.data.courseFrontIntroVo,
-                        chapterVideoList: response.data.data.chapterVideoList
+                        chapterVideoList: response.data.data.chapterVideoList,
+                        courseId: params.id
                       }
                     });
+  },
+  methods: {
+    // 生成课程订单
+    createCourseOrder() {
+      orderApi.createCourseOrder(this.courseId)
+              .then(response => {
+                // 获取课程订单号
+                var orderNo = response.data.data.orderNo;
+                // 跳转到课程订单详情页面
+                this.$router.push({path:'/order/'+orderNo});
+              });
+    }
   }
 };
 </script>
