@@ -1,9 +1,12 @@
 package com.tjulab.orderservice.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.tjulab.commonutils.R.R;
+import com.tjulab.orderservice.service.PayLogService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.Map;
 
 /**
  * <p>
@@ -14,8 +17,21 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-08-17
  */
 @RestController
-@RequestMapping("/orderservice/pay-log")
+@RequestMapping("/orderservice/paylog")
+@CrossOrigin
 public class PayLogController {
+    @Autowired
+    private PayLogService payLogService;
 
+    /**
+     * 生成微信支付二维码
+     * @param orderNo
+     * @return
+     */
+    @GetMapping("createWxQRCode/{orderNo}")
+    public R createWxQRCode(@PathVariable String orderNo) {
+        Map QRCodeMap = payLogService.createWxQRCode(orderNo);
+        return R.ok().data(QRCodeMap);
+    }
 }
 

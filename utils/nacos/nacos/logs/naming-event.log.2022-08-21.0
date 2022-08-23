@@ -1,0 +1,56 @@
+2022-08-21 19:31:07,721 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 19:31:07,728 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.46.1:8160_true,
+
+2022-08-21 19:31:09,499 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 19:31:09,500 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.46.1:8001_true,
+
+2022-08-21 19:31:11,451 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 19:31:11,451 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.46.1:8007_true,
+
+2022-08-21 20:07:14,444 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:07:14,447 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-21 20:07:25,765 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:07:25,768 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.46.1:8007_true,
+
+2022-08-21 20:08:06,626 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:08:06,628 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-21 20:08:17,504 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:08:17,508 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.46.1:8007_true,
+
+2022-08-21 20:11:02,913 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:11:02,914 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-21 20:11:14,478 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:11:14,479 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.46.1:8007_true,
+
+2022-08-21 20:17:58,589 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:17:58,590 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-21 20:18:09,646 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:18:09,647 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.46.1:8007_true,
+
+2022-08-21 20:26:03,977 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:26:03,979 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-21 20:26:05,901 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:26:05,901 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-08-21 20:26:07,474 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.46.1:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-21 20:26:07,474 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
