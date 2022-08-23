@@ -33,5 +33,23 @@ public class PayLogController {
         Map QRCodeMap = payLogService.createWxQRCode(orderNo);
         return R.ok().data(QRCodeMap);
     }
+
+    /**
+     * 查询课程订单支付状态
+     * @param orderNo
+     * @return
+     */
+    @GetMapping("queryPayStatus/{orderNo}")
+    public R queryPayStatus(@PathVariable String orderNo) {
+        Map<String, String> resultMap = payLogService.queryPayStatus(orderNo);  // 查询微信支付状态
+        if(resultMap == null) {
+            return R.error().message("支付失败");
+        }
+        if(resultMap.get("trade_state").equals("SUCCESS")) {
+            payLogService.updateOrderStatus(resultMap);  // 添加课程购买记录，并且更新课程订单支付状态
+            return R.ok().message("支付成功");
+        }
+        return R.ok().message("支付中");
+    }
 }
 

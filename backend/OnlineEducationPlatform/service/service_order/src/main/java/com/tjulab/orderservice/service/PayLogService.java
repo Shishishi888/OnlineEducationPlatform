@@ -21,4 +21,17 @@ public interface PayLogService extends IService<PayLog> {
      * @return
      */
     Map createWxQRCode(String orderNo);
+
+    /**
+     * 查询微信支付状态（根据课程订单号查询）
+     * @param orderNo
+     * @return
+     */
+    Map<String, String> queryPayStatus(String orderNo);
+
+    /**
+     * 添加课程购买记录，并且更新课程订单支付状态
+     * @param paramMap
+     */
+    void updateOrderStatus(Map<String, String> paramMap);
 }
