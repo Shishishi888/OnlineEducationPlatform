@@ -54,7 +54,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         order.setMemberId(userId);
         order.setMobile(ucenterMemberForOrder.getMobile());
         order.setNickname(ucenterMemberForOrder.getNickname());
-        order.setStatus(0);  // 支付状态
+        order.setStatus(0);   // 支付状态
         order.setPayType(1);  // 支付方式：1表示微信支付；2表示支付宝支付
 
         baseMapper.insert(order);

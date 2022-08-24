@@ -1,0 +1,108 @@
+2022-08-24 03:05:52,749 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661280609809
+
+2022-08-24 03:05:53,585 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 03:05:53,586 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 03:05:56,600 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 03:05:56,606 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 03:43:20,497 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661282780228
+
+2022-08-24 03:43:20,576 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 03:43:20,577 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 03:43:23,632 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 03:43:23,632 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 05:20:01,798 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661288581490
+
+2022-08-24 05:20:01,858 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 05:20:01,859 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 05:20:04,464 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 05:20:04,464 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 07:28:33,627 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661296317191
+
+2022-08-24 07:28:33,693 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 07:28:33,694 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 07:28:36,242 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 07:28:36,246 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 08:38:41,534 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661301464313
+
+2022-08-24 08:38:41,593 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 08:38:41,594 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 08:38:43,933 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 08:38:43,936 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 08:40:00,923 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661301543919
+
+2022-08-24 08:40:00,954 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 08:40:00,955 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 08:40:03,286 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 08:40:03,289 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 08:44:39,544 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661301696663
+
+2022-08-24 08:44:39,589 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 08:44:39,589 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 08:44:41,885 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 08:44:41,889 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 08:52:42,384 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661302007565
+
+2022-08-24 08:52:42,421 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 08:52:42,423 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 08:52:44,709 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 08:52:44,712 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 08:53:17,459 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661302374649
+
+2022-08-24 08:53:19,691 INFO service: DEFAULT_GROUP@@service-order {POS} {IP-ENABLED} valid: 172.23.236.135:8007@DEFAULT, region: unknown, msg: client beat ok
+
+2022-08-24 09:01:20,147 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661302844030
+
+2022-08-24 09:01:20,191 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 09:01:20,192 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 09:01:22,449 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 09:01:22,455 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 09:03:58,409 INFO {POS} {IP-DISABLED} valid: 172.23.236.135:8007@DEFAULT@DEFAULT_GROUP@@service-order, region: unknown, msg: client timeout after 15000, last beat: 1661302887389
+
+2022-08-24 09:03:58,451 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-24 09:03:58,452 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-24 09:04:00,622 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 09:04:00,623 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-24 09:08:08,496 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-24 09:08:08,497 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+

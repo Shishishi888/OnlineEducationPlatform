@@ -37,10 +37,10 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     @Autowired
     private ConstantPropertiesUtil constantPropertiesUtil;
 
-    private String appId = constantPropertiesUtil.APPID;
-    private String mchId = constantPropertiesUtil.MCH_ID;
+//    private String appId = constantPropertiesUtil.APPID;
+//    private String mchId = constantPropertiesUtil.MCH_ID;
 
-    private String partnerKey = ConstantPropertiesUtil.PARTNER_KEY;
+//    private String partnerKey = constantPropertiesUtil.PARTNER_KEY;
 
     private final String WX_PAY_IP = "https://api.mch.weixin.qq.com/pay/unifiedorder";
     private final String WX_PAY_QUERY_IP = "https://api.mch.weixin.qq.com/pay/orderquery";
@@ -60,8 +60,8 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
             Order order = orderService.getOne(queryWrapper);
 
             // 封装生成微信支付二维码所需要的参数
-            // String appId = constantPropertiesUtil.APPID;
-            // String mchId = constantPropertiesUtil.MCH_ID;
+            String appId = constantPropertiesUtil.APPID;
+            String mchId = constantPropertiesUtil.MCH_ID;
             String nonceStr = WXPayUtil.generateNonceStr();
             String courseTitle = order.getCourseTitle();
             String totalFee = order.getTotalFee().multiply(new BigDecimal("100")).longValue() + "";
@@ -81,7 +81,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
             paramMap.put("trade_type", tradeType);
 
             // 发送httpclient请求，向微信官方提供的固定地址传递xml参数
-            // String partnerKey = ConstantPropertiesUtil.PARTNER_KEY;
+             String partnerKey = ConstantPropertiesUtil.PARTNER_KEY;
             HttpClient client = new HttpClient(WX_PAY_IP);
             String xmlParam = WXPayUtil.generateSignedXml(paramMap, partnerKey);
             client.setXmlParam(xmlParam);
@@ -117,8 +117,8 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     public Map<String, String> queryPayStatus(String orderNo) {
         try {
             // 封装参数
-            // String appId = constantPropertiesUtil.APPID;
-            // String mchId = constantPropertiesUtil.MCH_ID;
+            String appId = constantPropertiesUtil.APPID;
+            String mchId = constantPropertiesUtil.MCH_ID;
             String nonceStr = WXPayUtil.generateNonceStr();
             Map paramMap = new HashMap<>();
             paramMap.put("appid", appId);
@@ -127,7 +127,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
             paramMap.put("nonce_str", nonceStr);
 
             // 发送httpclient请求，向微信官方提供的固定地址传递xml参数
-            // String partnerKey = ConstantPropertiesUtil.PARTNER_KEY;
+             String partnerKey = ConstantPropertiesUtil.PARTNER_KEY;
             HttpClient client = new HttpClient(WX_PAY_QUERY_IP);
             String xmlParam = WXPayUtil.generateSignedXml(paramMap, partnerKey);
             client.setXmlParam(xmlParam);
@@ -146,7 +146,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     }
 
     /**
-     * 添加课程购买记录，并且更新课程订单支付状态
+     * 添加课程购买记录，并更新课程订单支付状态
      * @param paramMap
      */
     @Override

@@ -30,7 +30,7 @@ public interface PayLogService extends IService<PayLog> {
     Map<String, String> queryPayStatus(String orderNo);
 
     /**
-     * 添加课程购买记录，并且更新课程订单支付状态
+     * 添加课程购买记录，并更新课程订单支付状态
      * @param paramMap
      */
     void updateOrderStatus(Map<String, String> paramMap);

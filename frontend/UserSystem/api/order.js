@@ -15,5 +15,21 @@ export default {
         url: '/orderservice/order/getCourseOrderInfo/' + orderId,
         method: 'get'
       });
-  }
+  },
+
+  // 3. 生成微信支付二维码
+  createWxQRCode(orderNo) {
+    return request({
+      url: '/orderservice/paylog/createWxQRCode/' + orderNo,
+      method: 'get'
+    });
+  },
+
+  // 4. 查询课程订单支付状态
+  queryPayStatus(orderNo) {
+    return request({
+      url: '/orderservice/paylog/queryPayStatus/' + orderNo,
+      method: 'get'
+    });
+  },
 }

@@ -1,0 +1,36 @@
+2022-08-23 22:43:55,391 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 22:43:55,393 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-23 23:33:27,577 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:33:27,578 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-23 23:33:56,841 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:33:56,842 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-23 23:34:25,535 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:34:25,536 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-23 23:34:35,195 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:34:35,196 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-23 23:34:52,391 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:34:52,391 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-23 23:35:01,791 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:35:01,792 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+
+2022-08-23 23:36:30,156 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:36:30,158 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 
+
+2022-08-23 23:36:42,102 INFO DEFAULT_GROUP@@service-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.236.135:8007:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-23 23:36:42,102 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-order, ips: 172.23.236.135:8007_true,
+

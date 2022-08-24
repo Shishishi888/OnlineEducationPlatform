@@ -62,7 +62,7 @@
           </div>
         </div>
         <input name="score" value="0" type="hidden" id="usedScore">
-        <button class="fr redb" type="button" id="submitPay" @click="toPay()">去支付</button>
+        <button class="fr redb" type="button" id="submitPay" @click="pay()">去支付</button>
         <div class="clear"></div>
       </div>
     </form>
@@ -78,6 +78,11 @@ export default {
                     order: response.data.data.order
                 };
             });
+    },
+    methods: {
+      pay() {
+        this.$router.push({path:'/pay/'+this.order.orderNo});
+      }
     }
 }
 </script>

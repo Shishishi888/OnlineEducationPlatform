@@ -31,11 +31,12 @@ public class PayLogController {
     @GetMapping("createWxQRCode/{orderNo}")
     public R createWxQRCode(@PathVariable String orderNo) {
         Map QRCodeMap = payLogService.createWxQRCode(orderNo);
+        System.out.println(QRCodeMap);
         return R.ok().data(QRCodeMap);
     }
 
     /**
-     * 查询课程订单支付状态
+     * 查询课程订单支付状态（根据课程订单号查询）
      * @param orderNo
      * @return
      */
@@ -46,7 +47,7 @@ public class PayLogController {
             return R.error().message("支付失败");
         }
         if(resultMap.get("trade_state").equals("SUCCESS")) {
-            payLogService.updateOrderStatus(resultMap);  // 添加课程购买记录，并且更新课程订单支付状态
+            payLogService.updateOrderStatus(resultMap);  // 添加课程购买记录，并更新课程订单支付状态
             return R.ok().message("支付成功");
         }
         return R.ok().message("支付中");
