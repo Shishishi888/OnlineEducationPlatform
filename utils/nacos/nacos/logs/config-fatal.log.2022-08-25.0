@@ -1,0 +1,26 @@
+2022-08-25 00:29:22,422 WARN useAddressServer:true
+
+2022-08-25 00:29:22,727 WARN isQuickStart:false
+
+2022-08-25 00:49:12,051 ERROR [master-db] master db not found.
+
+2022-08-25 00:49:19,108 ERROR [db-error] master db 11.162.196.161 down.
+
+2022-08-25 00:49:26,147 ERROR [db-error] slave db 11.163.152.91 down.
+
+2022-08-25 00:49:27,137 WARN useAddressServer:true
+
+2022-08-25 00:49:28,465 ERROR ########## cannot get serverlist, so exit.
+
+2022-08-25 00:52:06,892 WARN useAddressServer:true
+
+2022-08-25 00:52:07,225 WARN isQuickStart:false
+
+2022-08-25 09:10:53,196 WARN useAddressServer:true
+
+2022-08-25 09:10:53,510 WARN isQuickStart:false
+
+2022-08-25 09:16:40,022 WARN useAddressServer:true
+
+2022-08-25 09:16:40,301 WARN isQuickStart:false
+

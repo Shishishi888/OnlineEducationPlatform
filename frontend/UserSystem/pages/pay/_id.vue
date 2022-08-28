@@ -41,6 +41,37 @@ export default {
                     payObj: response.data.data
                 }
             });
+     },
+     data() {
+      return {
+        timer01: ''
+      }
+     },
+     mounted() {
+      this.timer01 = setInterval(() => {
+        this.queryOrderStatus(this.payObj.out_trade_no);
+      }, 3000);
+     },
+     methods: {
+      // 查询课程订单状态
+      queryOrderStatus(orderNo) {
+        orderApi.queryPayStatus(orderNo)
+                .then(response => {
+                  if(response.data.success) {
+                    // 支付成功，清楚定时器
+                    clearInterval(this.timer01);
+
+                    // 提示信息
+                    this.$message({
+                      type: 'success',
+                      message: '支付成功'
+                    });
+
+                    // 跳转到课程详情页
+                    this.$router.push({path: '/course/' + this.payObj.course_id});
+                  }
+                });
+      } 
      }
 }
 </script>

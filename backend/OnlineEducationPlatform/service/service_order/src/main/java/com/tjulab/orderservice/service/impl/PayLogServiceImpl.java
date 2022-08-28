@@ -34,8 +34,8 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     @Autowired
     private OrderService orderService;
 
-    @Autowired
-    private ConstantPropertiesUtil constantPropertiesUtil;
+//    @Autowired
+//    private ConstantPropertiesUtil constantPropertiesUtil;
 
 //    private String appId = constantPropertiesUtil.APPID;
 //    private String mchId = constantPropertiesUtil.MCH_ID;
@@ -60,14 +60,14 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
             Order order = orderService.getOne(queryWrapper);
 
             // 封装生成微信支付二维码所需要的参数
-            String appId = constantPropertiesUtil.APPID;
-            String mchId = constantPropertiesUtil.MCH_ID;
+            String appId = ConstantPropertiesUtil.APPID;
+            String mchId = ConstantPropertiesUtil.MCH_ID;
             String nonceStr = WXPayUtil.generateNonceStr();
             String courseTitle = order.getCourseTitle();
             String totalFee = order.getTotalFee().multiply(new BigDecimal("100")).longValue() + "";
-            String spbillCreateIp = constantPropertiesUtil.SPBILL_CREATE_IP;
-            String notifyUrl = constantPropertiesUtil.NOTIFY_URL + "\n";
-            String tradeType = constantPropertiesUtil.TRADE_TYPE;
+            String spbillCreateIp = ConstantPropertiesUtil.SPBILL_CREATE_IP;
+            String notifyUrl = ConstantPropertiesUtil.NOTIFY_URL + "\n";
+            String tradeType = ConstantPropertiesUtil.TRADE_TYPE;
 
             Map paramMap = new HashMap<>();
             paramMap.put("appid", appId);
@@ -117,8 +117,8 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     public Map<String, String> queryPayStatus(String orderNo) {
         try {
             // 封装参数
-            String appId = constantPropertiesUtil.APPID;
-            String mchId = constantPropertiesUtil.MCH_ID;
+            String appId = ConstantPropertiesUtil.APPID;
+            String mchId = ConstantPropertiesUtil.MCH_ID;
             String nonceStr = WXPayUtil.generateNonceStr();
             Map paramMap = new HashMap<>();
             paramMap.put("appid", appId);

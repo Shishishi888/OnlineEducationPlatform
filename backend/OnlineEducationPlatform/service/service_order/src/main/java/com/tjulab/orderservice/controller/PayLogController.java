@@ -43,6 +43,7 @@ public class PayLogController {
     @GetMapping("queryPayStatus/{orderNo}")
     public R queryPayStatus(@PathVariable String orderNo) {
         Map<String, String> resultMap = payLogService.queryPayStatus(orderNo);  // 查询微信支付状态
+        System.out.println(resultMap);
         if(resultMap == null) {
             return R.error().message("支付失败");
         }
@@ -50,7 +51,7 @@ public class PayLogController {
             payLogService.updateOrderStatus(resultMap);  // 添加课程购买记录，并更新课程订单支付状态
             return R.ok().message("支付成功");
         }
-        return R.ok().message("支付中");
+        return R.ok().code(25000).message("支付中");
     }
 }
 

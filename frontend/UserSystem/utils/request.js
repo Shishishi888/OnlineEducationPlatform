@@ -8,7 +8,7 @@ const service = axios.create({
   timeout: 20000  // 请求超时时间
 });
 
-// 设置request拦截器
+// 设置 http request 拦截器
 service.interceptors.request.use(
   config => {
     if(cookie.get("user_token")) {
@@ -21,5 +21,34 @@ service.interceptors.request.use(
     return Promise.reject(err);
   }
 );
+
+// 设置 http response 拦截器
+service.interceptors.response.use(
+  response => {
+    // debugger
+    if (response.data.code == 28004) {
+        console.log("response.data.resultCode ==> 28004")
+        // 返回错误代码-1；清除ticket信息并跳转到登录页面
+        // debugger
+        window.location.href = "/login"
+        return
+    }else{
+      if (response.data.code !== 20000) {
+        // 25000：订单支付中，不作任何提示
+        if(response.data.code != 25000) {
+          Message({
+            message: response.data.message || 'error',
+            type: 'error',
+            duration: 5 * 1000
+          })
+        }
+      } else {
+        return response;
+      }
+    }
+  },
+  error => {
+    return Promise.reject(error.response);  // 返回错误信息
+});
 
 export default service;
