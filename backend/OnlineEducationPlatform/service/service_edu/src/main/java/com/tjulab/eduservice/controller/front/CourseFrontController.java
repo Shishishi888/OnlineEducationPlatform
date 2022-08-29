@@ -2,7 +2,9 @@ package com.tjulab.eduservice.controller.front;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tjulab.commonutils.R.R;
+import com.tjulab.commonutils.jwt.JwtUtils;
 import com.tjulab.commonvo.ordervo.CourseFrontIntroVoForOrder;
+import com.tjulab.eduservice.client.OrderClient;
 import com.tjulab.eduservice.entity.EduCourse;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontIntroVo;
 import com.tjulab.eduservice.entity.frontvo.CourseFrontVo;
@@ -13,6 +15,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -26,6 +29,9 @@ public class CourseFrontController {
 
     @Autowired
     private EduChapterService eduChapterService;
+
+    @Autowired
+    private OrderClient orderClient;
 
     /**
      * 查询课程（条件查询+分页查询）
@@ -49,13 +55,19 @@ public class CourseFrontController {
      * @return
      */
     @GetMapping("getCourseFrontInfo/{courseId}")
-    public R getCourseFrontInfo(@PathVariable String courseId) {
+    public R getCourseFrontInfo(@PathVariable String courseId, HttpServletRequest request) {
         // 根据课程id查询课程的基本信息
         CourseFrontIntroVo courseFrontIntroVo = eduCourseService.getCourseBaseInfo(courseId);
+
         // 根据课程id查询课程的章节和小节
         List<ChapterVo> chapterVideoList = eduChapterService.getChapterVideoListByCourseId(courseId);
 
-        return R.ok().data("courseFrontIntroVo", courseFrontIntroVo).data("chapterVideoList", chapterVideoList);
+        // 根据课程id和用户id查询课程订单支付状态
+        // TODO 处理用户未登录
+        String userId = JwtUtils.getMemberIdByJwtToken(request);
+        boolean isPay = orderClient.isPay(courseId, userId);
+
+        return R.ok().data("courseFrontIntroVo", courseFrontIntroVo).data("chapterVideoList", chapterVideoList).data("isPay", isPay);
     }
 
     /**

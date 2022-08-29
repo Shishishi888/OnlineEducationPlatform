@@ -44,11 +44,11 @@ export default {
      },
      data() {
       return {
-        timer01: ''
+        timer: ''
       }
      },
      mounted() {
-      this.timer01 = setInterval(() => {
+      this.timer = setInterval(() => {
         this.queryOrderStatus(this.payObj.out_trade_no);
       }, 3000);
      },
@@ -58,8 +58,8 @@ export default {
         orderApi.queryPayStatus(orderNo)
                 .then(response => {
                   if(response.data.success) {
-                    // 支付成功，清楚定时器
-                    clearInterval(this.timer01);
+                    // 支付成功，清除定时器
+                    clearInterval(this.timer);
 
                     // 提示信息
                     this.$message({

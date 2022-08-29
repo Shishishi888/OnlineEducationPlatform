@@ -172,9 +172,9 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
         payLog.setPayTime(new Date());
         payLog.setPayType(1);  // 支付类型
         payLog.setTotalFee(order.getTotalFee());
-        payLog.setTradeState(paramMap.get("trade_state"));      // 支付状态
-        payLog.setTransactionId(paramMap.get("tranction_id"));  // 课程订单流水号
-        payLog.setAttr(JSONObject.toJSONString(paramMap));      // 其他属性
+        payLog.setTradeState(paramMap.get("trade_state"));        // 支付状态
+        payLog.setTransactionId(paramMap.get("transaction_id"));  // 课程订单流水号
+        payLog.setAttr(JSONObject.toJSONString(paramMap));        // 其他属性
 
         baseMapper.insert(payLog);
     }
