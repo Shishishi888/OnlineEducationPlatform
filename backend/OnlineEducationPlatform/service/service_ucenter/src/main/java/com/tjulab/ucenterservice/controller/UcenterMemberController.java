@@ -7,6 +7,7 @@ import com.tjulab.commonvo.ordervo.UcenterMemberForOrder;
 import com.tjulab.ucenterservice.entity.UcenterMember;
 import com.tjulab.ucenterservice.entity.vo.RegisterVo;
 import com.tjulab.ucenterservice.service.UcenterMemberService;
+import org.apache.poi.util.Internal;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -76,5 +77,15 @@ public class UcenterMemberController {
         return ucenterMemberForOrder;
     }
 
+    /**
+     * 查询某一天的注册人数
+     * @param date
+     * @return
+     */
+    @GetMapping("countRegisterUser/{date}")
+    public R countRegisterUser(@PathVariable String date) {
+        Integer registerNum = ucenterMemberService.countRegisterUser(date);
+        return R.ok().data("registerNum", registerNum);
+    }
 }
 
