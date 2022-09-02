@@ -596,3 +596,21 @@
 
 2022-09-02 22:58:32,401 INFO [capacityManagement] end correct usage, cost: 0s
 
+2022-09-02 23:08:32,404 WARN clearConfigHistory start
+
+2022-09-02 23:08:32,408 INFO [capacityManagement] start correct usage
+
+2022-09-02 23:08:32,899 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-02 23:18:32,875 WARN clearConfigHistory start
+
+2022-09-02 23:18:32,900 INFO [capacityManagement] start correct usage
+
+2022-09-02 23:18:33,188 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-02 23:28:33,174 WARN clearConfigHistory start
+
+2022-09-02 23:28:33,194 INFO [capacityManagement] start correct usage
+
+2022-09-02 23:28:33,537 INFO [capacityManagement] end correct usage, cost: 0s
+
