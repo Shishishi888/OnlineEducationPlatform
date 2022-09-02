@@ -1,5 +1,6 @@
 package com.tjulab.statisticsservice.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tjulab.commonutils.R.R;
 import com.tjulab.statisticsservice.client.UcenterClient;
 import com.tjulab.statisticsservice.entity.StatisticsDaily;
@@ -25,9 +26,18 @@ public class StatisticsDailyServiceImpl extends ServiceImpl<StatisticsDailyMappe
     @Autowired
     private UcenterClient ucenterClient;
 
-    // 统计某天的注册人数
+    /**
+     * 生成某一天的统计数据
+     * @param date
+     */
     @Override
-    public void countRegisterUser(String date) {
+    public void generateStatistics(String date) {
+        // 删除数据库中已有的统计数据
+        QueryWrapper<StatisticsDaily> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("date_calculated", date);
+        baseMapper.delete(queryWrapper);
+
+        // 获取某一天的注册人数
         R r = ucenterClient.countRegisterUser((date));
         Integer registerNum = (Integer) r.getData().get("registerNum");
 

@@ -23,13 +23,13 @@ public class StatisticsDailyController {
     private StatisticsDailyService statisticsDailyService;
 
     /**
-     * 统计某一天的注册人数
+     * 生成某一天的统计数据
      * @param date
      * @return
      */
-    @PostMapping("countRegisterUser/{date}")
-    public R countRegisterUser(@PathVariable String date) {
-        statisticsDailyService.countRegisterUser(date);
+    @PostMapping("generateStatistics/{date}")
+    public R generateStatistics(@PathVariable String date) {
+        statisticsDailyService.generateStatistics(date);
         return R.ok();
     }
 }
