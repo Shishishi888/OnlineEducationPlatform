@@ -5,7 +5,7 @@
    ,--,:  : |                                           Nacos 1.1.4
 ,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
 |   :  :  | |                      '   ,'\   .--.--.    Port: 8848
-:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 1635
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 14575
 |   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://172.23.126.118:8848/nacos/index.html
 '   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
 |   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
@@ -15,73 +15,130 @@
 ;   |.'     |  ,     .-./\   \  /            `--'---'
 '---'        `--`---'     `----'
 
-2022-09-04 23:12:27,757 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c42cda52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-05 23:52:56,906 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cd076a01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-04 23:12:28,074 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-05 23:52:57,184 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-04 23:12:28,087 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@16afbd92' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-05 23:52:57,194 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@40f33492' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-04 23:12:28,096 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$e9017d04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-05 23:52:57,200 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f1dc0cb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-04 23:12:28,122 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-05 23:52:57,223 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-04 23:12:30,164 INFO Tomcat initialized with port(s): 8848 (http)
+2022-09-05 23:52:58,690 INFO Tomcat initialized with port(s): 8848 (http)
 
-2022-09-04 23:12:30,665 INFO Root WebApplicationContext: initialization completed in 13262 ms
+2022-09-05 23:52:59,153 INFO Root WebApplicationContext: initialization completed in 10121 ms
 
-2022-09-04 23:12:39,044 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-05 23:53:01,904 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
 
-2022-09-04 23:12:39,601 INFO Adding welcome page: class path resource [static/index.html]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoaderBase (jar:file:/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/target/nacos-server.jar!/BOOT-INF/lib/tomcat-embed-core-9.0.13.jar!/) to field java.io.ObjectStreamClass$Caches.localDescs
+WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoaderBase
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-05 23:53:01,964 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/'], []
+2022-09-05 23:53:01,965 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.css'], []
+2022-09-05 23:53:01,965 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.js'], []
+2022-09-05 23:53:01,965 ERROR Nacos failed to start, please see /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/nacos.log for more details.
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.html'], []
+2022-09-05 23:53:01,992 INFO 
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.map'], []
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.svg'], []
+2022-09-05 23:53:02,003 ERROR Application run failed
 
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.png'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/**/*.ico'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/console-fe/public/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/auth/login'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/console/health/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/cs/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/ns/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/cmdb/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/actuator/**'], []
-
-2022-09-04 23:12:40,842 INFO Creating filter chain: Ant [pattern='/v1/console/server/**'], []
-
-2022-09-04 23:12:41,002 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28369db0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c380bd8, org.springframework.security.web.header.HeaderWriterFilter@350ec690, org.springframework.security.web.authentication.logout.LogoutFilter@5d342959, com.alibaba.nacos.console.filter.JwtAuthenticationTokenFilter@30893e08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47768e74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fef2aac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e86807a, org.springframework.security.web.session.SessionManagementFilter@3458eca5, org.springframework.security.web.access.ExceptionTranslationFilter@118dcbbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43b5021c]
-
-2022-09-04 23:12:41,410 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
-
-2022-09-04 23:12:41,520 INFO Initializing ExecutorService 'taskScheduler'
-
-2022-09-04 23:12:41,978 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
-
-2022-09-04 23:12:42,001 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
-
-2022-09-04 23:12:42,002 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
-
-2022-09-04 23:12:42,002 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
-
-2022-09-04 23:12:42,002 INFO Nacos started successfully in stand alone mode.
-
-2022-09-04 23:12:47,079 INFO Initializing Servlet 'dispatcherServlet'
-
-2022-09-04 23:12:47,125 INFO Completed initialization in 44 ms
-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:593)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at com.alibaba.nacos.config.server.service.DynamicDataSource.getDataSource(DynamicDataSource.java:52)
+	at com.alibaba.nacos.config.server.service.PersistService.init(PersistService.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 52 common frames omitted
+Caused by: java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.reload(LocalDataSourceServiceImpl.java:110)
+	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.init(LocalDataSourceServiceImpl.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 70 common frames omitted

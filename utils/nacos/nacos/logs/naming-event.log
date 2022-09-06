@@ -1,124 +1,42 @@
-2022-09-05 04:09:01,898 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1662321156934
+2022-09-06 00:28:06,079 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:09:01,898 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8160@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1662321156934
+2022-09-06 00:28:06,097 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
 
-2022-09-05 04:09:02,414 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-09-06 01:22:49,255 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662397642820
 
-2022-09-05 04:09:02,419 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+2022-09-06 01:22:49,838 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-09-05 04:09:02,438 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-09-06 01:22:49,838 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
 
-2022-09-05 04:09:02,438 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+2022-09-06 01:22:53,715 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:09:03,300 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662322143300
+2022-09-06 01:22:53,715 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
 
-2022-09-05 04:09:03,302 INFO service: DEFAULT_GROUP@@service-statistics {POS} {IP-ENABLED} valid: 172.23.126.118:8008@DEFAULT, region: unknown, msg: client beat ok
+2022-09-06 06:02:44,617 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662414465865
 
-2022-09-05 04:09:05,418 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-09-06 06:02:44,732 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-09-05 04:09:05,419 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.126.118:8001_true,
+2022-09-06 06:02:44,736 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
 
-2022-09-05 04:09:05,424 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-09-06 06:02:48,616 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:09:05,424 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.126.118:8160_true,
+2022-09-06 06:02:48,617 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
 
-2022-09-05 04:26:21,579 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8160@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1662322210477
+2022-09-06 07:50:27,261 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662420928825
 
-2022-09-05 04:26:21,580 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1662322210468
+2022-09-06 07:50:27,325 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-09-05 04:26:21,636 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-09-06 07:50:27,328 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
 
-2022-09-05 04:26:21,636 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+2022-09-06 07:50:31,696 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:26:21,647 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-09-06 07:50:31,697 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
 
-2022-09-05 04:26:21,648 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+2022-09-06 08:34:50,879 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:26:24,646 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-09-06 08:34:50,880 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
 
-2022-09-05 04:26:24,646 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.126.118:8160_true,
+2022-09-06 08:35:02,726 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-09-05 04:26:24,647 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 04:26:24,647 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.126.118:8001_true,
-
-2022-09-05 06:34:52,630 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1662329918454
-
-2022-09-05 06:34:52,630 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8160@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1662329918510
-
-2022-09-05 06:34:52,709 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 06:34:52,709 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
-
-2022-09-05 06:34:52,722 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 06:34:52,722 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
-
-2022-09-05 06:34:55,397 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 06:34:55,397 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.126.118:8001_true,
-
-2022-09-05 06:34:55,435 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 06:34:55,435 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.126.118:8160_true,
-
-2022-09-05 08:06:54,707 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1662335451624
-
-2022-09-05 08:06:54,707 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8160@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1662335451712
-
-2022-09-05 08:06:54,783 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:06:54,784 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
-
-2022-09-05 08:06:54,791 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:06:54,791 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
-
-2022-09-05 08:06:54,941 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662335449587
-
-2022-09-05 08:06:54,994 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:06:54,995 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
-
-2022-09-05 08:06:55,097 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:06:55,097 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
-
-2022-09-05 08:06:57,144 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:06:57,147 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.126.118:8001_true,
-
-2022-09-05 08:06:57,233 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:06:57,233 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.126.118:8160_true,
-
-2022-09-05 08:23:58,256 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8001@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1662336492193
-
-2022-09-05 08:23:58,255 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8160@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1662336492301
-
-2022-09-05 08:23:58,315 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:23:58,316 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
-
-2022-09-05 08:23:58,318 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:23:58,318 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
-
-2022-09-05 08:23:58,395 INFO {POS} {IP-DISABLED} valid: 172.23.126.118:8008@DEFAULT@DEFAULT_GROUP@@service-statistics, region: unknown, msg: client timeout after 15000, last beat: 1662336490156
-
-2022-09-05 08:23:58,453 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-09-05 08:23:58,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 
-
-2022-09-05 08:23:58,525 INFO DEFAULT_GROUP@@service-statistics {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8008:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:23:58,526 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
-
-2022-09-05 08:24:00,559 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:24:00,560 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.126.118:8001_true,
-
-2022-09-05 08:24:00,678 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.118:8160:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-09-05 08:24:00,680 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 172.23.126.118:8160_true,
+2022-09-06 08:35:02,726 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-statistics, ips: 172.23.126.118:8008_true,
 
