@@ -188,3 +188,9 @@
 
 2022-09-07 08:54:39,068 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
 
+2022-09-07 09:04:12,861 INFO [capacityManagement] start correct usage
+
+2022-09-07 09:04:12,912 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-07 09:04:12,938 WARN clearConfigHistory start
+
