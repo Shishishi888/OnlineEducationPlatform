@@ -22,7 +22,7 @@ public interface StatisticsDailyService extends IService<StatisticsDaily> {
     void generateStatistics(String date);
 
     /**
-     * 获取用于图表显示的数据（根据数据类型、日期范围查询）
+     * 获取用于图表显示的统计数据（根据数据类型、日期范围查询）
      * @param type
      * @param begin
      * @param end

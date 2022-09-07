@@ -47,6 +47,10 @@ export default {
                             // 跳转到图表显示页面
                             this.$router.push({path:'/statistics/showChart'});
                         });
+        },
+        // 获取用于图表显示的数据
+        getDataForChart() {
+          
         }
     }
 }

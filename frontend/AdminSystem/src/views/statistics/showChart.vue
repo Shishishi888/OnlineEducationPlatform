@@ -41,11 +41,15 @@
 
 <script>
 import echarts from 'echarts';
+import statisticsApi from '@/api/statistics'
+
 export default {
   data() {
     return {
       searchObj: {},
-      btnDisabled: false
+      btnDisabled: false,
+      xData: [],
+      yData: []
     }
   },
   created() {
@@ -54,6 +58,16 @@ export default {
   methods: {
     // 显示统计图表
     showChart() {
+      statisticsApi.getDataForChart(this.searchObj)
+                  .then(response => {
+                    this.xData = response.data.xList;
+                    this.yData = response.data.yList;
+
+                    this.setChart();
+                  })
+    },
+    // 设置统计图表
+    setChart() {
       // 基于准备好的dom，初始化echarts实例
       this.chart = echarts.init(document.getElementById('chart'))
 
@@ -95,7 +109,7 @@ export default {
           // x轴是类目轴（离散数据）,必须通过data设置类目数据
           xAxis: {
               type: 'category',
-              data: ['Mon', 'Tue', "Wed", 'Thu', "Fri", 'Sat', 'Sun']
+              data: this.xData
           },
           // y轴是数据轴（连续数据）
           yAxis: {
@@ -103,10 +117,10 @@ export default {
           },
           // 系列列表。每个系列通过 type 决定自己的图表类型
           series: [{
-              // 系列中的数据内容数组
-              data: [820, 932, 901, 934, 1290, 1330, 1320],
               // 折线图
-              type: 'line'
+              type: 'line',
+              // 系列中的数据内容数组
+              data: this.yData
           }]
       }
 

@@ -57,7 +57,7 @@ public class StatisticsDailyServiceImpl extends ServiceImpl<StatisticsDailyMappe
     }
 
     /**
-     * 获取用于图表显示的数据（根据数据类型、日期范围查询）
+     * 获取用于图表显示的统计数据（根据数据类型、日期范围查询）
      * @param type
      * @param begin
      * @param end
@@ -70,24 +70,24 @@ public class StatisticsDailyServiceImpl extends ServiceImpl<StatisticsDailyMappe
         queryWrapper.select("date_calculated", type);  // 选择要查询的列
         List<StatisticsDaily> statisticsDailyList = baseMapper.selectList(queryWrapper);
 
-        List<String> dateCalculatedList = new ArrayList<>();  // 日期list，封装点的横坐标
-        List<Integer> numList = new ArrayList<>();            // 数据list，封装点的纵坐标
+        List<String> xList = new ArrayList<>();
+        List<Integer> yList = new ArrayList<>();
 
         for(int i = 0; i < statisticsDailyList.size(); ++i) {
             StatisticsDaily statisticsDaily = statisticsDailyList.get(i);
-            dateCalculatedList.add(statisticsDaily.getDateCalculated());
+            xList.add(statisticsDaily.getDateCalculated());
             switch (type) {
                 case "login_num":
-                    numList.add(statisticsDaily.getLoginNum());
+                    yList.add(statisticsDaily.getLoginNum());
                     break;
                 case "register_num":
-                    numList.add(statisticsDaily.getRegisterNum());
+                    yList.add(statisticsDaily.getRegisterNum());
                     break;
                 case "video_view_num":
-                    numList.add(statisticsDaily.getVideoViewNum());
+                    yList.add(statisticsDaily.getVideoViewNum());
                     break;
                 case "course_num":
-                    numList.add(statisticsDaily.getCourseNum());
+                    yList.add(statisticsDaily.getCourseNum());
                     break;
                 default:
                     break;
@@ -95,8 +95,8 @@ public class StatisticsDailyServiceImpl extends ServiceImpl<StatisticsDailyMappe
         }
 
         Map<String, Object> mapForChart = new HashMap<>();
-        mapForChart.put("date_calculated", dateCalculatedList);
-        mapForChart.put("numList", numList);
+        mapForChart.put("xList", xList);
+        mapForChart.put("yList", yList);
 
         return mapForChart;
     }
