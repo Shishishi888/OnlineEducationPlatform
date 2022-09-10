@@ -1,0 +1,1890 @@
+2022-09-08 00:03:38,376 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 00:19:23,418 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 00:19:23,424 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144853735387291
+
+2022-09-08 00:19:23,425 INFO send udp packet: 172.23.126.118,55581,144853735387291
+
+2022-09-08 00:19:23,427 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662567563419,"env":"","clusters":""}, lastRefTime=144853735387291} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 00:36:28,961 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 00:36:28,980 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144863747366875
+
+2022-09-08 00:36:28,980 INFO send udp packet: 172.23.126.118,55581,144863747366875
+
+2022-09-08 00:36:28,983 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662568588971,"env":"","clusters":""}, lastRefTime=144863747366875} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 00:52:50,254 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 00:52:50,267 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144903795143334
+
+2022-09-08 00:52:50,267 INFO send udp packet: 172.23.126.118,55581,144903795143334
+
+2022-09-08 00:52:50,270 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662569570262,"env":"","clusters":""}, lastRefTime=144903795143334} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 00:52:50,272 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 00:52:50,273 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144903811838500
+
+2022-09-08 00:52:50,273 INFO send udp packet: 172.23.126.118,55581,144903811838500
+
+2022-09-08 00:52:50,273 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662569570272,"env":"","clusters":""}, lastRefTime=144903811838500} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:10:19,876 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:25:53,723 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 01:25:54,978 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 01:25:55,008 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:25:58,168 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 01:25:58,175 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,144937037888583
+
+2022-09-08 01:25:58,175 INFO send udp packet: 172.23.126.118,54117,144937037888583
+
+2022-09-08 01:25:58,177 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662571558169,"env":"","clusters":""}, lastRefTime=144937037888583} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:25:58,180 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,144937037888583
+
+2022-09-08 01:25:58,180 INFO send udp packet: 172.23.126.118,59240,144937037888583
+
+2022-09-08 01:25:58,181 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662571558180,"env":"","clusters":""}, lastRefTime=144937037888583} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:41:23,540 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 01:41:23,676 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:41:28,518 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 01:41:28,519 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144943847718375
+
+2022-09-08 01:41:28,520 INFO send udp packet: 172.23.126.118,55581,144943847718375
+
+2022-09-08 01:41:28,520 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662572488519,"env":"","clusters":""}, lastRefTime=144943847718375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:41:28,695 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:41:28,697 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144944025096042
+
+2022-09-08 01:41:28,697 INFO send udp packet: 172.23.126.118,55581,144944025096042
+
+2022-09-08 01:41:28,698 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662572488696,"env":"","clusters":""}, lastRefTime=144944025096042} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:58:44,608 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:58:44,619 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 01:58:49,174 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 01:58:49,183 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144983939966958
+
+2022-09-08 01:58:49,183 INFO send udp packet: 172.23.126.118,55581,144983939966958
+
+2022-09-08 01:58:49,187 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662573529177,"env":"","clusters":""}, lastRefTime=144983939966958} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 01:58:49,310 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 01:58:49,311 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,144984076258625
+
+2022-09-08 01:58:49,311 INFO send udp packet: 172.23.126.118,55581,144984076258625
+
+2022-09-08 01:58:49,323 INFO received ack: {"type": "push-ack", "lastRefTime":"144984076258625", "data":""} from: 172.23.126.118:, cost: 55581 ms, unacked: 12, total push: 0
+
+2022-09-08 02:31:04,911 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 02:31:09,296 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 02:31:09,313 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145023987828583
+
+2022-09-08 02:31:09,313 INFO send udp packet: 172.23.126.118,55581,145023987828583
+
+2022-09-08 02:31:09,326 INFO received ack: {"type": "push-ack", "lastRefTime":"145023987828583", "data":""} from: 172.23.126.118:, cost: 55581 ms, unacked: 12, total push: 0
+
+2022-09-08 03:02:41,378 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 03:02:45,549 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 03:02:45,550 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145037155551917
+
+2022-09-08 03:02:45,550 INFO send udp packet: 172.23.126.118,54117,145037155551917
+
+2022-09-08 03:02:45,553 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662577365550,"env":"","clusters":""}, lastRefTime=145037155551917} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 03:02:45,558 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145037155551917
+
+2022-09-08 03:02:45,558 INFO send udp packet: 172.23.126.118,59240,145037155551917
+
+2022-09-08 03:02:45,558 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662577365558,"env":"","clusters":""}, lastRefTime=145037155551917} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 04:05:55,388 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 04:05:59,364 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 04:05:59,374 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145072212358708
+
+2022-09-08 04:05:59,374 INFO send udp packet: 172.23.126.118,55581,145072212358708
+
+2022-09-08 04:05:59,377 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662581159366,"env":"","clusters":""}, lastRefTime=145072212358708} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 04:58:41,175 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 04:58:41,191 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145124112864958
+
+2022-09-08 04:58:41,191 INFO send udp packet: 172.23.126.118,55581,145124112864958
+
+2022-09-08 04:58:41,193 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662584321181,"env":"","clusters":""}, lastRefTime=145124112864958} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 04:58:46,033 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 04:58:46,036 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145128970278458
+
+2022-09-08 04:58:46,036 INFO send udp packet: 172.23.126.118,54117,145128970278458
+
+2022-09-08 04:58:46,037 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662584326034,"env":"","clusters":""}, lastRefTime=145128970278458} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 04:58:46,038 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145128970278458
+
+2022-09-08 04:58:46,038 INFO send udp packet: 172.23.126.118,55581,145128970278458
+
+2022-09-08 04:58:46,038 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662584326037,"env":"","clusters":""}, lastRefTime=145128970278458} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 04:58:46,039 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145128970278458
+
+2022-09-08 04:58:46,039 INFO send udp packet: 172.23.126.118,59240,145128970278458
+
+2022-09-08 04:58:46,040 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662584326039,"env":"","clusters":""}, lastRefTime=145128970278458} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 05:15:07,091 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 05:15:07,092 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 05:15:11,311 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 05:15:11,330 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145169152324417
+
+2022-09-08 05:15:11,331 INFO send udp packet: 172.23.126.118,54117,145169152324417
+
+2022-09-08 05:15:11,333 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662585311324,"env":"","clusters":""}, lastRefTime=145169152324417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 05:15:11,336 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145169152324417
+
+2022-09-08 05:15:11,336 INFO send udp packet: 172.23.126.118,59240,145169152324417
+
+2022-09-08 05:15:11,336 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662585311336,"env":"","clusters":""}, lastRefTime=145169152324417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 05:15:11,635 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 05:15:11,652 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145169479501667
+
+2022-09-08 05:15:11,653 INFO send udp packet: 172.23.126.118,59240,145169479501667
+
+2022-09-08 05:15:11,668 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145169479501667
+
+2022-09-08 05:15:11,669 INFO send udp packet: 172.23.126.118,54117,145169479501667
+
+2022-09-08 05:15:11,671 INFO received ack: {"type": "push-ack", "lastRefTime":"145169479501667", "data":""} from: 172.23.126.118:, cost: 59240 ms, unacked: 18, total push: 1
+
+2022-09-08 05:15:11,679 INFO received ack: {"type": "push-ack", "lastRefTime":"145169479501667", "data":""} from: 172.23.126.118:, cost: 54117 ms, unacked: 10, total push: 0
+
+2022-09-08 07:08:23,253 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 07:08:23,264 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 07:08:27,296 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 07:08:27,303 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145254280602125
+
+2022-09-08 07:08:27,304 INFO send udp packet: 172.23.126.118,55581,145254280602125
+
+2022-09-08 07:08:27,315 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662592107298,"env":"","clusters":""}, lastRefTime=145254280602125} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 07:08:27,564 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 07:08:27,592 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145254556473792
+
+2022-09-08 07:08:27,593 INFO send udp packet: 172.23.126.118,55581,145254556473792
+
+2022-09-08 07:08:27,595 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662592107577,"env":"","clusters":""}, lastRefTime=145254556473792} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 08:54:21,635 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 08:57:21,659 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 08:57:26,655 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 08:57:26,661 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145714924224542
+
+2022-09-08 08:57:26,662 INFO send udp packet: 172.23.126.118,55581,145714924224542
+
+2022-09-08 08:57:26,684 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662598646657,"env":"","clusters":""}, lastRefTime=145714924224542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 08:59:58,855 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 08:59:58,869 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145840128580459
+
+2022-09-08 08:59:58,870 INFO send udp packet: 172.23.126.118,54117,145840128580459
+
+2022-09-08 08:59:58,876 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662598798861,"env":"","clusters":""}, lastRefTime=145840128580459} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 08:59:58,879 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145840128580459
+
+2022-09-08 08:59:58,879 INFO send udp packet: 172.23.126.118,59240,145840128580459
+
+2022-09-08 08:59:58,881 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662598798879,"env":"","clusters":""}, lastRefTime=145840128580459} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:37,869 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 09:07:37,887 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145916564669375
+
+2022-09-08 09:07:37,888 INFO send udp packet: 172.23.126.118,55581,145916564669375
+
+2022-09-08 09:07:37,891 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-edu","checksum":"b9e012a29313ba26fe35fff9777db140","lastRefTime":1662599257874,"env":"","clusters":""}, lastRefTime=145916564669375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:37,893 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 09:07:37,896 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145916586734500
+
+2022-09-08 09:07:37,896 INFO send udp packet: 172.23.126.118,55581,145916586734500
+
+2022-09-08 09:07:37,897 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-statistics","checksum":"5fe8152d7bff93d13cfd17dd703e81cf","lastRefTime":1662599257895,"env":"","clusters":""}, lastRefTime=145916586734500} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,571 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 09:07:41,573 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145920265751375
+
+2022-09-08 09:07:41,573 INFO send udp packet: 172.23.126.118,54117,145920265751375
+
+2022-09-08 09:07:41,574 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662599261572,"env":"","clusters":""}, lastRefTime=145920265751375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,575 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145920265751375
+
+2022-09-08 09:07:41,575 INFO send udp packet: 172.23.126.118,55581,145920265751375
+
+2022-09-08 09:07:41,576 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662599261575,"env":"","clusters":""}, lastRefTime=145920265751375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,576 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145920265751375
+
+2022-09-08 09:07:41,576 INFO send udp packet: 172.23.126.118,59240,145920265751375
+
+2022-09-08 09:07:41,577 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662599261576,"env":"","clusters":""}, lastRefTime=145920265751375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,659 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 09:07:41,671 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145920355720417
+
+2022-09-08 09:07:41,672 INFO send udp packet: 172.23.126.118,55581,145920355720417
+
+2022-09-08 09:07:41,673 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662599261666,"env":"","clusters":""}, lastRefTime=145920355720417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,676 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145920355720417
+
+2022-09-08 09:07:41,676 INFO send udp packet: 172.23.126.118,54117,145920355720417
+
+2022-09-08 09:07:41,676 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662599261676,"env":"","clusters":""}, lastRefTime=145920355720417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,677 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145920355720417
+
+2022-09-08 09:07:41,677 INFO send udp packet: 172.23.126.118,59240,145920355720417
+
+2022-09-08 09:07:41,677 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662599261676,"env":"","clusters":""}, lastRefTime=145920355720417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,831 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 09:07:41,831 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,145920524745667
+
+2022-09-08 09:07:41,831 INFO send udp packet: 172.23.126.118,59240,145920524745667
+
+2022-09-08 09:07:41,831 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662599261831,"env":"","clusters":""}, lastRefTime=145920524745667} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,831 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,145920524745667
+
+2022-09-08 09:07:41,831 INFO send udp packet: 172.23.126.118,55581,145920524745667
+
+2022-09-08 09:07:41,832 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662599261831,"env":"","clusters":""}, lastRefTime=145920524745667} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 09:07:41,832 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,145920524745667
+
+2022-09-08 09:07:41,832 INFO send udp packet: 172.23.126.118,54117,145920524745667
+
+2022-09-08 09:07:41,832 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662599261832,"env":"","clusters":""}, lastRefTime=145920524745667} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:46:41,034 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 10:46:41,054 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,151815069364583
+
+2022-09-08 10:46:41,055 INFO send udp packet: 172.23.126.118,54117,151815069364583
+
+2022-09-08 10:46:41,058 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,151815069364583
+
+2022-09-08 10:46:41,058 INFO send udp packet: 172.23.126.118,59240,151815069364583
+
+2022-09-08 10:47:07,860 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 10:47:09,187 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 10:47:09,188 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 10:47:12,789 INFO retry to push data, key: 172.23.126.118,54117,151815069364583
+
+2022-09-08 10:47:12,789 INFO send udp packet: 172.23.126.118,54117,151815069364583
+
+2022-09-08 10:47:12,803 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662605201047,"env":"","clusters":""}, lastRefTime=151815069364583} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$Retransmitter.run(PushService.java:613)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:12,818 INFO retry to push data, key: 172.23.126.118,59240,151815069364583
+
+2022-09-08 10:47:12,818 INFO send udp packet: 172.23.126.118,59240,151815069364583
+
+2022-09-08 10:47:12,820 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662605201057,"env":"","clusters":""}, lastRefTime=151815069364583} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$Retransmitter.run(PushService.java:613)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,027 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 10:47:13,031 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,151825326285209
+
+2022-09-08 10:47:13,031 INFO send udp packet: 172.23.126.118,55581,151825326285209
+
+2022-09-08 10:47:13,032 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"a30ab50f8f5dafdbff4eca2f8e87dec0","lastRefTime":1662605233028,"env":"","clusters":""}, lastRefTime=151825326285209} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,034 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,151825326285209
+
+2022-09-08 10:47:13,034 INFO send udp packet: 172.23.126.118,54117,151825326285209
+
+2022-09-08 10:47:13,035 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"a30ab50f8f5dafdbff4eca2f8e87dec0","lastRefTime":1662605233032,"env":"","clusters":""}, lastRefTime=151825326285209} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,036 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,151825326285209
+
+2022-09-08 10:47:13,036 INFO send udp packet: 172.23.126.118,59240,151825326285209
+
+2022-09-08 10:47:13,036 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"a30ab50f8f5dafdbff4eca2f8e87dec0","lastRefTime":1662605233035,"env":"","clusters":""}, lastRefTime=151825326285209} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,149 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 10:47:13,150 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,151825448382167
+
+2022-09-08 10:47:13,150 INFO send udp packet: 172.23.126.118,59240,151825448382167
+
+2022-09-08 10:47:13,157 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"39922aba7beb2d1a0d2b3f34b200f4fa","lastRefTime":1662605233149,"env":"","clusters":""}, lastRefTime=151825448382167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,158 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,151825448382167
+
+2022-09-08 10:47:13,158 INFO send udp packet: 172.23.126.118,55581,151825448382167
+
+2022-09-08 10:47:13,159 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"39922aba7beb2d1a0d2b3f34b200f4fa","lastRefTime":1662605233157,"env":"","clusters":""}, lastRefTime=151825448382167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:47:13,159 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,151825448382167
+
+2022-09-08 10:47:13,159 INFO send udp packet: 172.23.126.118,54117,151825448382167
+
+2022-09-08 10:47:13,159 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"39922aba7beb2d1a0d2b3f34b200f4fa","lastRefTime":1662605233159,"env":"","clusters":""}, lastRefTime=151825448382167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:48:35,961 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 10:48:35,981 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,151845147971417
+
+2022-09-08 10:48:35,981 INFO send udp packet: 172.23.126.118,54117,151845147971417
+
+2022-09-08 10:48:35,983 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662605315975,"env":"","clusters":""}, lastRefTime=151845147971417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 10:48:35,985 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,151845147971417
+
+2022-09-08 10:48:35,985 INFO send udp packet: 172.23.126.118,59240,151845147971417
+
+2022-09-08 10:48:35,985 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662605315985,"env":"","clusters":""}, lastRefTime=151845147971417} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:05,585 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 11:00:05,587 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 11:00:09,449 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 11:00:09,457 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,152425818180042
+
+2022-09-08 11:00:09,457 INFO send udp packet: 172.23.126.118,55581,152425818180042
+
+2022-09-08 11:00:09,460 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662606009450,"env":"","clusters":""}, lastRefTime=152425818180042} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:09,463 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,152425818180042
+
+2022-09-08 11:00:09,464 INFO send udp packet: 172.23.126.118,54117,152425818180042
+
+2022-09-08 11:00:09,464 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662606009463,"env":"","clusters":""}, lastRefTime=152425818180042} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:09,465 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,152425818180042
+
+2022-09-08 11:00:09,465 INFO send udp packet: 172.23.126.118,59240,152425818180042
+
+2022-09-08 11:00:09,465 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662606009464,"env":"","clusters":""}, lastRefTime=152425818180042} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:09,586 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 11:00:09,586 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,152425954885167
+
+2022-09-08 11:00:09,586 INFO send udp packet: 172.23.126.118,59240,152425954885167
+
+2022-09-08 11:00:09,587 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662606009586,"env":"","clusters":""}, lastRefTime=152425954885167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:09,587 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,152425954885167
+
+2022-09-08 11:00:09,587 INFO send udp packet: 172.23.126.118,55581,152425954885167
+
+2022-09-08 11:00:09,588 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662606009587,"env":"","clusters":""}, lastRefTime=152425954885167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:00:09,588 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,152425954885167
+
+2022-09-08 11:00:09,588 INFO send udp packet: 172.23.126.118,54117,152425954885167
+
+2022-09-08 11:00:09,589 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662606009588,"env":"","clusters":""}, lastRefTime=152425954885167} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 11:47:49,740 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 11:47:49,750 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 11:47:53,289 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 11:47:53,513 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 11:47:53,696 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 12:04:48,223 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 12:04:48,238 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 12:04:51,601 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 12:04:51,617 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154252062162333
+
+2022-09-08 12:04:51,617 INFO send udp packet: 172.23.126.118,54117,154252062162333
+
+2022-09-08 12:04:51,630 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662609891607,"env":"","clusters":""}, lastRefTime=154252062162333} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,641 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154252062162333
+
+2022-09-08 12:04:51,641 INFO send udp packet: 172.23.126.118,55581,154252062162333
+
+2022-09-08 12:04:51,642 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662609891641,"env":"","clusters":""}, lastRefTime=154252062162333} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,642 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154252062162333
+
+2022-09-08 12:04:51,642 INFO send udp packet: 172.23.126.118,59240,154252062162333
+
+2022-09-08 12:04:51,642 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662609891642,"env":"","clusters":""}, lastRefTime=154252062162333} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,816 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 12:04:51,817 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154252277008375
+
+2022-09-08 12:04:51,817 INFO send udp packet: 172.23.126.118,55581,154252277008375
+
+2022-09-08 12:04:51,818 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662609891817,"env":"","clusters":""}, lastRefTime=154252277008375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,818 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154252277008375
+
+2022-09-08 12:04:51,819 INFO send udp packet: 172.23.126.118,54117,154252277008375
+
+2022-09-08 12:04:51,819 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662609891818,"env":"","clusters":""}, lastRefTime=154252277008375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,822 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154252277008375
+
+2022-09-08 12:04:51,822 INFO send udp packet: 172.23.126.118,59240,154252277008375
+
+2022-09-08 12:04:51,822 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662609891821,"env":"","clusters":""}, lastRefTime=154252277008375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,998 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 12:04:51,999 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154252458218541
+
+2022-09-08 12:04:51,999 INFO send udp packet: 172.23.126.118,59240,154252458218541
+
+2022-09-08 12:04:51,999 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662609891998,"env":"","clusters":""}, lastRefTime=154252458218541} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:51,999 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154252458218541
+
+2022-09-08 12:04:51,999 INFO send udp packet: 172.23.126.118,55581,154252458218541
+
+2022-09-08 12:04:52,000 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662609891999,"env":"","clusters":""}, lastRefTime=154252458218541} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:04:52,000 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154252458218541
+
+2022-09-08 12:04:52,000 INFO send udp packet: 172.23.126.118,54117,154252458218541
+
+2022-09-08 12:04:52,001 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662609892000,"env":"","clusters":""}, lastRefTime=154252458218541} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:20:41,285 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 12:20:46,349 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 12:20:46,350 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154262177803416
+
+2022-09-08 12:20:46,350 INFO send udp packet: 172.23.126.118,54117,154262177803416
+
+2022-09-08 12:20:46,351 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154262177803416
+
+2022-09-08 12:20:46,351 INFO send udp packet: 172.23.126.118,55581,154262177803416
+
+2022-09-08 12:20:46,351 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154262177803416
+
+2022-09-08 12:20:46,351 INFO send udp packet: 172.23.126.118,59240,154262177803416
+
+2022-09-08 12:20:46,372 INFO received ack: {"type": "push-ack", "lastRefTime":"154262177803416", "data":""} from: 172.23.126.118:, cost: 54117 ms, unacked: 22, total push: 2
+
+2022-09-08 12:20:46,376 INFO received ack: {"type": "push-ack", "lastRefTime":"154262177803416", "data":""} from: 172.23.126.118:, cost: 55581 ms, unacked: 25, total push: 1
+
+2022-09-08 12:20:46,378 INFO received ack: {"type": "push-ack", "lastRefTime":"154262177803416", "data":""} from: 172.23.126.118:, cost: 59240 ms, unacked: 27, total push: 0
+
+2022-09-08 12:37:47,484 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 12:37:47,487 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 12:37:50,741 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 12:37:50,750 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154292178713959
+
+2022-09-08 12:37:50,750 INFO send udp packet: 172.23.126.118,54117,154292178713959
+
+2022-09-08 12:37:50,753 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662611870743,"env":"","clusters":""}, lastRefTime=154292178713959} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:50,756 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154292178713959
+
+2022-09-08 12:37:50,756 INFO send udp packet: 172.23.126.118,55581,154292178713959
+
+2022-09-08 12:37:50,756 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662611870756,"env":"","clusters":""}, lastRefTime=154292178713959} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:50,757 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154292178713959
+
+2022-09-08 12:37:50,757 INFO send udp packet: 172.23.126.118,59240,154292178713959
+
+2022-09-08 12:37:50,759 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662611870757,"env":"","clusters":""}, lastRefTime=154292178713959} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:50,924 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 12:37:50,925 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154292361194834
+
+2022-09-08 12:37:50,925 INFO send udp packet: 172.23.126.118,55581,154292361194834
+
+2022-09-08 12:37:50,926 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662611870924,"env":"","clusters":""}, lastRefTime=154292361194834} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:50,926 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154292361194834
+
+2022-09-08 12:37:50,926 INFO send udp packet: 172.23.126.118,54117,154292361194834
+
+2022-09-08 12:37:50,927 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662611870926,"env":"","clusters":""}, lastRefTime=154292361194834} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:50,927 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154292361194834
+
+2022-09-08 12:37:50,927 INFO send udp packet: 172.23.126.118,59240,154292361194834
+
+2022-09-08 12:37:50,927 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662611870927,"env":"","clusters":""}, lastRefTime=154292361194834} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:51,097 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 12:37:51,098 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154292534314542
+
+2022-09-08 12:37:51,098 INFO send udp packet: 172.23.126.118,59240,154292534314542
+
+2022-09-08 12:37:51,098 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662611871098,"env":"","clusters":""}, lastRefTime=154292534314542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:51,100 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154292534314542
+
+2022-09-08 12:37:51,100 INFO send udp packet: 172.23.126.118,55581,154292534314542
+
+2022-09-08 12:37:51,100 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662611871100,"env":"","clusters":""}, lastRefTime=154292534314542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:37:51,101 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154292534314542
+
+2022-09-08 12:37:51,101 INFO send udp packet: 172.23.126.118,54117,154292534314542
+
+2022-09-08 12:37:51,101 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"bb926d2b51a67c6c12146d3aebf43b9a","lastRefTime":1662611871100,"env":"","clusters":""}, lastRefTime=154292534314542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 12:54:13,304 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 13:12:25,658 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 13:12:28,884 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 13:12:28,890 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154342267579542
+
+2022-09-08 13:12:28,891 INFO send udp packet: 172.23.126.118,54117,154342267579542
+
+2022-09-08 13:12:28,894 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662613948886,"env":"","clusters":""}, lastRefTime=154342267579542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:12:28,896 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154342267579542
+
+2022-09-08 13:12:28,897 INFO send udp packet: 172.23.126.118,55581,154342267579542
+
+2022-09-08 13:12:28,897 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662613948896,"env":"","clusters":""}, lastRefTime=154342267579542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:12:28,897 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154342267579542
+
+2022-09-08 13:12:28,898 INFO send udp packet: 172.23.126.118,59240,154342267579542
+
+2022-09-08 13:12:28,898 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662613948897,"env":"","clusters":""}, lastRefTime=154342267579542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:12:29,060 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 13:12:29,061 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,154342442363875
+
+2022-09-08 13:12:29,061 INFO send udp packet: 172.23.126.118,55581,154342442363875
+
+2022-09-08 13:12:29,063 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662613949060,"env":"","clusters":""}, lastRefTime=154342442363875} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:12:29,065 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,154342442363875
+
+2022-09-08 13:12:29,065 INFO send udp packet: 172.23.126.118,54117,154342442363875
+
+2022-09-08 13:12:29,067 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662613949065,"env":"","clusters":""}, lastRefTime=154342442363875} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:12:29,068 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154342442363875
+
+2022-09-08 13:12:29,068 INFO send udp packet: 172.23.126.118,59240,154342442363875
+
+2022-09-08 13:12:29,069 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662613949067,"env":"","clusters":""}, lastRefTime=154342442363875} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:29:07,247 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 13:29:10,336 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 13:29:10,507 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 13:31:30,008 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 13:31:30,011 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154352301638750
+
+2022-09-08 13:31:30,011 INFO send udp packet: 172.23.126.118,59240,154352301638750
+
+2022-09-08 13:31:30,013 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"3c084eb16501324a0c3026705dd50fed","lastRefTime":1662615090009,"env":"","clusters":""}, lastRefTime=154352301638750} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 13:31:35,045 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 13:31:35,058 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,154357340638916
+
+2022-09-08 13:31:35,059 INFO send udp packet: 172.23.126.118,59240,154357340638916
+
+2022-09-08 13:31:35,063 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662615095052,"env":"","clusters":""}, lastRefTime=154357340638916} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 16:05:36,430 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 16:05:36,615 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 16:05:39,945 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 16:05:40,103 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 16:05:40,492 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 17:21:36,447 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 17:21:41,792 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 17:21:41,816 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,166297934880750
+
+2022-09-08 17:21:41,816 INFO send udp packet: 172.23.126.118,54117,166297934880750
+
+2022-09-08 17:21:41,822 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,166297934880750
+
+2022-09-08 17:21:41,822 INFO send udp packet: 172.23.126.118,55581,166297934880750
+
+2022-09-08 17:21:41,823 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,166297934880750
+
+2022-09-08 17:21:41,823 INFO send udp packet: 172.23.126.118,59240,166297934880750
+
+2022-09-08 17:21:41,842 INFO received ack: {"type": "push-ack", "lastRefTime":"166297934880750", "data":""} from: 172.23.126.118:, cost: 55581 ms, unacked: 20, total push: 2
+
+2022-09-08 17:21:41,845 INFO received ack: {"type": "push-ack", "lastRefTime":"166297934880750", "data":""} from: 172.23.126.118:, cost: 54117 ms, unacked: 29, total push: 1
+
+2022-09-08 17:21:41,845 INFO received ack: {"type": "push-ack", "lastRefTime":"166297934880750", "data":""} from: 172.23.126.118:, cost: 59240 ms, unacked: 22, total push: 0
+
+2022-09-08 17:38:12,409 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 17:38:12,436 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,166337745104542
+
+2022-09-08 17:38:12,437 INFO send udp packet: 172.23.126.118,54117,166337745104542
+
+2022-09-08 17:38:12,439 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662629892428,"env":"","clusters":""}, lastRefTime=166337745104542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 17:38:12,445 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,166337745104542
+
+2022-09-08 17:38:12,445 INFO send udp packet: 172.23.126.118,55581,166337745104542
+
+2022-09-08 17:38:12,445 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662629892445,"env":"","clusters":""}, lastRefTime=166337745104542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 17:38:12,446 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,166337745104542
+
+2022-09-08 17:38:12,446 INFO send udp packet: 172.23.126.118,59240,166337745104542
+
+2022-09-08 17:38:12,446 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662629892445,"env":"","clusters":""}, lastRefTime=166337745104542} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 17:55:54,933 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 17:55:54,936 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,166387888955375
+
+2022-09-08 17:55:54,936 INFO send udp packet: 172.23.126.118,55581,166387888955375
+
+2022-09-08 17:55:54,936 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-ucenter","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8160#DEFAULT#DEFAULT_GROUP@@service-ucenter","port":8160,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-ucenter","enabled":true}],"name":"DEFAULT_GROUP@@service-ucenter","checksum":"195ff0ec29335969a129c49daffccd72","lastRefTime":1662630954936,"env":"","clusters":""}, lastRefTime=166387888955375} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:24,835 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 18:58:24,845 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,170000112322708
+
+2022-09-08 18:58:24,845 INFO send udp packet: 172.23.126.118,55581,170000112322708
+
+2022-09-08 18:58:24,850 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-statistics","checksum":"5fe8152d7bff93d13cfd17dd703e81cf","lastRefTime":1662634704839,"env":"","clusters":""}, lastRefTime=170000112322708} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:24,852 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,170000112322708
+
+2022-09-08 18:58:24,853 INFO send udp packet: 172.23.126.118,54117,170000112322708
+
+2022-09-08 18:58:24,853 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-statistics","checksum":"5fe8152d7bff93d13cfd17dd703e81cf","lastRefTime":1662634704852,"env":"","clusters":""}, lastRefTime=170000112322708} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:24,854 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,170000112322708
+
+2022-09-08 18:58:24,854 INFO send udp packet: 172.23.126.118,59240,170000112322708
+
+2022-09-08 18:58:24,854 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-statistics","checksum":"5fe8152d7bff93d13cfd17dd703e81cf","lastRefTime":1662634704853,"env":"","clusters":""}, lastRefTime=170000112322708} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:28,157 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 18:58:28,160 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,170003432820000
+
+2022-09-08 18:58:28,160 INFO send udp packet: 172.23.126.118,55581,170003432820000
+
+2022-09-08 18:58:28,161 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662634708158,"env":"","clusters":""}, lastRefTime=170003432820000} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:28,175 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,170003432820000
+
+2022-09-08 18:58:28,175 INFO send udp packet: 172.23.126.118,54117,170003432820000
+
+2022-09-08 18:58:28,176 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662634708175,"env":"","clusters":""}, lastRefTime=170003432820000} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 18:58:28,177 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,170003432820000
+
+2022-09-08 18:58:28,177 INFO send udp packet: 172.23.126.118,59240,170003432820000
+
+2022-09-08 18:58:28,177 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-statistics","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.126.118#8008#DEFAULT#DEFAULT_GROUP@@service-statistics","port":8008,"healthy":true,"ip":"172.23.126.118","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-statistics","enabled":true}],"name":"DEFAULT_GROUP@@service-statistics","checksum":"ab39359218bc3197e6b450d069380c9b","lastRefTime":1662634708177,"env":"","clusters":""}, lastRefTime=170003432820000} to client: 172.23.126.118, error: {}
+
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
+	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
+	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-08 19:03:29,298 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 19:35:49,134 INFO DEFAULT_GROUP@@service-statistics is changed, add it to push queue.
+
+2022-09-08 19:35:49,150 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:35:49,151 INFO send udp packet: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:35:49,155 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:35:49,155 INFO send udp packet: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:35:49,155 INFO serviceName: DEFAULT_GROUP@@service-statistics changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,171988324786416
+
+2022-09-08 19:35:49,155 INFO send udp packet: 172.23.126.118,59240,171988324786416
+
+2022-09-08 19:35:50,764 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-08 19:35:50,766 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,171989953103041
+
+2022-09-08 19:35:50,766 INFO send udp packet: 172.23.126.118,59240,171989953103041
+
+2022-09-08 19:35:50,767 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,171989953103041
+
+2022-09-08 19:35:50,767 INFO send udp packet: 172.23.126.118,55581,171989953103041
+
+2022-09-08 19:35:50,768 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,171989953103041
+
+2022-09-08 19:35:50,768 INFO send udp packet: 172.23.126.118,54117,171989953103041
+
+2022-09-08 19:35:52,685 INFO DEFAULT_GROUP@@service-ucenter is changed, add it to push queue.
+
+2022-09-08 19:35:52,686 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:54117, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,54117,171991874035125
+
+2022-09-08 19:35:52,686 INFO send udp packet: 172.23.126.118,54117,171991874035125
+
+2022-09-08 19:35:52,686 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:55581, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,55581,171991874035125
+
+2022-09-08 19:35:52,686 INFO send udp packet: 172.23.126.118,55581,171991874035125
+
+2022-09-08 19:35:52,686 INFO serviceName: DEFAULT_GROUP@@service-ucenter changed, schedule push for: 172.23.126.118:59240, agent: Nacos-Java-Client:v1.0.0, key: 172.23.126.118,59240,171991874035125
+
+2022-09-08 19:35:52,686 INFO send udp packet: 172.23.126.118,59240,171991874035125
+
+2022-09-08 19:35:59,155 INFO retry to push data, key: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:35:59,155 INFO send udp packet: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:35:59,158 INFO retry to push data, key: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:35:59,158 INFO send udp packet: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:35:59,160 INFO retry to push data, key: 172.23.126.118,59240,171988324786416
+
+2022-09-08 19:35:59,160 INFO send udp packet: 172.23.126.118,59240,171988324786416
+
+2022-09-08 19:36:23,428 INFO retry to push data, key: 172.23.126.118,59240,171989953103041
+
+2022-09-08 19:36:23,432 INFO send udp packet: 172.23.126.118,59240,171989953103041
+
+2022-09-08 19:36:23,451 INFO retry to push data, key: 172.23.126.118,55581,171989953103041
+
+2022-09-08 19:36:23,451 INFO send udp packet: 172.23.126.118,55581,171989953103041
+
+2022-09-08 19:36:23,456 INFO retry to push data, key: 172.23.126.118,54117,171989953103041
+
+2022-09-08 19:36:23,456 INFO send udp packet: 172.23.126.118,54117,171989953103041
+
+2022-09-08 19:36:23,457 INFO retry to push data, key: 172.23.126.118,54117,171991874035125
+
+2022-09-08 19:36:23,457 INFO send udp packet: 172.23.126.118,54117,171991874035125
+
+2022-09-08 19:36:23,458 INFO retry to push data, key: 172.23.126.118,55581,171991874035125
+
+2022-09-08 19:36:23,458 INFO send udp packet: 172.23.126.118,55581,171991874035125
+
+2022-09-08 19:36:23,459 INFO retry to push data, key: 172.23.126.118,59240,171991874035125
+
+2022-09-08 19:36:23,459 INFO send udp packet: 172.23.126.118,59240,171991874035125
+
+2022-09-08 19:36:23,460 INFO retry to push data, key: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:36:23,460 WARN max re-push times reached, retry times 2, key: 172.23.126.118,55581,171988324786416
+
+2022-09-08 19:36:23,460 INFO retry to push data, key: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:36:23,460 WARN max re-push times reached, retry times 2, key: 172.23.126.118,54117,171988324786416
+
+2022-09-08 19:36:23,460 INFO retry to push data, key: 172.23.126.118,59240,171988324786416
+
+2022-09-08 19:36:23,460 WARN max re-push times reached, retry times 2, key: 172.23.126.118,59240,171988324786416
+

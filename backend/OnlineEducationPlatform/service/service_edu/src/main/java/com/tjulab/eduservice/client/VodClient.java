@@ -14,9 +14,19 @@ import java.util.List;
 @Component
 public interface VodClient {
 
+    /**
+     * 删除单个阿里云视频（根据视频ID删除）
+     * @param videoId
+     * @return
+     */
     @DeleteMapping("/vodservice/video/deleteAliyunVideo/{videoId}")    // 完全路径
     public R deleteAliyunVideo(@PathVariable("videoId") String videoId);  // @PathVariable一定要指明参数的名称
 
+    /**
+     * 删除多个阿里云视频（根据视频ID删除）
+     * @param videoIdList
+     * @return
+     */
     @DeleteMapping("/vodservice/video/deleteAliyunVideos")
     public R deleteAliyunVideos(@RequestParam("videoIdList") List<String> videoIdList);
 

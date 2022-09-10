@@ -5,8 +5,8 @@
    ,--,:  : |                                           Nacos 1.1.4
 ,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
 |   :  :  | |                      '   ,'\   .--.--.    Port: 8848
-:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 14575
-|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://172.23.126.118:8848/nacos/index.html
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 21849
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://172.23.189.146:8848/nacos/index.html
 '   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
 |   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
 '   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
@@ -15,40 +15,40 @@
 ;   |.'     |  ,     .-./\   \  /            `--'---'
 '---'        `--`---'     `----'
 
-2022-09-05 23:52:56,906 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cd076a01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-10 22:56:47,395 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$310558f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-05 23:52:57,184 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-10 22:56:47,652 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-05 23:52:57,194 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@40f33492' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-10 22:56:47,663 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@324c64cd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-05 23:52:57,200 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f1dc0cb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-10 22:56:47,672 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$55d9fbab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-05 23:52:57,223 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-10 22:56:47,697 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2022-09-05 23:52:58,690 INFO Tomcat initialized with port(s): 8848 (http)
+2022-09-10 22:56:49,009 INFO Tomcat initialized with port(s): 8848 (http)
 
-2022-09-05 23:52:59,153 INFO Root WebApplicationContext: initialization completed in 10121 ms
+2022-09-10 22:56:49,531 INFO Root WebApplicationContext: initialization completed in 9957 ms
 
-2022-09-05 23:53:01,904 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
+2022-09-10 22:56:52,540 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
 
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoaderBase (jar:file:/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/target/nacos-server.jar!/BOOT-INF/lib/tomcat-embed-core-9.0.13.jar!/) to field java.io.ObjectStreamClass$Caches.localDescs
 WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoaderBase
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2022-09-05 23:53:01,964 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
+2022-09-10 22:56:52,619 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
 
-2022-09-05 23:53:01,965 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
+2022-09-10 22:56:52,620 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
 
-2022-09-05 23:53:01,965 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
+2022-09-10 22:56:52,620 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
 
-2022-09-05 23:53:01,965 ERROR Nacos failed to start, please see /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/nacos.log for more details.
+2022-09-10 22:56:52,620 ERROR Nacos failed to start, please see /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/nacos.log for more details.
 
-2022-09-05 23:53:01,992 INFO 
+2022-09-10 22:56:52,648 INFO 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 
-2022-09-05 23:53:02,003 ERROR Application run failed
+2022-09-10 22:56:52,660 ERROR Application run failed
 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
