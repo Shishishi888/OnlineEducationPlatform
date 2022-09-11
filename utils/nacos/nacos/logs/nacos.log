@@ -1,668 +1,438 @@
-2022-09-10 22:56:10,830 INFO Starting Nacos v1.1.4 on shiyangdeMacBook-Pro.local with PID 21620 (/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/target/nacos-server.jar started by shiyang in /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/bin)
+2022-09-11 00:36:27,348 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:10,846 INFO The following profiles are active: standalone
+2022-09-11 00:36:27,373 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:19,161 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c4f9028c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-11 00:36:27,808 WARN clearConfigHistory start
 
-2022-09-10 22:56:19,494 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-11 02:05:53,411 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:19,505 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@72efb5c1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-11 02:05:53,440 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:19,510 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$e9cda53e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-11 02:05:53,886 WARN clearConfigHistory start
 
-2022-09-10 22:56:19,532 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-11 02:15:53,443 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:20,905 INFO Tomcat initialized with port(s): 8848 (http)
+2022-09-11 02:15:53,472 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:20,999 INFO Starting service [Tomcat]
+2022-09-11 02:15:53,924 WARN clearConfigHistory start
 
-2022-09-10 22:56:20,999 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-09-11 02:25:53,458 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:21,040 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shiyang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-09-11 02:25:53,488 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:21,411 INFO Initializing Spring embedded WebApplicationContext
+2022-09-11 02:25:53,941 WARN clearConfigHistory start
 
-2022-09-10 22:56:21,412 INFO Root WebApplicationContext: initialization completed in 10366 ms
+2022-09-11 02:35:53,486 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:27,259 INFO Use Mysql as the driver
+2022-09-11 02:35:53,523 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:28,429 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-11 02:35:53,967 WARN clearConfigHistory start
 
-2022-09-10 22:56:29,021 INFO Adding welcome page: class path resource [static/index.html]
+2022-09-11 02:45:53,523 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,175 INFO Creating filter chain: Ant [pattern='/'], []
+2022-09-11 02:45:53,554 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,175 INFO Creating filter chain: Ant [pattern='/**/*.css'], []
+2022-09-11 02:45:53,992 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.js'], []
+2022-09-11 02:55:53,554 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.html'], []
+2022-09-11 02:55:53,596 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.map'], []
+2022-09-11 02:55:54,021 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.svg'], []
+2022-09-11 03:38:34,299 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.png'], []
+2022-09-11 03:38:34,390 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/**/*.ico'], []
+2022-09-11 03:38:34,783 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/console-fe/public/**'], []
+2022-09-11 03:48:34,404 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/auth/login'], []
+2022-09-11 03:48:34,443 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/console/health/**'], []
+2022-09-11 03:48:34,833 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/cs/**'], []
+2022-09-11 03:58:34,459 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/ns/**'], []
+2022-09-11 03:58:34,496 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/cmdb/**'], []
+2022-09-11 03:58:34,891 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-09-11 04:08:34,511 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,176 INFO Creating filter chain: Ant [pattern='/v1/console/server/**'], []
+2022-09-11 04:08:34,548 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:30,300 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1756f7cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c2924d7, org.springframework.security.web.header.HeaderWriterFilter@51dae791, org.springframework.security.web.authentication.logout.LogoutFilter@40fa8766, com.alibaba.nacos.console.filter.JwtAuthenticationTokenFilter@3138953b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6587305a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74d6736, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27df95e, org.springframework.security.web.session.SessionManagementFilter@7eb200ce, org.springframework.security.web.access.ExceptionTranslationFilter@314b9e4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3667faa8]
+2022-09-11 04:08:34,948 WARN clearConfigHistory start
 
-2022-09-10 22:56:30,648 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-11 04:18:34,563 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:30,715 INFO Initializing ExecutorService 'taskScheduler'
+2022-09-11 04:18:34,608 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:31,137 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+2022-09-11 04:18:35,023 WARN clearConfigHistory start
 
-2022-09-10 22:56:31,154 INFO Started Nacos in 23.347 seconds (JVM running for 24.698)
+2022-09-11 04:28:34,650 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:31,154 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
+2022-09-11 04:28:34,679 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:31,155 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
+2022-09-11 04:28:35,118 WARN clearConfigHistory start
 
-2022-09-10 22:56:31,155 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
+2022-09-11 05:27:13,328 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:31,155 INFO Nacos started successfully in stand alone mode.
+2022-09-11 05:27:13,389 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:32,066 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-11 05:27:13,785 WARN clearConfigHistory start
 
-2022-09-10 22:56:32,067 INFO Initializing Servlet 'dispatcherServlet'
+2022-09-11 05:53:35,493 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:32,117 INFO Completed initialization in 48 ms
+2022-09-11 05:53:35,514 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:36,998 INFO Expired JWT token.
+2022-09-11 05:53:35,923 WARN clearConfigHistory start
 
-2022-09-10 22:56:37,076 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
+2022-09-11 06:03:35,380 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:39,369 INFO Starting Nacos v1.1.4 on shiyangdeMacBook-Pro.local with PID 21849 (/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/target/nacos-server.jar started by shiyang in /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/bin)
+2022-09-11 06:03:35,412 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:39,378 INFO The following profiles are active: standalone
+2022-09-11 06:03:35,831 WARN clearConfigHistory start
 
-2022-09-10 22:56:44,099 INFO Expired JWT token.
+2022-09-11 06:13:35,417 INFO [capacityManagement] start correct usage
 
-2022-09-10 22:56:44,100 ERROR Responding with unauthorized error. Message - Full authentication is required to access this resource
+2022-09-11 06:13:35,447 INFO [capacityManagement] end correct usage, cost: 0s
 
-2022-09-10 22:56:47,395 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$310558f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2022-09-10 22:56:47,652 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2022-09-10 22:56:47,663 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@324c64cd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2022-09-10 22:56:47,672 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$55d9fbab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2022-09-10 22:56:47,697 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2022-09-10 22:56:49,009 INFO Tomcat initialized with port(s): 8848 (http)
-
-2022-09-10 22:56:49,116 INFO Starting service [Tomcat]
-
-2022-09-10 22:56:49,116 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
-
-2022-09-10 22:56:49,150 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shiyang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-
-2022-09-10 22:56:49,530 INFO Initializing Spring embedded WebApplicationContext
-
-2022-09-10 22:56:49,531 INFO Root WebApplicationContext: initialization completed in 9957 ms
-
-2022-09-10 22:56:52,533 ERROR Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
-	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.reload(LocalDataSourceServiceImpl.java:105)
-	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.init(LocalDataSourceServiceImpl.java:94)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
-	at com.alibaba.nacos.config.server.service.DynamicDataSource.getDataSource(DynamicDataSource.java:52)
-	at com.alibaba.nacos.config.server.service.PersistService.init(PersistService.java:91)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.alibaba.nacos.Nacos.main(Nacos.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
-	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:593)
-Caused by: java.sql.SQLException: Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
-	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
-	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
-	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
-	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
-	... 81 common frames omitted
-Caused by: org.apache.derby.impl.jdbc.EmbedSQLException: Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 95 common frames omitted
-Caused by: org.apache.derby.impl.jdbc.EmbedSQLException: Another instance of Derby may have already booted the database /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
-	... 92 common frames omitted
-Caused by: org.apache.derby.iapi.error.StandardException: Another instance of Derby may have already booted the database /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
-	... 92 common frames omitted
-2022-09-10 22:56:52,540 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-
-2022-09-10 22:56:52,547 INFO Stopping service [Tomcat]
-
-2022-09-10 22:56:52,559 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,559 WARN The web application [nacos] appears to have started a thread named [nacos.naming.status.worker] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,560 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.raft.notifier] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
- com.alibaba.nacos.naming.consistency.persistent.raft.RaftCore$Notifier.run(RaftCore.java:940)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,560 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,561 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,563 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,563 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,564 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.server.list.notifier] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,564 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,565 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.data.syncer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,566 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,566 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,567 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,567 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,586 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,587 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,587 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,588 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.task.dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:94)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,588 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,589 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.notifier] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
- com.alibaba.nacos.naming.consistency.ephemeral.distro.DistroConsistencyServiceImpl$Notifier.run(DistroConsistencyServiceImpl.java:385)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,589 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,589 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/java.net.PlainDatagramSocketImpl.receive0(Native Method)
- java.base@11.0.2/java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:181)
- java.base@11.0.2/java.net.DatagramSocket.receive(DatagramSocket.java:814)
- com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:626)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,590 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.retransmitter] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,591 WARN The web application [nacos] appears to have started a thread named [nacos.naming.service.worker] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,591 WARN The web application [nacos] appears to have started a thread named [nacos.naming.service.update.processor] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
- java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:483)
- java.base@11.0.2/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:671)
- com.alibaba.nacos.naming.core.ServiceManager$UpdatedServiceProcessor.run(ServiceManager.java:199)
- java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
- java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
- java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
-
-2022-09-10 22:56:52,619 INFO Nacos Log files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/
-
-2022-09-10 22:56:52,620 INFO Nacos Conf files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/conf/
-
-2022-09-10 22:56:52,620 INFO Nacos Data files: /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/
-
-2022-09-10 22:56:52,620 ERROR Nacos failed to start, please see /Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/logs/nacos.log for more details.
-
-2022-09-10 22:56:52,648 INFO 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-
-2022-09-10 22:56:52,660 ERROR Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.alibaba.nacos.Nacos.main(Nacos.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
-	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:593)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
-	... 27 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'persistService': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
-	... 40 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localDataSourceService': Invocation of init method failed; nested exception is java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
-	at com.alibaba.nacos.config.server.service.DynamicDataSource.getDataSource(DynamicDataSource.java:52)
-	at com.alibaba.nacos.config.server.service.PersistService.init(PersistService.java:91)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	... 52 common frames omitted
-Caused by: java.lang.RuntimeException: load schema.sql error.org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Failed to start database '/Users/shiyang/Projects/learn/OnlineEducationPlatform/utils/nacos/nacos/data/derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@6767c1fc, see the next exception for details.)
-	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.reload(LocalDataSourceServiceImpl.java:110)
-	at com.alibaba.nacos.config.server.service.LocalDataSourceServiceImpl.init(LocalDataSourceServiceImpl.java:94)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	... 70 common frames omitted
+2022-09-11 06:13:35,883 WARN clearConfigHistory start
+
+2022-09-11 06:23:35,504 INFO [capacityManagement] start correct usage
+
+2022-09-11 06:23:35,532 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 06:23:35,961 WARN clearConfigHistory start
+
+2022-09-11 06:33:35,565 INFO [capacityManagement] start correct usage
+
+2022-09-11 06:33:35,591 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 06:33:36,031 WARN clearConfigHistory start
+
+2022-09-11 06:43:35,603 INFO [capacityManagement] start correct usage
+
+2022-09-11 06:43:35,631 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 06:43:36,061 WARN clearConfigHistory start
+
+2022-09-11 07:42:34,312 INFO [capacityManagement] start correct usage
+
+2022-09-11 07:42:34,365 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 07:42:34,768 WARN clearConfigHistory start
+
+2022-09-11 07:52:34,443 INFO [capacityManagement] start correct usage
+
+2022-09-11 07:52:34,480 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 07:52:34,878 WARN clearConfigHistory start
+
+2022-09-11 08:02:34,488 INFO [capacityManagement] start correct usage
+
+2022-09-11 08:02:34,516 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 08:02:34,922 WARN clearConfigHistory start
+
+2022-09-11 08:12:34,526 INFO [capacityManagement] start correct usage
+
+2022-09-11 08:12:34,565 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 08:12:34,976 WARN clearConfigHistory start
+
+2022-09-11 08:22:34,617 INFO [capacityManagement] start correct usage
+
+2022-09-11 08:22:34,650 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 08:22:35,050 WARN clearConfigHistory start
+
+2022-09-11 08:32:34,662 INFO [capacityManagement] start correct usage
+
+2022-09-11 08:32:34,698 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 08:32:35,112 WARN clearConfigHistory start
+
+2022-09-11 10:06:23,427 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:06:23,489 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:06:23,880 WARN clearConfigHistory start
+
+2022-09-11 10:16:23,503 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:16:23,535 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:16:23,953 WARN clearConfigHistory start
+
+2022-09-11 10:26:23,554 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:26:23,583 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:26:24,004 WARN clearConfigHistory start
+
+2022-09-11 10:36:23,602 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:36:23,630 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:36:24,035 WARN clearConfigHistory start
+
+2022-09-11 10:46:23,554 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:46:23,592 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:46:24,005 WARN clearConfigHistory start
+
+2022-09-11 10:56:23,600 INFO [capacityManagement] start correct usage
+
+2022-09-11 10:56:23,635 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 10:56:24,056 WARN clearConfigHistory start
+
+2022-09-11 11:06:23,637 INFO [capacityManagement] start correct usage
+
+2022-09-11 11:06:23,674 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 11:06:24,100 WARN clearConfigHistory start
+
+2022-09-11 11:16:23,562 INFO [capacityManagement] start correct usage
+
+2022-09-11 11:16:23,574 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 11:16:24,031 WARN clearConfigHistory start
+
+2022-09-11 11:26:23,568 INFO [capacityManagement] start correct usage
+
+2022-09-11 11:26:23,610 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 11:26:24,076 WARN clearConfigHistory start
+
+2022-09-11 11:36:23,598 INFO [capacityManagement] start correct usage
+
+2022-09-11 11:36:23,630 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 11:36:24,101 WARN clearConfigHistory start
+
+2022-09-11 12:30:01,716 INFO [capacityManagement] start correct usage
+
+2022-09-11 12:30:01,770 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 12:30:02,230 WARN clearConfigHistory start
+
+2022-09-11 14:03:29,416 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:03:29,456 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:03:29,914 WARN clearConfigHistory start
+
+2022-09-11 14:13:29,454 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:13:29,490 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:13:29,960 WARN clearConfigHistory start
+
+2022-09-11 14:23:29,488 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:23:29,518 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:23:29,989 WARN clearConfigHistory start
+
+2022-09-11 14:33:29,719 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:33:29,752 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:33:30,213 WARN clearConfigHistory start
+
+2022-09-11 14:43:29,762 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:43:29,797 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:43:30,242 WARN clearConfigHistory start
+
+2022-09-11 14:53:29,820 INFO [capacityManagement] start correct usage
+
+2022-09-11 14:53:29,853 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 14:53:30,288 WARN clearConfigHistory start
+
+2022-09-11 15:19:19,161 INFO [capacityManagement] start correct usage
+
+2022-09-11 15:19:19,189 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 15:19:19,617 WARN clearConfigHistory start
+
+2022-09-11 15:29:19,206 INFO [capacityManagement] start correct usage
+
+2022-09-11 15:29:19,229 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 15:29:19,687 WARN clearConfigHistory start
+
+2022-09-11 15:39:19,238 INFO [capacityManagement] start correct usage
+
+2022-09-11 15:39:19,273 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 15:39:19,708 WARN clearConfigHistory start
+
+2022-09-11 15:49:19,269 INFO [capacityManagement] start correct usage
+
+2022-09-11 15:49:19,281 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 15:49:19,740 WARN clearConfigHistory start
+
+2022-09-11 15:59:19,294 INFO [capacityManagement] start correct usage
+
+2022-09-11 15:59:19,333 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 15:59:19,773 WARN clearConfigHistory start
+
+2022-09-11 16:09:19,349 INFO [capacityManagement] start correct usage
+
+2022-09-11 16:09:19,390 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 16:09:19,826 WARN clearConfigHistory start
+
+2022-09-11 16:26:26,704 INFO [capacityManagement] start correct usage
+
+2022-09-11 16:26:26,743 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 16:26:27,164 WARN clearConfigHistory start
+
+2022-09-11 17:24:16,746 INFO [capacityManagement] start correct usage
+
+2022-09-11 17:24:16,820 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 17:24:17,202 WARN clearConfigHistory start
+
+2022-09-11 17:34:16,875 INFO [capacityManagement] start correct usage
+
+2022-09-11 17:34:16,911 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 17:34:17,311 WARN clearConfigHistory start
+
+2022-09-11 17:44:16,931 INFO [capacityManagement] start correct usage
+
+2022-09-11 17:44:16,964 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 17:44:17,360 WARN clearConfigHistory start
+
+2022-09-11 17:54:17,010 INFO [capacityManagement] start correct usage
+
+2022-09-11 17:54:17,022 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 17:54:17,454 WARN clearConfigHistory start
+
+2022-09-11 18:04:17,041 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:04:17,077 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:04:17,473 WARN clearConfigHistory start
+
+2022-09-11 18:14:17,079 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:14:17,113 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:14:17,522 WARN clearConfigHistory start
+
+2022-09-11 18:24:17,128 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:24:17,143 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:24:17,575 WARN clearConfigHistory start
+
+2022-09-11 18:34:17,185 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:34:17,214 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:34:17,649 WARN clearConfigHistory start
+
+2022-09-11 18:44:17,234 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:44:17,266 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:44:17,696 WARN clearConfigHistory start
+
+2022-09-11 18:54:17,283 INFO [capacityManagement] start correct usage
+
+2022-09-11 18:54:17,319 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 18:54:17,742 WARN clearConfigHistory start
+
+2022-09-11 19:04:17,303 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:04:17,340 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:04:17,762 WARN clearConfigHistory start
+
+2022-09-11 19:14:17,358 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:14:17,394 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:14:17,824 WARN clearConfigHistory start
+
+2022-09-11 19:24:17,408 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:24:17,446 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:24:17,860 WARN clearConfigHistory start
+
+2022-09-11 19:34:17,461 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:34:17,494 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:34:17,898 WARN clearConfigHistory start
+
+2022-09-11 19:44:17,397 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:44:17,432 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:44:17,827 WARN clearConfigHistory start
+
+2022-09-11 19:54:17,431 INFO [capacityManagement] start correct usage
+
+2022-09-11 19:54:17,452 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 19:54:17,871 WARN clearConfigHistory start
+
+2022-09-11 20:04:17,489 INFO [capacityManagement] start correct usage
+
+2022-09-11 20:04:17,504 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 20:04:17,950 WARN clearConfigHistory start
+
+2022-09-11 20:14:17,502 INFO [capacityManagement] start correct usage
+
+2022-09-11 20:14:17,526 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 20:14:18,021 WARN clearConfigHistory start
+
+2022-09-11 20:24:17,532 INFO [capacityManagement] start correct usage
+
+2022-09-11 20:24:17,569 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 20:24:18,064 WARN clearConfigHistory start
+
+2022-09-11 21:49:31,191 INFO [capacityManagement] start correct usage
+
+2022-09-11 21:49:31,277 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 21:49:31,727 WARN clearConfigHistory start
+
+2022-09-11 21:59:31,276 INFO [capacityManagement] start correct usage
+
+2022-09-11 21:59:31,314 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 21:59:31,782 WARN clearConfigHistory start
+
+2022-09-11 22:09:31,382 INFO [capacityManagement] start correct usage
+
+2022-09-11 22:09:31,429 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 22:09:31,912 WARN clearConfigHistory start
+
+2022-09-11 22:19:31,392 INFO [capacityManagement] start correct usage
+
+2022-09-11 22:19:31,459 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-11 22:19:31,912 WARN clearConfigHistory start
+
