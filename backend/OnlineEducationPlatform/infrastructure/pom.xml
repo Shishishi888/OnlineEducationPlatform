@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>api_gateway</module>
+        <module>spring_security</module>
     </modules>
 
     <properties>

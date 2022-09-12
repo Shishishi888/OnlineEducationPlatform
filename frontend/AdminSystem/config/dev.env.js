@@ -7,5 +7,5 @@ module.exports = merge(prodEnv, {
   // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
   // BASE_API: '"http://localhost:8001"',
   // BASE_API: '"http://localhost:9001"',  // nginx网关地址
-  BASE_API: '"http://localhost:8222"',  // Gateway地址
+  BASE_API: '"http://localhost:8222"',     // Gateway网关地址
 })
