@@ -16,7 +16,10 @@ import java.util.List;
  */
 public interface PermissionService extends IService<Permission> {
 
-    //获取全部菜单
+    /**
+     * 查询所有菜单
+     * @return
+     */
     List<Permission> queryAllMenu();
 
     //根据角色获取菜单
@@ -32,9 +35,6 @@ public interface PermissionService extends IService<Permission> {
     List<String> selectPermissionValueByUserId(String id);
 
     List<JSONObject> selectPermissionByUserId(String id);
-
-    //获取全部菜单
-    List<Permission> queryAllMenuGuli();
 
     //递归删除菜单
     void removeChildByIdGuli(String id);

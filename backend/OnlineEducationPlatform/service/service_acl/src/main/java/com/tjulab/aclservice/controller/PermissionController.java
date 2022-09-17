@@ -20,18 +20,21 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/admin/acl/permission")
-//@CrossOrigin
+// @CrossOrigin
 public class PermissionController {
 
     @Autowired
     private PermissionService permissionService;
 
-    //获取全部菜单
+    /**
+     * 查询所有菜单
+     * @return
+     */
     @ApiOperation(value = "查询所有菜单")
     @GetMapping
-    public R indexAllPermission() {
-        List<Permission> list =  permissionService.queryAllMenuGuli();
-        return R.ok().data("children",list);
+    public R queryAllMenu() {
+        List<Permission> menuList =  permissionService.queryAllMenu();
+        return R.ok().data("menuList", menuList);
     }
 
     @ApiOperation(value = "递归删除菜单")

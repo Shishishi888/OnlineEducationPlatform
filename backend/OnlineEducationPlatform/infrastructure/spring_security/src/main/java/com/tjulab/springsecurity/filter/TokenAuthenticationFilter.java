@@ -3,7 +3,6 @@ package com.tjulab.springsecurity.filter;
 import com.tjulab.commonutils.R.R;
 import com.tjulab.commonutils.ResponseUtil;
 import com.tjulab.springsecurity.security.TokenManager;
-import com.tjulab.springsecurity.security.TokenManager;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
