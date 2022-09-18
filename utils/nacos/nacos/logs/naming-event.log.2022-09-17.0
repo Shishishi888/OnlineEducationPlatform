@@ -1,0 +1,48 @@
+2022-09-17 22:03:40,716 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:03:40,729 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+
+2022-09-17 22:04:06,030 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:04:06,032 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 
+
+2022-09-17 22:04:15,618 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:04:15,620 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+
+2022-09-17 22:06:16,138 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:06:16,138 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 
+
+2022-09-17 22:06:28,797 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:06:28,797 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+
+2022-09-17 22:07:24,480 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:07:24,480 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 
+
+2022-09-17 22:07:34,139 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:07:34,140 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+
+2022-09-17 22:10:59,595 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:10:59,597 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 
+
+2022-09-17 22:11:11,268 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:11:11,268 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+
+2022-09-17 22:11:57,110 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:11:57,111 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 172.23.167.29:8001_true,
+
+2022-09-17 22:14:01,025 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:14:01,031 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 
+
+2022-09-17 22:14:14,152 INFO DEFAULT_GROUP@@service-acl {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.167.29:8009:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-17 22:14:14,152 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-acl, ips: 172.23.167.29:8009_true,
+

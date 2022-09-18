@@ -1,0 +1,102 @@
+2022-09-17 22:03:41,734 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:04:07,034 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:04:16,624 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:04:16,634 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 127.0.0.1:53303, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,53303,100232921700292
+
+2022-09-17 22:04:16,635 INFO send udp packet: 127.0.0.1,53303,100232921700292
+
+2022-09-17 22:04:16,680 INFO received ack: {"type": "push-ack", "lastRefTime":"100232921700292", "data":""} from: 127.0.0.1:, cost: 53303 ms, unacked: 45, total push: 0
+
+2022-09-17 22:06:17,142 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:06:29,802 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:06:29,804 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:55360, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,55360,100366098278125
+
+2022-09-17 22:06:29,804 INFO send udp packet: 172.23.167.29,55360,100366098278125
+
+2022-09-17 22:06:29,812 INFO received ack: {"type": "push-ack", "lastRefTime":"100366098278125", "data":""} from: 172.23.167.29:, cost: 55360 ms, unacked: 8, total push: 0
+
+2022-09-17 22:07:25,486 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:07:25,487 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:55360, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:07:25,487 INFO send udp packet: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:07:35,143 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:07:35,144 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:58851, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,58851,100431438186250
+
+2022-09-17 22:07:35,144 INFO send udp packet: 172.23.167.29,58851,100431438186250
+
+2022-09-17 22:07:35,159 INFO received ack: {"type": "push-ack", "lastRefTime":"100431438186250", "data":""} from: 172.23.167.29:, cost: 58851 ms, unacked: 15, total push: 1
+
+2022-09-17 22:07:35,502 INFO retry to push data, key: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:07:35,503 INFO send udp packet: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:07:45,506 INFO retry to push data, key: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:07:45,509 WARN max re-push times reached, retry times 2, key: 172.23.167.29,55360,100421781164083
+
+2022-09-17 22:11:00,599 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:11:00,601 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:58851, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:00,601 INFO send udp packet: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:10,606 INFO retry to push data, key: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:10,607 INFO send udp packet: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:12,274 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:11:12,278 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:60515, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,60515,100648509856208
+
+2022-09-17 22:11:12,278 INFO send udp packet: 172.23.167.29,60515,100648509856208
+
+2022-09-17 22:11:12,311 INFO received ack: {"type": "push-ack", "lastRefTime":"100648509856208", "data":""} from: 172.23.167.29:, cost: 60515 ms, unacked: 33, total push: 1
+
+2022-09-17 22:11:20,611 INFO retry to push data, key: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:20,611 WARN max re-push times reached, retry times 2, key: 172.23.167.29,58851,100636835939625
+
+2022-09-17 22:11:58,113 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-09-17 22:14:02,034 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:14:02,038 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:60515, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,60515,100818269667417
+
+2022-09-17 22:14:02,038 INFO send udp packet: 172.23.167.29,60515,100818269667417
+
+2022-09-17 22:14:02,038 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,100818269667417
+
+2022-09-17 22:14:02,039 INFO send udp packet: 172.23.167.29,57771,100818269667417
+
+2022-09-17 22:14:02,061 INFO received ack: {"type": "push-ack", "lastRefTime":"100818269667417", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 23, total push: 1
+
+2022-09-17 22:14:12,042 INFO retry to push data, key: 172.23.167.29,60515,100818269667417
+
+2022-09-17 22:14:12,045 INFO send udp packet: 172.23.167.29,60515,100818269667417
+
+2022-09-17 22:14:15,156 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+
+2022-09-17 22:14:15,157 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,100831389810208
+
+2022-09-17 22:14:15,157 INFO send udp packet: 172.23.167.29,50597,100831389810208
+
+2022-09-17 22:14:15,158 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,100831389810208
+
+2022-09-17 22:14:15,158 INFO send udp packet: 172.23.167.29,57771,100831389810208
+
+2022-09-17 22:14:15,171 INFO received ack: {"type": "push-ack", "lastRefTime":"100831389810208", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 13, total push: 2
+
+2022-09-17 22:14:15,175 INFO received ack: {"type": "push-ack", "lastRefTime":"100831389810208", "data":""} from: 172.23.167.29:, cost: 50597 ms, unacked: 18, total push: 1
+
+2022-09-17 22:14:22,058 INFO retry to push data, key: 172.23.167.29,60515,100818269667417
+
+2022-09-17 22:14:22,059 WARN max re-push times reached, retry times 2, key: 172.23.167.29,60515,100818269667417
+

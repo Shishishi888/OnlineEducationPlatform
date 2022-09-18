@@ -31,16 +31,21 @@ public class PermissionController {
      * @return
      */
     @ApiOperation(value = "查询所有菜单")
-    @GetMapping
+    @GetMapping("queryAllMenu")
     public R queryAllMenu() {
         List<Permission> menuList =  permissionService.queryAllMenu();
         return R.ok().data("menuList", menuList);
     }
 
+    /**
+     * 删除菜单（根据菜单ID删除）
+     * @param id
+     * @return
+     */
     @ApiOperation(value = "递归删除菜单")
-    @DeleteMapping("remove/{id}")
-    public R remove(@PathVariable String id) {
-        permissionService.removeChildByIdGuli(id);
+    @DeleteMapping("removeMenuById/{id}")
+    public R removeMenuById(@PathVariable String id) {
+        permissionService.removeMenuById(id);
         return R.ok();
     }
 

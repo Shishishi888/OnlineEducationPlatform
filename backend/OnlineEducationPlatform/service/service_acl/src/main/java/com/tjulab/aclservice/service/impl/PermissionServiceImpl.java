@@ -106,10 +106,16 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         rolePermissionService.saveBatch(rolePermissionList);
     }
 
-    //递归删除菜单
+    /**
+     * 删除菜单（根据菜单ID删除）
+     * @param id
+     */
     @Override
-    public void removeChildById(String id) {
+    public void removeMenuById(String id) {
+        // 创建idList集合，用于封装要删除的菜单项的菜单id
         List<String> idList = new ArrayList<>();
+
+        // 像idList中递归添加要删除的菜单项的菜单id
         this.selectChildListById(id, idList);
 
         idList.add(id);
@@ -165,7 +171,13 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
      * @param idList
      */
     private void selectChildListById(String id, List<String> idList) {
-        List<Permission> childList = baseMapper.selectList(new QueryWrapper<Permission>().eq("pid", id).select("id"));
+        // 查询当前菜单项的所有子菜单
+        QueryWrapper<Permission> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("pid", id);
+        queryWrapper.select("id");
+        List<Permission> childList = baseMapper.selectList(queryWrapper);
+
+        // 递归查询每个子菜单项
         childList.stream().forEach(item -> {
             idList.add(item.getId());
             this.selectChildListById(item.getId(), idList);
@@ -211,35 +223,6 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     }
 
 
-    //========================递归查询所有菜单================================================
-
-    //============递归删除菜单==================================
-    @Override
-    public void removeChildByIdGuli(String id) {
-        //1 创建list集合，用于封装所有删除菜单id值
-        List<String> idList = new ArrayList<>();
-        //2 向idList集合设置删除菜单id
-        this.selectPermissionChildById(id,idList);
-        //把当前id封装到list里面
-        idList.add(id);
-        baseMapper.deleteBatchIds(idList);
-    }
-
-    //2 根据当前菜单id，查询菜单里面子菜单id，封装到list集合
-    private void selectPermissionChildById(String id, List<String> idList) {
-        //查询菜单里面子菜单id
-        QueryWrapper<Permission>  wrapper = new QueryWrapper<>();
-        wrapper.eq("pid",id);
-        wrapper.select("id");
-        List<Permission> childIdList = baseMapper.selectList(wrapper);
-        //把childIdList里面菜单id值获取出来，封装idList里面，做递归查询
-        childIdList.stream().forEach(item -> {
-            //封装idList里面
-            idList.add(item.getId());
-            //递归查询
-            this.selectPermissionChildById(item.getId(),idList);
-        });
-    }
 
     //=========================给角色分配菜单=======================
     @Override

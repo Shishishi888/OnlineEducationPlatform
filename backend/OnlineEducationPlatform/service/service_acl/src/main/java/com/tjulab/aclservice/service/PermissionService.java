@@ -28,16 +28,16 @@ public interface PermissionService extends IService<Permission> {
     //给角色分配权限
     void saveRolePermissionRealtionShip(String roleId, String[] permissionId);
 
-    //递归删除菜单
-    void removeChildById(String id);
+    /**
+     * 删除菜单（根据菜单ID删除）
+     * @param id
+     */
+    void removeMenuById(String id);
 
     //根据用户id获取用户菜单
     List<String> selectPermissionValueByUserId(String id);
 
     List<JSONObject> selectPermissionByUserId(String id);
-
-    //递归删除菜单
-    void removeChildByIdGuli(String id);
 
     //给角色分配权限
     void saveRolePermissionRealtionShipGuli(String roleId, String[] permissionId);
