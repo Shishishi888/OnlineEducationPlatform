@@ -33,8 +33,8 @@ public class PermissionController {
     @ApiOperation(value = "查询所有菜单")
     @GetMapping("queryAllMenu")
     public R queryAllMenu() {
-        List<Permission> menuList =  permissionService.queryAllMenu();
-        return R.ok().data("menuList", menuList);
+        List<Permission> permissionList =  permissionService.queryAllMenu();
+        return R.ok().data("permissionListList", permissionList);
     }
 
     /**
@@ -49,10 +49,16 @@ public class PermissionController {
         return R.ok();
     }
 
-    @ApiOperation(value = "给角色分配权限")
+    /**
+     * 为角色分配菜单权限
+     * @param roleId
+     * @param permissionId
+     * @return
+     */
+    @ApiOperation(value = "为角色分配菜单权限")
     @PostMapping("/doAssign")
     public R doAssign(String roleId,String[] permissionId) {
-        permissionService.saveRolePermissionRealtionShipGuli(roleId,permissionId);
+        permissionService.saveRolePermissionRealtionShip(roleId,permissionId);
         return R.ok();
     }
 

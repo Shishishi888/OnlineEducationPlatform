@@ -25,7 +25,11 @@ public interface PermissionService extends IService<Permission> {
     //根据角色获取菜单
     List<Permission> selectAllMenu(String roleId);
 
-    //给角色分配权限
+    /**
+     * 为角色分配菜单权限
+     * @param roleId
+     * @param permissionId
+     */
     void saveRolePermissionRealtionShip(String roleId, String[] permissionId);
 
     /**
@@ -39,6 +43,4 @@ public interface PermissionService extends IService<Permission> {
 
     List<JSONObject> selectPermissionByUserId(String id);
 
-    //给角色分配权限
-    void saveRolePermissionRealtionShipGuli(String roleId, String[] permissionId);
 }

@@ -50,9 +50,9 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         List<Permission> permissionList = baseMapper.selectList(queryWrapper);
 
         // 2. 将菜单集合按照要求进行封装
-        List<Permission> menuList = bulid(permissionList);
+        List<Permission> finalPermissionList = build(permissionList);
 
-        return menuList;
+        return finalPermissionList;
     }
 
     //根据角色获取菜单
@@ -82,22 +82,19 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         }
 
 
-        List<Permission> permissionList = bulid(allPermissionList);
+        List<Permission> permissionList = build(allPermissionList);
         return permissionList;
     }
 
-    //给角色分配权限
+    /**
+     * 为角色分配菜单权限
+     * @param roleId
+     * @param permissionIds
+     */
     @Override
     public void saveRolePermissionRealtionShip(String roleId, String[] permissionIds) {
-
-        rolePermissionService.remove(new QueryWrapper<RolePermission>().eq("role_id", roleId));
-
-  
-
         List<RolePermission> rolePermissionList = new ArrayList<>();
         for(String permissionId : permissionIds) {
-            if(StringUtils.isEmpty(permissionId)) continue;
-      
             RolePermission rolePermission = new RolePermission();
             rolePermission.setRoleId(roleId);
             rolePermission.setPermissionId(permissionId);
@@ -189,16 +186,16 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
      * @param treeNodes
      * @return
      */
-    private static List<Permission> bulid(List<Permission> treeNodes) {
-        List<Permission> finalNode = new ArrayList<>();
+    private static List<Permission> build(List<Permission> treeNodes) {
+        List<Permission> permissionList = new ArrayList<>();
         // 遍历菜单list集合
         for (Permission treeNode : treeNodes) {
             if ("0".equals(treeNode.getPid())) {  // 找到顶层菜单项
                 treeNode.setLevel(1);  // 将该菜单项的level值设置为1
-                finalNode.add(findChildren(treeNode,treeNodes));  // 递归查询顶层菜单项的子菜单，并封装到finalNode集合中
+                permissionList.add(findChildren(treeNode,treeNodes));  // 递归查询顶层菜单项的子菜单，并封装到finalNode集合中
             }
         }
-        return finalNode;
+        return permissionList;
     }
 
     /**
@@ -222,25 +219,4 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         return treeNode;
     }
 
-
-
-    //=========================给角色分配菜单=======================
-    @Override
-    public void saveRolePermissionRealtionShipGuli(String roleId, String[] permissionIds) {
-        //roleId角色id
-        //permissionId菜单id 数组形式
-        //1 创建list集合，用于封装添加数据
-        List<RolePermission> rolePermissionList = new ArrayList<>();
-        //遍历所有菜单数组
-        for(String perId : permissionIds) {
-            //RolePermission对象
-            RolePermission rolePermission = new RolePermission();
-            rolePermission.setRoleId(roleId);
-            rolePermission.setPermissionId(perId);
-            //封装到list集合
-            rolePermissionList.add(rolePermission);
-        }
-        //添加到角色菜单关系表
-        rolePermissionService.saveBatch(rolePermissionList);
-    }
 }

@@ -1,614 +1,92 @@
-2022-09-18 09:55:21,156 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:36,062 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
 
-2022-09-18 09:56:23,066 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:00:36,094 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 127.0.0.1:56879, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:23,705 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:36,095 INFO send udp packet: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:25,353 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:00:36,096 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,184345234652334
 
-2022-09-18 09:56:25,359 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,142878683938625
+2022-09-19 00:00:36,096 INFO send udp packet: 172.23.167.29,57771,184345234652334
 
-2022-09-18 09:56:25,359 INFO send udp packet: 172.23.167.29,57771,142878683938625
+2022-09-19 00:00:46,099 INFO retry to push data, key: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:25,359 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:46,102 INFO send udp packet: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:25,360 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,142878690173292
+2022-09-19 00:00:46,105 INFO retry to push data, key: 172.23.167.29,57771,184345234652334
 
-2022-09-18 09:56:25,360 INFO send udp packet: 172.23.167.29,57771,142878690173292
+2022-09-19 00:00:46,105 INFO send udp packet: 172.23.167.29,57771,184345234652334
 
-2022-09-18 09:56:25,415 INFO received ack: {"type": "push-ack", "lastRefTime":"142878683938625", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 56, total push: 1
+2022-09-19 00:00:48,954 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
 
-2022-09-18 09:56:25,424 INFO received ack: {"type": "push-ack", "lastRefTime":"142878690173292", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 63, total push: 0
+2022-09-19 00:00:48,976 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 127.0.0.1:56522, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,56522,184358107661709
 
-2022-09-18 09:56:28,710 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:48,976 INFO send udp packet: 127.0.0.1,56522,184358107661709
 
-2022-09-18 09:56:28,716 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,142882036593792
+2022-09-19 00:00:48,979 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,184358107661709
 
-2022-09-18 09:56:28,716 INFO send udp packet: 172.23.167.29,50597,142882036593792
+2022-09-19 00:00:48,979 INFO send udp packet: 172.23.167.29,57771,184358107661709
 
-2022-09-18 09:56:28,717 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,142882036593792
+2022-09-19 00:00:48,990 INFO received ack: {"type": "push-ack", "lastRefTime":"184358107661709", "data":""} from: 127.0.0.1:, cost: 56522 ms, unacked: 14, total push: 3
 
-2022-09-18 09:56:28,717 INFO send udp packet: 172.23.167.29,57771,142882036593792
+2022-09-19 00:00:56,110 INFO retry to push data, key: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:28,730 INFO received ack: {"type": "push-ack", "lastRefTime":"142882036593792", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 13, total push: 1
+2022-09-19 00:00:56,112 WARN max re-push times reached, retry times 2, key: 127.0.0.1,56879,184345234652334
 
-2022-09-18 09:56:28,748 INFO received ack: {"type": "push-ack", "lastRefTime":"142882036593792", "data":""} from: 172.23.167.29:, cost: 50597 ms, unacked: 32, total push: 0
+2022-09-19 00:00:56,113 INFO retry to push data, key: 172.23.167.29,57771,184345234652334
 
-2022-09-18 10:09:40,591 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:56,114 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,184345234652334
 
-2022-09-18 10:09:40,592 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:00:58,981 INFO retry to push data, key: 172.23.167.29,57771,184358107661709
 
-2022-09-18 10:09:43,990 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:00:58,982 INFO send udp packet: 172.23.167.29,57771,184358107661709
 
-2022-09-18 10:09:43,996 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,143572617618250
+2022-09-19 00:01:08,987 INFO retry to push data, key: 172.23.167.29,57771,184358107661709
 
-2022-09-18 10:09:43,998 INFO send udp packet: 172.23.167.29,50597,143572617618250
+2022-09-19 00:01:08,988 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,184358107661709
 
-2022-09-18 10:09:44,002 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"e68236ca895a79aaf15027c3d6d19f7","lastRefTime":1663466983992,"env":"","clusters":""}, lastRefTime=143572617618250} to client: 172.23.167.29, error: {}
+2022-09-19 00:03:23,010 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
 
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 10:09:44,006 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,143572617618250
+2022-09-19 00:03:23,011 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 127.0.0.1:56522, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,56522,184512163567209
 
-2022-09-18 10:09:44,007 INFO send udp packet: 172.23.167.29,57771,143572617618250
+2022-09-19 00:03:23,012 INFO send udp packet: 127.0.0.1,56522,184512163567209
 
-2022-09-18 10:09:44,007 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"e68236ca895a79aaf15027c3d6d19f7","lastRefTime":1663466984004,"env":"","clusters":""}, lastRefTime=143572617618250} to client: 172.23.167.29, error: {}
+2022-09-19 00:03:23,013 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,184512163567209
 
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 10:54:57,072 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:03:23,013 INFO send udp packet: 172.23.167.29,57771,184512163567209
 
-2022-09-18 10:54:57,080 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,146206332131500
+2022-09-19 00:03:33,017 INFO retry to push data, key: 127.0.0.1,56522,184512163567209
 
-2022-09-18 10:54:57,081 INFO send udp packet: 172.23.167.29,50597,146206332131500
+2022-09-19 00:03:33,018 INFO send udp packet: 127.0.0.1,56522,184512163567209
 
-2022-09-18 10:54:57,081 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,146206332131500
+2022-09-19 00:03:33,022 INFO retry to push data, key: 172.23.167.29,57771,184512163567209
 
-2022-09-18 10:54:57,082 INFO send udp packet: 172.23.167.29,57771,146206332131500
+2022-09-19 00:03:33,022 INFO send udp packet: 172.23.167.29,57771,184512163567209
 
-2022-09-18 10:54:57,101 INFO received ack: {"type": "push-ack", "lastRefTime":"146206332131500", "data":""} from: 172.23.167.29:, cost: 50597 ms, unacked: 20, total push: 1
+2022-09-19 00:03:34,798 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
 
-2022-09-18 10:54:57,102 INFO received ack: {"type": "push-ack", "lastRefTime":"146206332131500", "data":""} from: 172.23.167.29:, cost: 57771 ms, unacked: 20, total push: 0
+2022-09-19 00:03:34,817 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.20.10.2:65062, agent: Nacos-Java-Client:v1.0.0, key: 172.20.10.2,65062,184523951760667
 
-2022-09-18 16:38:28,950 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:03:34,818 INFO send udp packet: 172.20.10.2,65062,184523951760667
 
-2022-09-18 16:38:28,954 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:03:34,822 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,184523951760667
 
-2022-09-18 16:38:32,301 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+2022-09-19 00:03:34,823 INFO send udp packet: 172.23.167.29,57771,184523951760667
 
-2022-09-18 16:38:32,308 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:34,839 INFO received ack: {"type": "push-ack", "lastRefTime":"184523951760667", "data":""} from: 172.20.10.2:, cost: 65062 ms, unacked: 21, total push: 3
 
-2022-09-18 16:38:32,308 INFO send udp packet: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:43,024 INFO retry to push data, key: 127.0.0.1,56522,184512163567209
 
-2022-09-18 16:38:42,317 INFO retry to push data, key: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:43,025 WARN max re-push times reached, retry times 2, key: 127.0.0.1,56522,184512163567209
 
-2022-09-18 16:38:42,318 INFO send udp packet: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:43,025 INFO retry to push data, key: 172.23.167.29,57771,184512163567209
 
-2022-09-18 16:38:52,331 INFO retry to push data, key: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:43,025 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,184512163567209
 
-2022-09-18 16:38:52,332 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,165558602569167
+2022-09-19 00:03:44,823 INFO retry to push data, key: 172.23.167.29,57771,184523951760667
 
-2022-09-18 16:45:03,752 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
+2022-09-19 00:03:44,823 INFO send udp packet: 172.23.167.29,57771,184523951760667
 
-2022-09-18 16:45:03,866 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,165620374750041
+2022-09-19 00:03:54,829 INFO retry to push data, key: 172.23.167.29,57771,184523951760667
 
-2022-09-18 16:45:03,867 INFO send udp packet: 172.23.167.29,57771,165620374750041
-
-2022-09-18 16:45:03,867 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 16:45:03,868 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:03,868 INFO send udp packet: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:07,050 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 16:45:07,051 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,165623672188208
-
-2022-09-18 16:45:07,051 INFO send udp packet: 172.23.167.29,57771,165623672188208
-
-2022-09-18 16:45:13,873 INFO retry to push data, key: 172.23.167.29,57771,165620374750041
-
-2022-09-18 16:45:13,873 INFO send udp packet: 172.23.167.29,57771,165620374750041
-
-2022-09-18 16:45:13,883 INFO retry to push data, key: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:13,883 INFO send udp packet: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:17,062 INFO retry to push data, key: 172.23.167.29,57771,165623672188208
-
-2022-09-18 16:45:17,063 INFO send udp packet: 172.23.167.29,57771,165623672188208
-
-2022-09-18 16:45:23,881 INFO retry to push data, key: 172.23.167.29,57771,165620374750041
-
-2022-09-18 16:45:23,881 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,165620374750041
-
-2022-09-18 16:45:23,886 INFO retry to push data, key: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:23,886 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,165620489299916
-
-2022-09-18 16:45:27,070 INFO retry to push data, key: 172.23.167.29,57771,165623672188208
-
-2022-09-18 16:45:27,070 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,165623672188208
-
-2022-09-18 19:06:49,261 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 19:06:49,280 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:06:49,281 INFO send udp packet: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:06:49,282 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 19:06:49,284 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:06:49,284 INFO send udp packet: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:06:52,722 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 19:06:52,723 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:06:52,723 INFO send udp packet: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:06:59,291 INFO retry to push data, key: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:06:59,292 INFO send udp packet: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:06:59,296 INFO retry to push data, key: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:06:59,297 INFO send udp packet: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:07:02,735 INFO retry to push data, key: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:07:02,736 INFO send udp packet: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:07:09,298 INFO retry to push data, key: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:07:09,299 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,173206270702792
-
-2022-09-18 19:07:09,300 INFO retry to push data, key: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:07:09,300 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,173206282632125
-
-2022-09-18 19:07:12,743 INFO retry to push data, key: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:07:12,744 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,173209723152500
-
-2022-09-18 19:22:54,446 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 19:22:54,456 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:22:54,457 INFO send udp packet: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:22:54,461 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:22:54,461 INFO send udp packet: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:23:04,451 INFO retry to push data, key: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:23:04,452 INFO send udp packet: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:23:04,457 INFO retry to push data, key: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:23:04,457 INFO send udp packet: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:23:14,459 INFO retry to push data, key: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:23:14,460 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,173256398376750
-
-2022-09-18 19:23:14,460 INFO retry to push data, key: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:23:14,460 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,173256398376750
-
-2022-09-18 19:30:55,177 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 19:30:55,178 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 19:30:58,280 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 19:30:58,285 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:30:58,285 INFO send udp packet: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:31:08,294 INFO retry to push data, key: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:31:08,295 INFO send udp packet: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:31:18,303 INFO retry to push data, key: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:31:18,304 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,173304852737792
-
-2022-09-18 19:33:44,800 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 19:33:44,809 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:33:44,810 INFO send udp packet: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:33:54,830 INFO retry to push data, key: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:33:54,833 INFO send udp packet: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:34:04,850 INFO retry to push data, key: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:34:04,851 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,173367007710958
-
-2022-09-18 19:46:41,241 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:24:09,003 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:24:09,006 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:24:12,098 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:33:02,609 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:33:02,623 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:33:02,623 INFO send udp packet: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:33:02,624 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:33:02,630 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:33:02,630 INFO send udp packet: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:33:05,648 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:33:05,650 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:33:05,650 INFO send udp packet: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:37:32,229 INFO retry to push data, key: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:37:32,231 INFO send udp packet: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:37:32,238 INFO retry to push data, key: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:37:32,238 INFO send udp packet: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:37:32,260 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:37:32,272 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175493729753916
-
-2022-09-18 20:37:32,273 INFO send udp packet: 172.23.167.29,57771,175493729753916
-
-2022-09-18 20:37:35,255 INFO retry to push data, key: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:37:35,255 INFO send udp packet: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:38:22,544 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:38:22,546 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175498781109041
-
-2022-09-18 20:38:22,546 INFO send udp packet: 172.23.167.29,50597,175498781109041
-
-2022-09-18 20:38:22,559 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-acl","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8009#DEFAULT#DEFAULT_GROUP@@service-acl","port":8009,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-acl","enabled":true}],"name":"DEFAULT_GROUP@@service-acl","checksum":"e90af432d45a6af9b6e98d6403a7ba16","lastRefTime":1663504702545,"env":"","clusters":""}, lastRefTime=175498781109041} to client: 172.23.167.29, error: {}
-
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 20:38:22,562 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:38:22,562 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175498798423583
-
-2022-09-18 20:38:22,563 INFO send udp packet: 172.23.167.29,50597,175498798423583
-
-2022-09-18 20:38:22,564 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[],"name":"DEFAULT_GROUP@@service-edu","checksum":"b9e012a29313ba26fe35fff9777db140","lastRefTime":1663504702562,"env":"","clusters":""}, lastRefTime=175498798423583} to client: 172.23.167.29, error: {}
-
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 20:38:25,497 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:38:25,498 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175501733779208
-
-2022-09-18 20:38:25,498 INFO send udp packet: 172.23.167.29,50597,175501733779208
-
-2022-09-18 20:38:25,499 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"e68236ca895a79aaf15027c3d6d19f7","lastRefTime":1663504705498,"env":"","clusters":""}, lastRefTime=175501733779208} to client: 172.23.167.29, error: {}
-
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 20:38:25,500 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175501733779208
-
-2022-09-18 20:38:25,500 INFO send udp packet: 172.23.167.29,57771,175501733779208
-
-2022-09-18 20:38:25,500 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-edu","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8001#DEFAULT#DEFAULT_GROUP@@service-edu","port":8001,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-edu","enabled":true}],"name":"DEFAULT_GROUP@@service-edu","checksum":"e68236ca895a79aaf15027c3d6d19f7","lastRefTime":1663504705499,"env":"","clusters":""}, lastRefTime=175501733779208} to client: 172.23.167.29, error: {}
-
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$4.run(PushService.java:184)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 20:38:27,474 INFO retry to push data, key: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:38:27,474 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175483674586250
-
-2022-09-18 20:38:27,475 INFO retry to push data, key: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:38:27,475 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175483688163500
-
-2022-09-18 20:38:27,507 INFO retry to push data, key: 172.23.167.29,57771,175493729753916
-
-2022-09-18 20:38:27,508 INFO send udp packet: 172.23.167.29,57771,175493729753916
-
-2022-09-18 20:38:27,513 ERROR [NACOS-PUSH] failed to push data: {type=dom, data={"metadata":{},"dom":"DEFAULT_GROUP@@service-acl","cacheMillis":10000,"useSpecifiedURL":false,"hosts":[{"valid":true,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceId":"172.23.167.29#8009#DEFAULT#DEFAULT_GROUP@@service-acl","port":8009,"healthy":true,"ip":"172.23.167.29","clusterName":"DEFAULT","weight":1.0,"ephemeral":true,"serviceName":"DEFAULT_GROUP@@service-acl","enabled":true}],"name":"DEFAULT_GROUP@@service-acl","checksum":"e90af432d45a6af9b6e98d6403a7ba16","lastRefTime":1663504652268,"env":"","clusters":""}, lastRefTime=175493729753916} to client: 172.23.167.29, error: {}
-
-java.io.IOException: Network is unreachable
-	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
-	at com.alibaba.nacos.naming.push.PushService.udpPush(PushService.java:579)
-	at com.alibaba.nacos.naming.push.PushService.access$500(PushService.java:51)
-	at com.alibaba.nacos.naming.push.PushService$Retransmitter.run(PushService.java:613)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-18 20:38:30,503 INFO retry to push data, key: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:38:30,503 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175486711523667
-
-2022-09-18 20:54:53,223 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 20:54:53,226 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 20:54:56,135 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 21:10:56,771 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 21:10:56,785 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:10:56,785 INFO send udp packet: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:10:56,786 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:10:56,790 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:10:56,790 INFO send udp packet: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:27:14,435 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 21:27:16,545 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:27:16,546 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:16,546 INFO send udp packet: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:16,546 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 21:27:16,546 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:16,546 INFO send udp packet: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:19,365 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
-
-2022-09-18 21:27:19,368 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:19,368 INFO send udp packet: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:19,369 INFO serviceName: DEFAULT_GROUP@@service-edu changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:27:19,369 INFO send udp packet: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:27:21,473 INFO retry to push data, key: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:27:21,474 INFO send udp packet: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:27:21,480 INFO retry to push data, key: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:27:21,481 INFO send udp packet: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:27:26,480 INFO retry to push data, key: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:26,481 INFO send udp packet: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:26,481 INFO retry to push data, key: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:26,481 INFO send udp packet: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:29,372 INFO retry to push data, key: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:29,373 INFO send udp packet: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:29,374 INFO retry to push data, key: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:27:29,374 INFO send udp packet: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:27:31,479 INFO retry to push data, key: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:27:31,480 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175543896107292
-
-2022-09-18 21:27:31,486 INFO retry to push data, key: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:27:31,486 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175543908818334
-
-2022-09-18 21:27:36,489 INFO retry to push data, key: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:36,489 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,175548913800458
-
-2022-09-18 21:27:36,489 INFO retry to push data, key: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:36,489 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,175548914895833
-
-2022-09-18 21:27:39,379 INFO retry to push data, key: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:39,380 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,175551802701875
-
-2022-09-18 21:27:39,380 INFO retry to push data, key: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:27:39,381 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,175551802701875
-
-2022-09-18 21:30:16,063 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:30:16,074 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:30:16,074 INFO send udp packet: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:30:26,079 INFO retry to push data, key: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:30:26,080 INFO send udp packet: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:34:49,844 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:34:49,846 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:34:49,846 INFO send udp packet: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:34:49,849 INFO retry to push data, key: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:34:49,849 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,175578961447791
-
-2022-09-18 21:34:59,856 INFO retry to push data, key: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:34:59,857 INFO send udp packet: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:35:09,872 INFO retry to push data, key: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:35:09,872 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,175598988073834
-
-2022-09-18 21:59:26,618 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:59:26,626 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:50597, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:26,626 INFO send udp packet: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:26,627 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:26,627 INFO send udp packet: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:36,629 INFO retry to push data, key: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:36,629 INFO send udp packet: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:36,642 INFO retry to push data, key: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:36,643 INFO send udp packet: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:42,206 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 21:59:42,208 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.188.251:53845, agent: Nacos-Java-Client:v1.0.0, key: 172.23.188.251,53845,177091369934417
-
-2022-09-18 21:59:42,208 INFO send udp packet: 172.23.188.251,53845,177091369934417
-
-2022-09-18 21:59:42,209 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,177091369934417
-
-2022-09-18 21:59:42,209 INFO send udp packet: 172.23.167.29,57771,177091369934417
-
-2022-09-18 21:59:42,240 INFO received ack: {"type": "push-ack", "lastRefTime":"177091369934417", "data":""} from: 172.23.188.251:, cost: 53845 ms, unacked: 32, total push: 3
-
-2022-09-18 21:59:46,646 INFO retry to push data, key: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:46,646 WARN max re-push times reached, retry times 2, key: 172.23.167.29,50597,177075782582500
-
-2022-09-18 21:59:46,647 INFO retry to push data, key: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:46,647 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,177075782582500
-
-2022-09-18 21:59:52,213 INFO retry to push data, key: 172.23.167.29,57771,177091369934417
-
-2022-09-18 21:59:52,213 INFO send udp packet: 172.23.167.29,57771,177091369934417
-
-2022-09-18 22:00:02,217 INFO retry to push data, key: 172.23.167.29,57771,177091369934417
-
-2022-09-18 22:00:02,217 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,177091369934417
-
-2022-09-18 22:04:37,310 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 22:04:37,316 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.188.251:53845, agent: Nacos-Java-Client:v1.0.0, key: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:37,316 INFO send udp packet: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:37,317 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:04:37,317 INFO send udp packet: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:04:47,322 INFO retry to push data, key: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:47,323 INFO send udp packet: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:47,326 INFO retry to push data, key: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:04:47,326 INFO send udp packet: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:04:52,525 INFO DEFAULT_GROUP@@service-acl is changed, add it to push queue.
-
-2022-09-18 22:04:52,544 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 127.0.0.1:59885, agent: Nacos-Java-Client:v1.0.0, key: 127.0.0.1,59885,177401693199250
-
-2022-09-18 22:04:52,547 INFO send udp packet: 127.0.0.1,59885,177401693199250
-
-2022-09-18 22:04:52,548 INFO serviceName: DEFAULT_GROUP@@service-acl changed, schedule push for: 172.23.167.29:57771, agent: Nacos-Java-Client:v1.0.0, key: 172.23.167.29,57771,177401693199250
-
-2022-09-18 22:04:52,548 INFO send udp packet: 172.23.167.29,57771,177401693199250
-
-2022-09-18 22:04:52,573 INFO received ack: {"type": "push-ack", "lastRefTime":"177401693199250", "data":""} from: 127.0.0.1:, cost: 59885 ms, unacked: 26, total push: 3
-
-2022-09-18 22:04:57,327 INFO retry to push data, key: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:57,327 WARN max re-push times reached, retry times 2, key: 172.23.188.251,53845,177386478179542
-
-2022-09-18 22:04:57,328 INFO retry to push data, key: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:04:57,328 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,177386478179542
-
-2022-09-18 22:05:02,550 INFO retry to push data, key: 172.23.167.29,57771,177401693199250
-
-2022-09-18 22:05:02,551 INFO send udp packet: 172.23.167.29,57771,177401693199250
-
-2022-09-18 22:05:12,557 INFO retry to push data, key: 172.23.167.29,57771,177401693199250
-
-2022-09-18 22:05:12,559 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,177401693199250
+2022-09-19 00:03:54,829 WARN max re-push times reached, retry times 2, key: 172.23.167.29,57771,184523951760667
 
