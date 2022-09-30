@@ -1,7 +1,7 @@
 package com.tjulab.springsecurity.security;
 
 import com.tjulab.commonutils.R.R;
-import com.tjulab.commonutils.ResponseUtil;
+import com.tjulab.commonutils.response.ResponseUtil;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
